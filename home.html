@@ -5,20 +5,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
+    * {
       font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    #header {
+      padding: 10px;
+      background: #333333;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    h1 {
+      font-size: 32px;
+      
+    }
+    #output_table {
+      width:100%;
     }
     #output_table th {
       text-align: left;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      background: #555555;
+      color: white;
     }
     .subject-button,
     .conjugation-button {
       display: inline-block;
       padding: 10px;
       min-width: 150px;
+      width: 100%;
       border: 1px solid gray;
       border-radius: 5px;
-      margin: 0px 5px;
       cursor: pointer;
     }
     .selected,
@@ -41,7 +62,8 @@
       border-radius: 5px;
       font-weight: bold;
     }
-    #correct_div {
+    #correct_div,
+    #all_correct_div {
       display:none;
       background: limegreen;
       color: white;
@@ -118,7 +140,7 @@
       }
       function show_all_correct_answer() {
         if(correct_answers === 6) {
-          alert("Congratulations - all answers were correct");
+          $("#all_correct_div").css("display","block");
         }
       }
       
@@ -193,7 +215,9 @@
   </script>
 </head>
 <body>
-  <h1>KONJUGATOR</h1>
+  <div id="header">
+    <h1>KONJUGATOR</h1>
+  </div>
   <table id="output_table">
     <tr>
       <th>SUBJECT</th>
@@ -202,4 +226,5 @@
   </table>
   <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
   <div id="correct_div">ANSWER WAS CORRECT</div>
+  <div id="all_correct_div">YEAH! ALL THE ANSWERS WERE CORRECT</div>
 </body>
