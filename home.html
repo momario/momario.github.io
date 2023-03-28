@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONJUGATOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial;
+    }
+    #output_table th {
+      text-align: left;
+    }
+    .subject-button,
+    .conjugation-button {
+      display: inline-block;
+      padding: 10px;
+      min-width: 150px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin: 0px 5px;
+      cursor: pointer;
+    }
+    .selected,
+    .subject-button:hover,
+    .conjugation-button:hover {
+      background-color: thistle;
+      border: 1px solid mediumpurple;
+    }
+    .grayed-out {
+      opacity: 0.5;
+      cursor: default;
+    }
+    #wrong_div {
+      display:none;
+      background: orangered;
+      color: white;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid darkred;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    #correct_div {
+      display:none;
+      background: limegreen;
+      color: white;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid green;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      function shuffleObject(obj) {
+        const entries = Object.entries(obj);
+        const shuffled = shuffleArray(entries);
+        return Object.fromEntries(shuffled);
+      }
+      function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+      }
+
+      var correct_answers = 0;
+      var selected_subject = null;
+      var selected_verb = null;
+      var correction_dict = null;
+      var clicked_subject = null;
+      var clicked_verb = null;
+
+      $.getJSON("verbs.json", function(data) {
+        correction_dict = data.present;
+        console.log(correction_dict);
+        /*console.log(data);*/
+
+        const correction_values = Object.values(correction_dict);
+        // Shuffle correction_values
+        for (let i = correction_values.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [correction_values[i], correction_values[j]] = [correction_values[j], correction_values[i]];
+        }
+        // Create new object
+        const shuffled_dict = {};
+        // Add key-value pairs to the new object
+        const correction_keys = Object.keys(correction_dict);
+        for (let i = 0; i < correction_keys.length; i++) {
+          shuffled_dict[correction_keys[i]] = correction_values[i];
+        }
+        /*console.log(shuffled_dict);*/
+        var shuffled_obj = shuffleObject(shuffled_dict);
+        console.log(shuffled_obj);
+
+        $.each(shuffled_obj, function(subject, verb) {
+          /*console.log(subject + ': ' + verb);*/
+          $('#output_table').append('<tr><td><input type="submit" class="subject-button" value="'+ subject +'"></td><td><input type="submit" class="conjugation-button" value="'+ verb +'"></td></tr>');  
+        });
+      });
+      
+      function hide_wrong_answer() {
+        $("#wrong_div").css("display","none");
+      }
+      function hide_correct_answer() {
+        $("#correct_div").css("display","none");
+      }
+      function show_wrong_answer() {
+        $("#wrong_div").css("display","block");
+      }
+      function show_correct_answer() {
+        $("#correct_div").css("display","block");
+      }
+      function show_all_correct_answer() {
+        if(correct_answers === 6) {
+          alert("Congratulations - all answers were correct");
+        }
+      }
+      
+      // Attach the click event handler using event delegation
+      $(document).on('click', '.subject-button', function() {
+        selected_subject = $(this).val();
+        clicked_subject = $(this);
+        hide_wrong_answer();
+        hide_correct_answer();
+        if(selected_verb === null) {
+          $('.subject-button').removeClass('selected');
+          $('.conjugation-button').removeClass('selected');
+          $(this).addClass('selected');
+        } else {
+          console.log("Selection:" + selected_subject + " " + selected_verb);
+          console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
+          if(selected_verb === correction_dict[selected_subject]) {
+            console.log("Answer is correct");
+            clicked_subject.addClass('grayed-out');
+            clicked_verb.addClass('grayed-out');
+            clicked_subject.attr("disabled", "disabled");
+            clicked_verb.attr("disabled", "disabled");
+            correct_answers++;
+            show_correct_answer();
+            show_all_correct_answer();
+          } else {
+            console.log("Answer is NOT correct");
+            show_wrong_answer();
+          }
+          $('.subject-button').removeClass('selected');
+          $('.conjugation-button').removeClass('selected');
+          selected_subject = null;
+          selected_verb = null;
+          clicked_subject = null;
+          clicked_verb = null;
+        }
+      });
+      $(document).on('click', '.conjugation-button', function() {
+        selected_verb = $(this).val();
+        clicked_verb = $(this);
+        hide_wrong_answer();
+        hide_correct_answer();
+        if(selected_subject === null) {
+          $('.subject-button').removeClass('selected');
+          $('.conjugation-button').removeClass('selected');
+          $(this).addClass('selected');
+        } else {
+          console.log("Selection:" + selected_subject + " " + selected_verb);
+          console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
+          if(selected_verb === correction_dict[selected_subject]) {
+            console.log("Answer is correct");
+            clicked_subject.addClass('grayed-out');
+            clicked_verb.addClass('grayed-out');
+            clicked_subject.attr("disabled", "disabled");
+            clicked_verb.attr("disabled", "disabled");
+            correct_answers++;
+            show_correct_answer();
+            show_all_correct_answer()
+          } else {
+            console.log("Answer is NOT correct");
+            show_wrong_answer();
+          }
+          $('.subject-button').removeClass('selected');
+          $('.conjugation-button').removeClass('selected');
+          selected_subject = null;
+          selected_verb = null;
+          clicked_subject = null;
+          clicked_verb = null;
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>KONJUGATOR</h1>
+  <table id="output_table">
+    <tr>
+      <th>SUBJECT</th>
+      <th>VERB</th>
+    </tr>
+  </table>
+  <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
+  <div id="correct_div">ANSWER WAS CORRECT</div>
+</body>
