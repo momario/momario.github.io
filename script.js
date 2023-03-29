@@ -143,28 +143,30 @@ $(document).ready(function() {
             hide_wrong_answer2();
             hide_correct_answer2();
             e.preventDefault();
-            if(random_verb_de.indexOf($("#translation_table_verb").val()) !== -1 && $("#translation_table_verb").val() !== "") {
+            random_verb_de_check = random_verb_de.toLowerCase();
+            translation_table_verb_check = $("#translation_table_verb").val().toLowerCase();
+            if(random_verb_de_check.indexOf(translation_table_verb_check) !== -1 && translation_table_verb_check !== "") {
                 // alert(1);
                 // console.log($("#translation_table_verb").val());
                 // console.log(random_verb_de);
                 show_correct_answer2();
-                show_correct_answer3($("#translation_table_verb").val());
-                show_correct_answer4(random_verb_de);
+                show_correct_answer3(translation_table_verb_check);
+                show_correct_answer4(random_verb_de_check);
                 $("#translation_table_verb").val('');
             } else {
                 // alert(2);
                 // console.log($("#translation_table_verb").val());
                 // console.log(random_verb_de);
                 show_wrong_answer2();
-                show_correct_answer3($("#translation_table_verb").val());
-                show_correct_answer4(random_verb_de);
+                show_correct_answer3(translation_table_verb_check);
+                show_correct_answer4(random_verb_de_check);
                 $("#translation_table_verb").val('');
             }
         });
         $(document).on('click', '#next_verb', function() {
             location.reload();
         });
-        
+
         // console.log(random_verb_es);
         // console.log(random_verb_de);
         const conjugation = conjugateRegularVerb(random_verb_es, tense);
