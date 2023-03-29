@@ -140,9 +140,9 @@ $(document).ready(function() {
         $("#random_verb_es").text(random_verb_es);
 
         $(document).on('click', '#translation_table_submit', function(e) {
+            e.preventDefault();
             hide_wrong_answer2();
             hide_correct_answer2();
-            e.preventDefault();
             random_verb_de_check = random_verb_de.toLowerCase();
             translation_table_verb_check = $("#translation_table_verb").val().toLowerCase();
             if(random_verb_de_check.indexOf(translation_table_verb_check) !== -1 && translation_table_verb_check !== "") {
