@@ -1,0 +1,92 @@
+* {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  #header {
+    padding: 10px;
+    background: #333333;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  #translation_table {
+    width:100%;
+  }
+  #translation_table input,
+  #random_verb_es {
+    display: inline-block;
+    width:100%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    color: black;
+  }
+  #translation_table_submit {
+    background: lightskyblue;
+  }
+  #translation_table_submit:hover {
+    color: white;
+    background: #333333;
+  }
+  #conjugation_table {
+    width:100%;
+  }
+  #conjugation_table th {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: #555555;
+    color: white;
+  }
+  .subject-button,
+  .conjugation-button,
+  #next_verb {
+    display: inline-block;
+    padding: 10px;
+    min-width: 150px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .selected,
+  .subject-button:hover,
+  .conjugation-button:hover,
+  #next-verb:hover {
+    color: white;
+    background-color: #333333;
+  }
+  .grayed-out {
+    opacity: 0.5;
+    cursor: default;
+  }
+  #wrong_div,
+  #wrong_div2 {
+    display:none;
+    background: orangered;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  #correct_div,
+  #correct_div2,
+  #all_correct_div {
+    display:none;
+    background: limegreen;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-weight: bold;
+  }

@@ -114,3 +114,224 @@
     }
   ]
 }
+
+{
+  "animals": [
+    {
+      "spanish": "perro",
+      "german": "Hund"
+    },
+    {
+      "spanish": "gato",
+      "german": "Katze"
+    },
+    {
+      "spanish": "elefante",
+      "german": "Elefant"
+    },
+    {
+      "spanish": "león",
+      "german": "Löwe"
+    },
+    {
+      "spanish": "jirafa",
+      "german": "Giraffe"
+    },
+    {
+      "spanish": "mono",
+      "german": "Affe"
+    },
+    {
+      "spanish": "tigre",
+      "german": "Tiger"
+    },
+    {
+      "spanish": "oso",
+      "german": "Bär"
+    },
+    {
+      "spanish": "cebra",
+      "german": "Zebra"
+    },
+    {
+      "spanish": "serpiente",
+      "german": "Schlange"
+    }
+  ]
+}
+
+{
+  "animals": [
+    {
+      "perro": "Hund",
+      "perros": "Hunde"
+    }
+  ]
+}
+
+{
+  "colors": [
+    {
+      "name": "red",
+      "spanish": "rojo",
+      "german": "rot",
+      "french": "rouge"
+    },
+    {
+      "name": "blue",
+      "spanish": "azul",
+      "german": "blau",
+      "french": "bleu"
+    },
+    {
+      "name": "green",
+      "spanish": "verde",
+      "german": "grün",
+      "french": "vert"
+    },
+    {
+      "name": "yellow",
+      "spanish": "amarillo",
+      "german": "gelb",
+      "french": "jaune"
+    },
+    {
+      "name": "purple",
+      "spanish": "morado",
+      "german": "lila",
+      "french": "violet"
+    },
+    {
+      "name": "orange",
+      "spanish": "naranja",
+      "german": "orange",
+      "french": "orange"
+    },
+    {
+      "name": "black",
+      "spanish": "negro",
+      "german": "schwarz",
+      "french": "noir"
+    },
+    {
+      "name": "white",
+      "spanish": "blanco",
+      "german": "weiß",
+      "french": "blanc"
+    },
+    {
+      "name": "pink",
+      "spanish": "rosado",
+      "german": "rosa",
+      "french": "rose"
+    },
+    {
+      "name": "brown",
+      "spanish": "marrón",
+      "german": "braun",
+      "french": "marron"
+    }
+  ]
+}
+
+{
+  "body_parts": [
+    {
+      "name": "head",
+      "spanish": "cabeza",
+      "german": "Kopf",
+      "french": "tête"
+    },
+    {
+      "name": "shoulder",
+      "spanish": "hombro",
+      "german": "Schulter",
+      "french": "épaule"
+    },
+    {
+      "name": "arm",
+      "spanish": "brazo",
+      "german": "Arm",
+      "french": "bras"
+    },
+    {
+      "name": "hand",
+      "spanish": "mano",
+      "german": "Hand",
+      "french": "main"
+    },
+    {
+      "name": "finger",
+      "spanish": "dedo",
+      "german": "Finger",
+      "french": "doigt"
+    },
+    {
+      "name": "leg",
+      "spanish": "pierna",
+      "german": "Bein",
+      "french": "jambe"
+    },
+    {
+      "name": "foot",
+      "spanish": "pie",
+      "german": "Fuß",
+      "french": "pied"
+    },
+    {
+      "name": "toe",
+      "spanish": "dedo del pie",
+      "german": "Zeh",
+      "french": "orteil"
+    },
+    {
+      "name": "chest",
+      "spanish": "pecho",
+      "german": "Brust",
+      "french": "poitrine"
+    },
+    {
+      "name": "stomach",
+      "spanish": "estómago",
+      "german": "Bauch",
+      "french": "estomac"
+    },
+    {
+      "name": "back",
+      "spanish": "espalda",
+      "german": "Rücken",
+      "french": "dos"
+    }
+  ]
+}
+
+{
+  "rooms": [
+    {
+      "name": {
+        "es": "Sala de estar",
+        "de": "Wohnzimmer"
+      }
+    },
+    {
+      "name": {
+        "es": "Cocina",
+        "de": "Küche"
+      }
+    },
+    {
+      "name": {
+        "es": "Dormitorio principal",
+        "de": "Hauptschlafzimmer"
+      }
+    },
+    {
+      "name": {
+        "es": "Baño",
+        "de": "Badezimmer"
+      }
+    }
+  ]
+}
+
+
