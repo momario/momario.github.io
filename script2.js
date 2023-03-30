@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     // Global script variables
     var correct_answers = 0;
+    let max_count = 0;
     var selected_subject = null;
     var selected_verb = null;
     var correction_dict = null;
@@ -22,12 +23,14 @@ $(document).ready(function() {
         $("#correct_div").css("display","block");
     }
     function show_all_correct_answer() {
-        if(correct_answers === 10) {
+        console.log(max_count);
+        if(correct_answers === max_count) {
         $("#all_correct_div").css("display","block");
         }
     }
 
     $.getJSON("colors.json", function(data) {
+        max_count = data.length;
         var dict = {};
         for(var key in data) {
             var value = data[key]["german"];
