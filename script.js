@@ -97,26 +97,6 @@ $(document).ready(function() {
     function show_correct_answer() {
         $("#correct_div").css("display","block");
     }
-    function hide_wrong_answer2() {
-        $("#wrong_div2").css("display","none");
-    }
-    function hide_correct_answer2() {
-        $("#correct_div2").css("display","none");
-    }
-    function show_wrong_answer2() {
-        $("#wrong_div2").css("display","block");
-    }
-    function show_correct_answer2() {
-        $("#correct_div2").css("display","block");
-    }
-    function show_correct_answer3(var_input) {
-        $("#correct_div3").css("display","block");
-        $("#correct_div3").text("Input: " + var_input);
-    }
-    function show_correct_answer4(var_correction) {
-        $("#correct_div4").css("display","block");
-        $("#correct_div4").text("Correction: " + var_correction);
-    }
     function show_all_correct_answer() {
         if(correct_answers === 6) {
         $("#all_correct_div").css("display","block");
@@ -137,32 +117,7 @@ $(document).ready(function() {
         const random_verb = data[random_list_number];
         const random_verb_es = random_verb["es"];
         const random_verb_de = random_verb["de"];
-        $("#random_verb_es").text(random_verb_es);
-
-        $(document).on('click', '#translation_table_submit', function(e) {
-            e.preventDefault();
-            hide_wrong_answer2();
-            hide_correct_answer2();
-            random_verb_de_check = random_verb_de.toLowerCase();
-            translation_table_verb_check = $("#translation_table_verb").val().toLowerCase();
-            if(random_verb_de_check.indexOf(translation_table_verb_check) !== -1 && translation_table_verb_check !== "") {
-                // alert(1);
-                // console.log($("#translation_table_verb").val());
-                // console.log(random_verb_de);
-                show_correct_answer2();
-                show_correct_answer3(translation_table_verb_check);
-                show_correct_answer4(random_verb_de_check);
-                $("#translation_table_verb").val('');
-            } else {
-                // alert(2);
-                // console.log($("#translation_table_verb").val());
-                // console.log(random_verb_de);
-                show_wrong_answer2();
-                show_correct_answer3(translation_table_verb_check);
-                show_correct_answer4(random_verb_de_check);
-                $("#translation_table_verb").val('');
-            }
-        });
+        $("#random_verb_es").text(random_verb_es + " (" + random_verb_de + ")");
         $(document).on('click', '#next_verb', function() {
             location.reload();
         });

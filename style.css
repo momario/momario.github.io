@@ -18,6 +18,7 @@
   }
   #translation_table input,
   #random_verb_es {
+    box-sizing: border-box;
     display: inline-block;
     width:100%;
     text-align: left;
@@ -47,19 +48,24 @@
   }
   .subject-button,
   .conjugation-button,
-  #next_verb {
+  #next_verb,
+  .link {
     display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
     padding: 10px;
     min-width: 150px;
     width: 100%;
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
+    color:black;
   }
   .selected,
   .subject-button:hover,
   .conjugation-button:hover,
-  #next-verb:hover {
+  #next-verb:hover,
+  .link:hover {
     color: white;
     background-color: #333333;
   }
