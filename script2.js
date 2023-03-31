@@ -9,26 +9,6 @@ $(document).ready(function() {
     var clicked_subject = null;
     var clicked_verb = null;
 
-    // Functions for showing information boxes
-    function hide_wrong_answer() {
-        $("#wrong_div").css("display","none");
-    }
-    function hide_correct_answer() {
-        $("#correct_div").css("display","none");
-    }
-    function show_wrong_answer() {
-        $("#wrong_div").css("display","block");
-    }
-    function show_correct_answer() {
-        $("#correct_div").css("display","block");
-    }
-    function show_all_correct_answer() {
-        console.log(max_count);
-        if(correct_answers === max_count) {
-        $("#all_correct_div").css("display","block");
-        }
-    }
-
     $.getJSON("colors.json", function(data) {
         max_count = data.length;
         var dict = {};
@@ -80,15 +60,13 @@ $(document).ready(function() {
     $(document).on('click', '.subject-button', function() {
         selected_subject = $(this).val();
         clicked_subject = $(this);
-        hide_wrong_answer();
-        hide_correct_answer();
+        $("#wrong_div").css("display","none");
+        $("#correct_div").css("display","none");
         if(selected_verb === null) {
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
         $(this).addClass('selected');
         } else {
-        console.log("Selection:" + selected_subject + " " + selected_verb);
-        console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
         if(selected_verb === correction_dict[selected_subject]) {
             console.log("Answer is correct");
             clicked_subject.addClass('grayed-out');
@@ -96,11 +74,12 @@ $(document).ready(function() {
             clicked_subject.attr("disabled", "disabled");
             clicked_verb.attr("disabled", "disabled");
             correct_answers++;
-            show_correct_answer();
-            show_all_correct_answer();
+            $("#correct_div").css("display","block");
+            if(correct_answers === max_count) {
+                $("#all_correct_div").css("display","block");
+            }
         } else {
-            console.log("Answer is NOT correct");
-            show_wrong_answer();
+            $("#wrong_div").css("display","block");
         }
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
@@ -115,27 +94,25 @@ $(document).ready(function() {
     $(document).on('click', '.conjugation-button', function() {
         selected_verb = $(this).val();
         clicked_verb = $(this);
-        hide_wrong_answer();
-        hide_correct_answer();
+        $("#wrong_div").css("display","none");
+        $("#correct_div").css("display","none");
         if(selected_subject === null) {
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
         $(this).addClass('selected');
         } else {
-        console.log("Selection:" + selected_subject + " " + selected_verb);
-        console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
         if(selected_verb === correction_dict[selected_subject]) {
-            console.log("Answer is correct");
             clicked_subject.addClass('grayed-out');
             clicked_verb.addClass('grayed-out');
             clicked_subject.attr("disabled", "disabled");
             clicked_verb.attr("disabled", "disabled");
             correct_answers++;
-            show_correct_answer();
-            show_all_correct_answer()
+            $("#correct_div").css("display","block");
+            if(correct_answers === max_count) {
+                $("#all_correct_div").css("display","block");
+            }
         } else {
-            console.log("Answer is NOT correct");
-            show_wrong_answer();
+            $("#wrong_div").css("display","block");
         }
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
