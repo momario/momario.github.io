@@ -9,7 +9,7 @@ $(document).ready(function() {
     var clicked_subject = null;
     var clicked_verb = null;
 
-    $.getJSON("colors.json", function(data) {
+    $.getJSON("body.json", function(data) {
         max_count = data.length;
         var dict = {};
         for(var key in data) {

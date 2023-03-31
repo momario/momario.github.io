@@ -161,23 +161,21 @@ $(document).ready(function() {
 
         $.each(shuffled_obj, function(subject, verb) {
         /*console.log(subject + ': ' + verb);*/
-        $('#conjugation_table').append('<tr><td><input type="submit" class="subject-button" value="'+ subject +'"></td><td><input type="submit" class="conjugation-button" value="'+ verb +'"></td></tr>');  
+        $('#output_table').append('<tr><td><input type="submit" class="button subject-button" value="'+ subject +'"></td><td><input type="submit" class="button conjugation-button" value="'+ verb +'"></td></tr>');  
         });
     });
 
-    // Attach the click event handler using event delegation
+   
     $(document).on('click', '.subject-button', function() {
         selected_subject = $(this).val();
         clicked_subject = $(this);
-        hide_wrong_answer();
-        hide_correct_answer();
+        $("#wrong_div").css("display","none");
+        $("#correct_div").css("display","none");
         if(selected_verb === null) {
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
         $(this).addClass('selected');
         } else {
-        console.log("Selection:" + selected_subject + " " + selected_verb);
-        console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
         if(selected_verb === correction_dict[selected_subject]) {
             console.log("Answer is correct");
             clicked_subject.addClass('grayed-out');
@@ -185,11 +183,12 @@ $(document).ready(function() {
             clicked_subject.attr("disabled", "disabled");
             clicked_verb.attr("disabled", "disabled");
             correct_answers++;
-            show_correct_answer();
-            show_all_correct_answer();
+            $("#correct_div").css("display","block");
+            if(correct_answers === max_count) {
+                $("#all_correct_div").css("display","block");
+            }
         } else {
-            console.log("Answer is NOT correct");
-            show_wrong_answer();
+            $("#wrong_div").css("display","block");
         }
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
@@ -200,31 +199,28 @@ $(document).ready(function() {
         }
     });
 
-    // Attach the click event handler using event delegation
     $(document).on('click', '.conjugation-button', function() {
         selected_verb = $(this).val();
         clicked_verb = $(this);
-        hide_wrong_answer();
-        hide_correct_answer();
+        $("#wrong_div").css("display","none");
+        $("#correct_div").css("display","none");
         if(selected_subject === null) {
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');
         $(this).addClass('selected');
         } else {
-        console.log("Selection:" + selected_subject + " " + selected_verb);
-        console.log("Correction:" + selected_subject + " " + correction_dict[selected_subject])
         if(selected_verb === correction_dict[selected_subject]) {
-            console.log("Answer is correct");
             clicked_subject.addClass('grayed-out');
             clicked_verb.addClass('grayed-out');
             clicked_subject.attr("disabled", "disabled");
             clicked_verb.attr("disabled", "disabled");
             correct_answers++;
-            show_correct_answer();
-            show_all_correct_answer()
+            $("#correct_div").css("display","block");
+            if(correct_answers === max_count) {
+                $("#all_correct_div").css("display","block");
+            }
         } else {
-            console.log("Answer is NOT correct");
-            show_wrong_answer();
+            $("#wrong_div").css("display","block");
         }
         $('.subject-button').removeClass('selected');
         $('.conjugation-button').removeClass('selected');

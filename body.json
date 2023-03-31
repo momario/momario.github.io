@@ -1,0 +1,69 @@
+[
+    {
+    "english": "head",
+    "spanish": "cabeza",
+    "german": "Kopf",
+    "french": "tête"
+    },
+    {
+    "english": "shoulder",
+    "spanish": "hombro",
+    "german": "Schulter",
+    "french": "épaule"
+    },
+    {
+    "english": "arm",
+    "spanish": "brazo",
+    "german": "Arm",
+    "french": "bras"
+    },
+    {
+    "english": "hand",
+    "spanish": "mano",
+    "german": "Hand",
+    "french": "main"
+    },
+    {
+    "english": "finger",
+    "spanish": "dedo",
+    "german": "Finger",
+    "french": "doigt"
+    },
+    {
+    "english": "leg",
+    "spanish": "pierna",
+    "german": "Bein",
+    "french": "jambe"
+    },
+    {
+    "english": "foot",
+    "spanish": "pie",
+    "german": "Fuß",
+    "french": "pied"
+    },
+    {
+    "english": "toe",
+    "spanish": "dedo del pie",
+    "german": "Zeh",
+    "french": "orteil"
+    },
+    {
+    "english": "chest",
+    "spanish": "pecho",
+    "german": "Brust",
+    "french": "poitrine"
+    },
+    {
+    "english": "stomach",
+    "spanish": "estómago",
+    "german": "Bauch",
+    "french": "estomac"
+    },
+    {
+    "english": "back",
+    "spanish": "espalda",
+    "german": "Rücken",
+    "french": "dos"
+    }
+]
+  

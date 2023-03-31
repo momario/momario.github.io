@@ -1,51 +1,36 @@
 * {
-    font-family: Arial;
-    font-size: 17px;
+    font-family: 'Arial';
+    font-size: 18px;
     font-weight: bold;
   }
   #header {
     padding: 10px;
-    background: #333333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  #translation_table {
-    width:100%;
-  }
-  #translation_table input,
-  #random_verb_es {
-    box-sizing: border-box;
-    display: inline-block;
-    width:100%;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
     background: white;
-    color: black;
-  }
-  #translation_table_submit {
-    background: lightskyblue;
-  }
-  #translation_table_submit:hover {
-    color: white;
+    border-radius: 5px;
     background: #333333;
   }
-  #conjugation_table {
+  #header b {
+    font-size: 50px;
+    font-stretch: ultra-expanded;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, rgb(0, 255, 255), rgb(0, 255, 0));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  #output_table {
     width:100%;
   }
-  #conjugation_table th {
+  #output_table th {
     text-align: left;
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 5px;
-    background: #555555;
+    background: #333333;
     color: white;
   }
+  .button,
+  #random_verb_es,
   .subject-button,
   .conjugation-button,
   #next_verb,
@@ -56,7 +41,7 @@
     padding: 10px;
     min-width: 150px;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     color:black;
@@ -72,27 +57,27 @@
   .grayed-out {
     opacity: 0.5;
     cursor: default;
+    background: white;
+    color: lightgray;
   }
+  #correct_div,
+  #correct_div2,
+  #all_correct_div,
   #wrong_div,
   #wrong_div2 {
     display:none;
-    background: orangered;
     color: white;
-    margin-top: 10px;
     padding: 10px;
-    border: 1px solid darkred;
+    border: 1px solid black;
     border-radius: 5px;
     font-weight: bold;
+  }
+  #wrong_div,
+  #wrong_div2 {
+    background: orangered;
   }
   #correct_div,
   #correct_div2,
   #all_correct_div {
-    display:none;
-    background: limegreen;
-    color: white;
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid green;
-    border-radius: 5px;
-    font-weight: bold;
+    background: green;
   }
