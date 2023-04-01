@@ -1,90 +1,146 @@
 [
     {
-    "english": "head",
-    "spanish": "cabeza",
-    "german": "Kopf",
-    "french": "tête",
-    "slovenian": "glava",
-    "italian": "testa"
+        "english": "head",
+        "spanish": "cabeza",
+        "german": "Kopf",
+        "french": "tête",
+        "slovenian": "glava",
+        "italian": "testa"
     },
     {
-    "english": "shoulder",
-    "spanish": "hombro",
-    "german": "Schulter",
-    "french": "épaule",
-    "slovenian": "ramo",
-    "italian": "spalla"
+        "english": "shoulder",
+        "spanish": "hombro",
+        "german": "Schulter",
+        "french": "épaule",
+        "slovenian": "ramo",
+        "italian": "spalla"
     },
     {
-    "english": "arm",
-    "spanish": "brazo",
-    "german": "Arm",
-    "french": "bras",
-    "slovenian": "rok",
-    "italian": "braccio"
+        "english": "arm",
+        "spanish": "brazo",
+        "german": "Arm",
+        "french": "bras",
+        "slovenian": "rok",
+        "italian": "braccio"
     },
     {
-    "english": "hand",
-    "spanish": "mano",
-    "german": "Hand",
-    "french": "main",
-    "slovenian": "roka",
-    "italian": "mano"
+        "english": "hand",
+        "spanish": "mano",
+        "german": "Hand",
+        "french": "main",
+        "slovenian": "roka",
+        "italian": "mano"
     },
     {
-    "english": "finger",
-    "spanish": "dedo",
-    "german": "Finger",
-    "french": "doigt",
-    "slovenian": "prst",
-    "italian": "dito"
+        "english": "finger",
+        "spanish": "dedo",
+        "german": "Finger",
+        "french": "doigt",
+        "slovenian": "prst",
+        "italian": "dito"
     },
     {
-    "english": "leg",
-    "spanish": "pierna",
-    "german": "Bein",
-    "french": "jambe",
-    "slovenian": "noga",
-    "italian": "gamba"
+        "english": "leg",
+        "spanish": "pierna",
+        "german": "Bein",
+        "french": "jambe",
+        "slovenian": "noga",
+        "italian": "gamba"
     },
     {
-    "english": "foot",
-    "spanish": "pie",
-    "german": "Fuß",
-    "french": "pied",
-    "slovenian": "stopalo",
-    "italian": "piede"
+        "english": "foot",
+        "spanish": "pie",
+        "german": "Fuß",
+        "french": "pied",
+        "slovenian": "stopalo",
+        "italian": "piede"
     },
     {
-    "english": "toe",
-    "spanish": "dedo del pie",
-    "german": "Zeh",
-    "french": "orteil",
-    "slovenian": "prst na nogi",
-    "italian": "dito del piede"
+        "english": "toe",
+        "spanish": "dedo del pie",
+        "german": "Zeh",
+        "french": "orteil",
+        "slovenian": "prst na nogi",
+        "italian": "dito del piede"
     },
     {
-    "english": "chest",
-    "spanish": "pecho",
-    "german": "Brust",
-    "french": "poitrine",
-    "slovenian": "prsni koš",
-    "italian": "petto"
+        "english": "chest",
+        "spanish": "pecho",
+        "german": "Brust",
+        "french": "poitrine",
+        "slovenian": "prsni koš",
+        "italian": "petto"
     },
     {
-    "english": "stomach",
-    "spanish": "estómago",
-    "german": "Bauch",
-    "french": "estomac",
-    "slovenian": "želodec",
-    "italian": "pancia"
+        "english": "stomach",
+        "spanish": "estómago",
+        "german": "Bauch",
+        "french": "estomac",
+        "slovenian": "želodec",
+        "italian": "pancia"
     },
     {
-    "english": "back",
-    "spanish": "espalda",
-    "german": "Rücken",
-    "french": "dos",
-    "slovenian": "hřbet",
-    "italian": "schiena"
+        "english": "back",
+        "spanish": "espalda",
+        "german": "Rücken",
+        "french": "dos",
+        "slovenian": "hřbet",
+        "italian": "schiena"
+    },
+    {
+        "english": "nose",
+        "spanish": "nariz",
+        "german": "Nase",
+        "italian": "naso",
+        "slovenian": "nos",
+        "french": "nez"
+    },
+    {
+        "english": "hair",
+        "spanish": "pelo",
+        "german": "Haar",
+        "italian": "capelli",
+        "slovenian": "lasje",
+        "french": "cheveux"
+    },
+    {
+        "english": "eyes",
+        "spanish": "ojos",
+        "german": "Augen",
+        "italian": "occhi",
+        "slovenian": "oči",
+        "french": "yeux"
+    },
+    {
+        "english": "tongue",
+        "spanish": "lengua",
+        "german": "Zunge",
+        "italian": "lingua",
+        "slovenian": "jezik",
+        "french": "langue"
+    },
+    {
+        "english": "ears",
+        "spanish": "orejas",
+        "german": "Ohren",
+        "italian": "orecchie",
+        "slovenian": "ušesa",
+        "french": "oreilles"
+    },
+    {
+        "english": "teeth",
+        "spanish": "dientes",
+        "german": "Zähne",
+        "italian": "denti",
+        "slovenian": "zobje",
+        "french": "dents"
+    },
+    {
+        "english": "ass",
+        "spanish": "culo",
+        "german": "Arsch",
+        "italian": "culo",
+        "slovenian": "rit",
+        "french": "cul"
     }
 ]

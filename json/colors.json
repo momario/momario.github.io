@@ -1,90 +1,122 @@
 [
   {
-  "english": "red",
-  "spanish": "rojo",
-  "german": "rot",
-  "french": "rouge",
-  "italian": "rosso",
-  "slovenian": "rdeča"
+    "english": "red",
+    "spanish": "rojo",
+    "german": "rot",
+    "french": "rouge",
+    "italian": "rosso",
+    "slovenian": "rdeča"
   },
   {
-  "english": "blue",
-  "spanish": "azul",
-  "german": "blau",
-  "french": "bleu",
-  "italian": "blu",
-  "slovenian": "modra"
+    "english": "blue",
+    "spanish": "azul",
+    "german": "blau",
+    "french": "bleu",
+    "italian": "blu",
+    "slovenian": "modra"
   },
   {
-  "english": "green",
-  "spanish": "verde",
-  "german": "grün",
-  "french": "vert",
-  "italian": "verde",
-  "slovenian": "zelena"
+    "english": "green",
+    "spanish": "verde",
+    "german": "grün",
+    "french": "vert",
+    "italian": "verde",
+    "slovenian": "zelena"
   },
   {
-  "english": "yellow",
-  "spanish": "amarillo",
-  "german": "gelb",
-  "french": "jaune",
-  "italian": "giallo",
-  "slovenian": "rumena"
+    "english": "yellow",
+    "spanish": "amarillo",
+    "german": "gelb",
+    "french": "jaune",
+    "italian": "giallo",
+    "slovenian": "rumena"
   },
   {
-  "english": "purple",
-  "spanish": "morado",
-  "german": "lila",
-  "french": "violet",
-  "italian": "viola",
-  "slovenian": "vijolična"
+    "english": "purple",
+    "spanish": "morado",
+    "german": "lila",
+    "french": "violet",
+    "italian": "viola",
+    "slovenian": "vijolična"
   },
   {
-  "english": "orange",
-  "spanish": "naranja",
-  "german": "orange",
-  "french": "orange",
-  "italian": "arancione",
-  "slovenian": "oranžna"
+    "english": "orange",
+    "spanish": "naranja",
+    "german": "orange",
+    "french": "orange",
+    "italian": "arancione",
+    "slovenian": "oranžna"
   },
   {
-  "english": "black",
-  "spanish": "negro",
-  "german": "schwarz",
-  "french": "noir",
-  "italian": "nero",
-  "slovenian": "črna"
+    "english": "black",
+    "spanish": "negro",
+    "german": "schwarz",
+    "french": "noir",
+    "italian": "nero",
+    "slovenian": "črna"
   },
   {
-  "english": "white",
-  "spanish": "blanco",
-  "german": "weiß",
-  "french": "blanc",
-  "italian": "bianco",
-  "slovenian": "bela"
+    "english": "white",
+    "spanish": "blanco",
+    "german": "weiß",
+    "french": "blanc",
+    "italian": "bianco",
+    "slovenian": "bela"
   },
   {
-  "english": "pink",
-  "spanish": "rosado",
-  "german": "rosa",
-  "french": "rose",
-  "italian": "rosa",
-  "slovenian": "roza"
+    "english": "pink",
+    "spanish": "rosado",
+    "german": "rosa",
+    "french": "rose",
+    "italian": "rosa",
+    "slovenian": "roza"
   },
   {
-  "english": "brown",
-  "spanish": "marrón",
-  "german": "braun",
-  "french": "marron",
-  "italian": "marrone",
-  "slovenian": "rjava"
+    "english": "brown",
+    "spanish": "marrón",
+    "german": "braun",
+    "french": "marron",
+    "italian": "marrone",
+    "slovenian": "rjava"
   },
   {
-  "english": "gray",
-  "spanish": "gris",
-  "german": "grau",
-  "french": "gris",
-  "italian": "grigio",
-  "slovenian": "siva"
+    "english": "gray",
+    "spanish": "gris",
+    "german": "grau",
+    "french": "gris",
+    "italian": "grigio",
+    "slovenian": "siva"
+  },
+  {
+    "english": "turquoise",
+    "spanish": "turquesa",
+    "german": "Türkis",
+    "italian": "turchese",
+    "slovenian": "turkizna",
+    "french": "turquoise"
+  },
+  {
+    "english": "silver",
+    "spanish": "plata",
+    "german": "Silber",
+    "italian": "argento",
+    "slovenian": "srebrna",
+    "french": "argent"
+  },
+  {
+    "english": "gold",
+    "spanish": "oro",
+    "german": "Gold",
+    "italian": "oro",
+    "slovenian": "zlata",
+    "french": "or"
+  },
+  {
+    "english": "beige",
+    "spanish": "beige",
+    "german": "Beige",
+    "italian": "beige",
+    "slovenian": "bež",
+    "french": "beige"
   }
 ]
