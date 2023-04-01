@@ -1,0 +1,65 @@
+[
+    {
+        "spanish": "manzana",
+        "german": "Apfel",
+        "english": "apple",
+        "slovenian": "jabolko",
+        "italian": "mela",
+        "french": "pomme",
+        "dutch": "appel"
+    },
+    {
+        "spanish": "plátano",
+        "german": "Banane",
+        "english": "banana",
+        "slovenian": "banana",
+        "italian": "banana",
+        "french": "banane",
+        "dutch": "banaan"
+    },
+    {
+        "spanish": "naranja",
+        "german": "Orange",
+        "english": "orange",
+        "slovenian": "pomaranča",
+        "italian": "arancia",
+        "french": "orange",
+        "dutch": "sinaasappel"
+    },
+    {
+        "spanish": "fresa",
+        "german": "Erdbeere",
+        "english": "strawberry",
+        "slovenian": "jagoda",
+        "italian": "fragola",
+        "french": "fraise",
+        "dutch": "aardbei"
+    },
+    {
+        "spanish": "piña",
+        "german": "Ananas",
+        "english": "pineapple",
+        "slovenian": "ananas",
+        "italian": "ananas",
+        "french": "ananas",
+        "dutch": "ananas"
+    },
+    {
+        "spanish": "uva",
+        "german": "Traube",
+        "english": "grape",
+        "slovenian": "grozdje",
+        "italian": "uva",
+        "french": "raisin",
+        "dutch": "druif"
+    },
+    {
+        "spanish": "limón",
+        "german": "Zitrone",
+        "english": "lemon",
+        "slovenian": "limona",
+        "italian": "limone",
+        "french": "citron",
+        "dutch": "citroen"
+    }
+]

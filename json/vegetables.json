@@ -1,0 +1,65 @@
+[
+    {
+        "spanish": "zanahoria",
+        "german": "Karotte",
+        "english": "carrot",
+        "slovenian": "korenček",
+        "italian": "carota",
+        "french": "carotte",
+        "dutch": "wortel"
+    },
+    {
+        "spanish": "brócoli",
+        "german": "Brokkoli",
+        "english": "broccoli",
+        "slovenian": "brokoli",
+        "italian": "broccolo",
+        "french": "brocoli",
+        "dutch": "broccoli"
+    },
+    {
+        "spanish": "cebolla",
+        "german": "Zwiebel",
+        "english": "onion",
+        "slovenian": "čebula",
+        "italian": "cipolla",
+        "french": "oignon",
+        "dutch": "ui"
+    },
+    {
+        "spanish": "tomate",
+        "german": "Tomate",
+        "english": "tomato",
+        "slovenian": "paradižnik",
+        "italian": "pomodoro",
+        "french": "tomate",
+        "dutch": "tomaat"
+    },
+    {
+        "spanish": "espinaca",
+        "german": "Spinat",
+        "english": "spinach",
+        "slovenian": "špinača",
+        "italian": "spinaci",
+        "french": "épinard",
+        "dutch": "spinazie"
+    },
+    {
+        "spanish": "pepino",
+        "german": "Gurke",
+        "english": "cucumber",
+        "slovenian": "kumara",
+        "italian": "cetriolo",
+        "french": "concombre",
+        "dutch": "komkommer"
+    },
+    {
+        "spanish": "coliflor",
+        "german": "Blumenkohl",
+        "english": "cauliflower",
+        "slovenian": "cvetača",
+        "italian": "cavolfiore",
+        "french": "chou-fleur",
+        "dutch": "bloemkool"
+    }
+]
