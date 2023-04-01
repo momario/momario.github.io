@@ -1,0 +1,90 @@
+[
+  {
+  "english": "red",
+  "spanish": "rojo",
+  "german": "rot",
+  "french": "rouge",
+  "italian": "rosso",
+  "slovenian": "rdeča"
+  },
+  {
+  "english": "blue",
+  "spanish": "azul",
+  "german": "blau",
+  "french": "bleu",
+  "italian": "blu",
+  "slovenian": "modra"
+  },
+  {
+  "english": "green",
+  "spanish": "verde",
+  "german": "grün",
+  "french": "vert",
+  "italian": "verde",
+  "slovenian": "zelena"
+  },
+  {
+  "english": "yellow",
+  "spanish": "amarillo",
+  "german": "gelb",
+  "french": "jaune",
+  "italian": "giallo",
+  "slovenian": "rumena"
+  },
+  {
+  "english": "purple",
+  "spanish": "morado",
+  "german": "lila",
+  "french": "violet",
+  "italian": "viola",
+  "slovenian": "vijolična"
+  },
+  {
+  "english": "orange",
+  "spanish": "naranja",
+  "german": "orange",
+  "french": "orange",
+  "italian": "arancione",
+  "slovenian": "oranžna"
+  },
+  {
+  "english": "black",
+  "spanish": "negro",
+  "german": "schwarz",
+  "french": "noir",
+  "italian": "nero",
+  "slovenian": "črna"
+  },
+  {
+  "english": "white",
+  "spanish": "blanco",
+  "german": "weiß",
+  "french": "blanc",
+  "italian": "bianco",
+  "slovenian": "bela"
+  },
+  {
+  "english": "pink",
+  "spanish": "rosado",
+  "german": "rosa",
+  "french": "rose",
+  "italian": "rosa",
+  "slovenian": "roza"
+  },
+  {
+  "english": "brown",
+  "spanish": "marrón",
+  "german": "braun",
+  "french": "marron",
+  "italian": "marrone",
+  "slovenian": "rjava"
+  },
+  {
+  "english": "gray",
+  "spanish": "gris",
+  "german": "grau",
+  "french": "gris",
+  "italian": "grigio",
+  "slovenian": "siva"
+  }
+]

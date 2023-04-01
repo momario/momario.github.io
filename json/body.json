@@ -3,67 +3,88 @@
     "english": "head",
     "spanish": "cabeza",
     "german": "Kopf",
-    "french": "tête"
+    "french": "tête",
+    "slovenian": "glava",
+    "italian": "testa"
     },
     {
     "english": "shoulder",
     "spanish": "hombro",
     "german": "Schulter",
-    "french": "épaule"
+    "french": "épaule",
+    "slovenian": "ramo",
+    "italian": "spalla"
     },
     {
     "english": "arm",
     "spanish": "brazo",
     "german": "Arm",
-    "french": "bras"
+    "french": "bras",
+    "slovenian": "rok",
+    "italian": "braccio"
     },
     {
     "english": "hand",
     "spanish": "mano",
     "german": "Hand",
-    "french": "main"
+    "french": "main",
+    "slovenian": "roka",
+    "italian": "mano"
     },
     {
     "english": "finger",
     "spanish": "dedo",
     "german": "Finger",
-    "french": "doigt"
+    "french": "doigt",
+    "slovenian": "prst",
+    "italian": "dito"
     },
     {
     "english": "leg",
     "spanish": "pierna",
     "german": "Bein",
-    "french": "jambe"
+    "french": "jambe",
+    "slovenian": "noga",
+    "italian": "gamba"
     },
     {
     "english": "foot",
     "spanish": "pie",
     "german": "Fuß",
-    "french": "pied"
+    "french": "pied",
+    "slovenian": "stopalo",
+    "italian": "piede"
     },
     {
     "english": "toe",
     "spanish": "dedo del pie",
     "german": "Zeh",
-    "french": "orteil"
+    "french": "orteil",
+    "slovenian": "prst na nogi",
+    "italian": "dito del piede"
     },
     {
     "english": "chest",
     "spanish": "pecho",
     "german": "Brust",
-    "french": "poitrine"
+    "french": "poitrine",
+    "slovenian": "prsni koš",
+    "italian": "petto"
     },
     {
     "english": "stomach",
     "spanish": "estómago",
     "german": "Bauch",
-    "french": "estomac"
+    "french": "estomac",
+    "slovenian": "želodec",
+    "italian": "pancia"
     },
     {
     "english": "back",
     "spanish": "espalda",
     "german": "Rücken",
-    "french": "dos"
+    "french": "dos",
+    "slovenian": "hřbet",
+    "italian": "schiena"
     }
 ]
-  

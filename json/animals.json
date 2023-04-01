@@ -1,0 +1,90 @@
+[
+  {
+      "spanish": "perro (él)",
+      "german": "Hund",
+      "english": "dog",
+      "slovenian": "pes",
+      "italian": "cane",
+      "french": "chien"
+  },
+  {
+      "spanish": "gata (la)",
+      "german": "Katze",
+      "english": "cat",
+      "slovenian": "mačka",
+      "italian": "gatta",
+      "french": "chatte"
+  },
+  {
+      "spanish": "elefante (él)",
+      "german": "Elefant",
+      "english": "elephant",
+      "slovenian": "slon",
+      "italian": "elefante",
+      "french": "éléphant"
+  },
+  {
+      "spanish": "león (él)",
+      "german": "Löwe",
+      "english": "lion",
+      "slovenian": "lev",
+      "italian": "leone",
+      "french": "lion"
+  },
+  {
+      "spanish": "jirafa (la)",
+      "german": "Giraffe",
+      "english": "giraffe",
+      "slovenian": "žirafa",
+      "italian": "giraffa",
+      "french": "girafe"
+  },
+  {
+      "spanish": "mono (él)",
+      "german": "Affe",
+      "english": "monkey",
+      "slovenian": "opica",
+      "italian": "scimmia",
+      "french": "singe"
+  },
+  {
+      "spanish": "tigre (él)",
+      "german": "Tiger",
+      "english": "tiger",
+      "slovenian": "tiger",
+      "italian": "tigre",
+      "french": "tigre"
+  },
+  {
+      "spanish": "oso (él)",
+      "german": "Bär",
+      "english": "bear",
+      "slovenian": "medved",
+      "italian": "orso",
+      "french": "ours"
+  },
+  {
+      "spanish": "cebra (la)",
+      "german": "Zebra",
+      "english": "zebra",
+      "slovenian": "zebra",
+      "italian": "zebra",
+      "french": "zèbre"
+  },
+  {
+      "spanish": "serpiente (la)",
+      "german": "Schlange",
+      "english": "snake",
+      "slovenian": "kača",
+      "italian": "serpente",
+      "french": "serpent"
+  },
+  {
+      "spanish": "vaca (la)",
+      "german": "Kuh",
+      "english": "cow",
+      "slovenian": "krava",
+      "italian": "mucca",
+      "french": "vache"
+  }
+]
