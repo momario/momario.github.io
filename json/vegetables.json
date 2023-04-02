@@ -1,65 +1,112 @@
 [
     {
+        "english": "carrot",
         "spanish": "zanahoria",
         "german": "Karotte",
-        "english": "carrot",
-        "slovenian": "korenček",
-        "italian": "carota",
         "french": "carotte",
-        "dutch": "wortel"
+        "italian": "carota",
+        "slovenian": "korenček",
+        "dutch": "wortel",
+        "turkish": "havuç"
     },
     {
+        "english": "broccoli",
         "spanish": "brócoli",
         "german": "Brokkoli",
-        "english": "broccoli",
-        "slovenian": "brokoli",
-        "italian": "broccolo",
         "french": "brocoli",
-        "dutch": "broccoli"
+        "italian": "broccolo",
+        "slovenian": "brokoli",
+        "dutch": "broccoli",
+        "turkish": "brokoli"
     },
     {
-        "spanish": "cebolla",
-        "german": "Zwiebel",
-        "english": "onion",
-        "slovenian": "čebula",
-        "italian": "cipolla",
-        "french": "oignon",
-        "dutch": "ui"
-    },
-    {
-        "spanish": "tomate",
-        "german": "Tomate",
-        "english": "tomato",
-        "slovenian": "paradižnik",
-        "italian": "pomodoro",
-        "french": "tomate",
-        "dutch": "tomaat"
-    },
-    {
+        "english": "spinach",
         "spanish": "espinaca",
         "german": "Spinat",
-        "english": "spinach",
-        "slovenian": "špinača",
-        "italian": "spinaci",
         "french": "épinard",
-        "dutch": "spinazie"
+        "italian": "spinaci",
+        "slovenian": "špinača",
+        "dutch": "spinazie",
+        "turkish": "ıspanak"
     },
     {
-        "spanish": "pepino",
-        "german": "Gurke",
-        "english": "cucumber",
-        "slovenian": "kumara",
-        "italian": "cetriolo",
-        "french": "concombre",
-        "dutch": "komkommer"
-    },
-    {
+        "english": "cauliflower",
         "spanish": "coliflor",
         "german": "Blumenkohl",
-        "english": "cauliflower",
-        "slovenian": "cvetača",
-        "italian": "cavolfiore",
         "french": "chou-fleur",
-        "dutch": "bloemkool"
+        "italian": "cavolfiore",
+        "slovenian": "cvetača",
+        "dutch": "bloemkool",
+        "turkish": "karnabahar"
+    },
+    {
+        "english": "potato",
+        "spanish": "patata",
+        "german": "Kartoffel",
+        "french": "pomme de terre",
+        "italian": "patata",
+        "slovenian": "krompir",
+        "dutch": "aardappel",
+        "turkish": "patates"
+    },
+    {
+        "english": "onion",
+        "spanish": "cebolla",
+        "german": "Zwiebel",
+        "french": "oignon",
+        "italian": "cipolla",
+        "slovenian": "čebula",
+        "dutch": "ui",
+        "turkish": "soğan"
+    },
+    {
+        "english": "tomato",
+        "spanish": "tomate",
+        "german": "Tomate",
+        "french": "tomate",
+        "italian": "pomodoro",
+        "slovenian": "paradižnik",
+        "dutch": "tomaat",
+        "turkish": "domates"
+    },
+    {
+        "english": "cucumber",
+        "spanish": "pepino",
+        "german": "Gurke",
+        "french": "concombre",
+        "italian": "cetriolo",
+        "slovenian": "kumara",
+        "dutch": "komkommer",
+        "turkish": "salatalık"
+    },
+    {
+        "english": "eggplant",
+        "spanish": "berenjena",
+        "german": "Aubergine",
+        "french": "aubergine",
+        "italian": "melanzana",
+        "slovenian": "jajčevec",
+        "dutch": "aubergine",
+        "turkish": "patlıcan"
+    },
+    {
+        "english": "zucchini",
+        "spanish": "calabacín",
+        "german": "Zucchini",
+        "french": "courgette",
+        "italian": "zucchina",
+        "slovenian": "bučka",
+        "dutch": "courgette",
+        "turkish": "kabak"
+    },
+    {
+        "english": "beetroot",
+        "spanish": "remolacha",
+        "german": "Rote Bete",
+        "french": "betterave",
+        "italian": "barbabietola",
+        "slovenian": "rdeča pesa",
+        "dutch": "biet",
+        "turkish": "pancar"
     }
 ]

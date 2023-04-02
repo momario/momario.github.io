@@ -14,7 +14,7 @@ $(document).ready(function () {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Lax";
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=None";
     }
 
     function getCookie(cname) {
@@ -65,7 +65,13 @@ $(document).ready(function () {
     // $("#all_correct_div").css("display", "block");
 
     $.getJSON(json_file, function (data) {
+        if (data.length <= max_count) {
+            alert("There are not enough elements in the data array to select random keys. Aborting.");
+            return;
+        }
+
         var dict = {};
+
         for (var key in data) {
             dict[data[key][fromlang_cookie]] = data[key][tolang_cookie]
         }
@@ -151,7 +157,7 @@ $(document).ready(function () {
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    if(wrong_answers === null || wrong_answers === "") {
+                    if (wrong_answers === null || wrong_answers === "") {
                         wrong_answers = 0;
                     }
                     $("#wrong_answers_span").html(wrong_answers);
@@ -191,7 +197,7 @@ $(document).ready(function () {
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    if(wrong_answers === null || wrong_answers === "") {
+                    if (wrong_answers === null || wrong_answers === "") {
                         wrong_answers = 0;
                     }
                     $("#wrong_answers_span").html(wrong_answers);

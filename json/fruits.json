@@ -6,7 +6,8 @@
         "slovenian": "jabolko",
         "italian": "mela",
         "french": "pomme",
-        "dutch": "appel"
+        "dutch": "appel",
+        "turkish": "elma"
     },
     {
         "spanish": "plátano",
@@ -15,7 +16,8 @@
         "slovenian": "banana",
         "italian": "banana",
         "french": "banane",
-        "dutch": "banaan"
+        "dutch": "banaan",
+        "turkish": "muz"
     },
     {
         "spanish": "naranja",
@@ -24,7 +26,8 @@
         "slovenian": "pomaranča",
         "italian": "arancia",
         "french": "orange",
-        "dutch": "sinaasappel"
+        "dutch": "sinaasappel",
+        "turkish": "portakal"
     },
     {
         "spanish": "fresa",
@@ -33,7 +36,8 @@
         "slovenian": "jagoda",
         "italian": "fragola",
         "french": "fraise",
-        "dutch": "aardbei"
+        "dutch": "aardbei",
+        "turkish": "çilek"
     },
     {
         "spanish": "piña",
@@ -42,7 +46,8 @@
         "slovenian": "ananas",
         "italian": "ananas",
         "french": "ananas",
-        "dutch": "ananas"
+        "dutch": "ananas",
+        "turkish": "ananas"
     },
     {
         "spanish": "uva",
@@ -51,7 +56,8 @@
         "slovenian": "grozdje",
         "italian": "uva",
         "french": "raisin",
-        "dutch": "druif"
+        "dutch": "druif",
+        "turkish": "üzüm"
     },
     {
         "spanish": "limón",
@@ -60,6 +66,84 @@
         "slovenian": "limona",
         "italian": "limone",
         "french": "citron",
-        "dutch": "citroen"
+        "dutch": "citroen",
+        "turkish": "limon"
+    },
+    {
+        "spanish": "sandía",
+        "german": "Wassermelone",
+        "english": "watermelon",
+        "slovenian": "melona",
+        "italian": "anguria",
+        "french": "pastèque",
+        "dutch": "watermeloen",
+        "turkish": "karpuz"
+    },
+    {
+        "spanish": "cereza",
+        "german": "Kirsche",
+        "english": "cherry",
+        "slovenian": "češnja",
+        "italian": "ciliegia",
+        "french": "cerise",
+        "dutch": "kers",
+        "turkish": "kiraz"
+    },
+    {
+        "spanish": "kiwi",
+        "german": "Kiwi",
+        "english": "kiwi",
+        "slovenian": "kiwi",
+        "italian": "kiwi",
+        "french": "kiwi",
+        "dutch": "kiwi"
+    },
+    {
+        "spanish": "melón",
+        "german": "Melone",
+        "english": "melon",
+        "slovenian": "melon",
+        "italian": "melone",
+        "french": "melon",
+        "dutch": "meloen"
+    },
+    {
+        "spanish": "frambuesa",
+        "german": "Himbeere",
+        "english": "raspberry",
+        "slovenian": "malina",
+        "italian": "lampone",
+        "french": "framboise",
+        "dutch": "framboos"
+    },
+    {
+        "spanish": "kiwi",
+        "german": "Kiwi",
+        "english": "kiwi",
+        "slovenian": "kiwi",
+        "italian": "kiwi",
+        "french": "kiwi",
+        "dutch": "kiwi",
+        "turkish": "kiwi"
+    },
+    {
+        "spanish": "melón",
+        "german": "Melone",
+        "english": "melon",
+        "slovenian": "melon",
+        "italian": "melone",
+        "french": "melon",
+        "dutch": "meloen",
+        "turkish": "kavun"
+    },
+    {
+        "spanish": "frambuesa",
+        "german": "Himbeere",
+        "english": "raspberry",
+        "slovenian": "malina",
+        "italian": "lampone",
+        "french": "framboise",
+        "dutch": "framboos",
+        "turkish": "ahududu"
     }
 ]

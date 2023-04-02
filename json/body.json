@@ -1,6 +1,7 @@
 [
     {
         "english": "head",
+        "turkish": "baş",
         "dutch": "hoofd",
         "spanish": "cabeza",
         "german": "Kopf",
@@ -10,6 +11,7 @@
     },
     {
         "english": "shoulder",
+        "turkish": "omuz",
         "dutch": "schouder",
         "spanish": "hombro",
         "german": "Schulter",
@@ -19,6 +21,7 @@
     },
     {
         "english": "arm",
+        "turkish": "kol",
         "dutch": "arm",
         "spanish": "brazo",
         "german": "Arm",
@@ -28,6 +31,7 @@
     },
     {
         "english": "hand",
+        "turkish": "el",
         "dutch": "hand",
         "spanish": "mano",
         "german": "Hand",
@@ -37,6 +41,7 @@
     },
     {
         "english": "finger",
+        "turkish": "parmak",
         "dutch": "vinger",
         "spanish": "dedo",
         "german": "Finger",
@@ -46,6 +51,7 @@
     },
     {
         "english": "leg",
+        "turkish": "bacak",
         "dutch": "been",
         "spanish": "pierna",
         "german": "Bein",
@@ -55,6 +61,7 @@
     },
     {
         "english": "foot",
+        "turkish": "ayak",
         "dutch": "voet",
         "spanish": "pie",
         "german": "Fuß",
@@ -64,6 +71,7 @@
     },
     {
         "english": "toe",
+        "turkish": "ayak parmağı",
         "dutch": "teen",
         "spanish": "dedo del pie",
         "german": "Zeh",
@@ -73,6 +81,7 @@
     },
     {
         "english": "chest",
+        "turkish": "göğüs",
         "dutch": "borst",
         "spanish": "pecho",
         "german": "Brust",
@@ -87,7 +96,8 @@
         "german": "Bauch",
         "french": "estomac",
         "slovenian": "želodec",
-        "italian": "pancia"
+        "italian": "pancia",
+        "turkish": "karın"
     },
     {
         "english": "back",
@@ -96,7 +106,8 @@
         "german": "Rücken",
         "french": "dos",
         "slovenian": "hřbet",
-        "italian": "schiena"
+        "italian": "schiena",
+        "turkish": "sırt"
     },
     {
         "english": "nose",
@@ -105,7 +116,8 @@
         "italian": "naso",
         "slovenian": "nos",
         "french": "nez",
-        "dutch": "neus"
+        "dutch": "neus",
+        "turkish": "burun"
     },
     {
         "english": "hair",
@@ -114,7 +126,8 @@
         "italian": "capelli",
         "slovenian": "lasje",
         "french": "cheveux",
-        "dutch": "haar"
+        "dutch": "haar",
+        "turkish": "saç"
     },
     {
         "english": "eyes",
@@ -123,7 +136,8 @@
         "italian": "occhi",
         "slovenian": "oči",
         "french": "yeux",
-        "dutch": "ogen"
+        "dutch": "ogen",
+        "turkish": "gözler"
     },
     {
         "english": "tongue",
@@ -132,7 +146,8 @@
         "italian": "lingua",
         "slovenian": "jezik",
         "french": "langue",
-        "dutch": "tong"
+        "dutch": "tong",
+        "turkish": "dil"
     },
     {
         "english": "ears",
@@ -141,7 +156,8 @@
         "italian": "orecchie",
         "slovenian": "ušesa",
         "french": "oreilles",
-        "dutch": "oren"
+        "dutch": "oren",
+        "turkish": "kulaklar"
     },
     {
         "english": "teeth",
@@ -150,7 +166,8 @@
         "italian": "denti",
         "slovenian": "zobje",
         "french": "dents",
-        "dutch": "tanden"
+        "dutch": "tanden",
+        "turkish": "dişler"
     },
     {
         "english": "ass",
@@ -159,6 +176,7 @@
         "italian": "culo",
         "slovenian": "rit",
         "french": "cul",
-        "dutch": "kont"
+        "dutch": "kont",
+        "turkish": "kıç"
     }
 ]

@@ -6,7 +6,8 @@
         "slovenian": "pes",
         "italian": "cane",
         "french": "chien",
-        "dutch": "hond"
+        "dutch": "hond",
+        "turkish": "köpek"
     },
     {
         "spanish": "gata (la)",
@@ -15,7 +16,8 @@
         "slovenian": "mačka",
         "italian": "gatta",
         "french": "chatte",
-        "dutch": "kat"
+        "dutch": "kat",
+        "turkish": "kedi"
     },
     {
         "spanish": "elefante (él)",
@@ -24,7 +26,8 @@
         "slovenian": "slon",
         "italian": "elefante",
         "french": "éléphant",
-        "dutch": "olifant"
+        "dutch": "olifant",
+        "turkish": "fil"
     },
     {
         "spanish": "león (él)",
@@ -33,7 +36,8 @@
         "slovenian": "lev",
         "italian": "leone",
         "french": "lion",
-        "dutch": "leeuw"
+        "dutch": "leeuw",
+        "turkish": "aslan"
     },
     {
         "spanish": "jirafa (la)",
@@ -42,7 +46,8 @@
         "slovenian": "žirafa",
         "italian": "giraffa",
         "french": "girafe",
-        "dutch": "giraffe"
+        "dutch": "giraffe",
+        "turkish": "zürafa"
     },
     {
         "spanish": "mono (él)",
@@ -51,7 +56,8 @@
         "slovenian": "opica",
         "italian": "scimmia",
         "french": "singe",
-        "dutch": "aap"
+        "dutch": "aap",
+        "turkish": "maymun"
     },
     {
         "spanish": "tigre (él)",
@@ -60,7 +66,8 @@
         "slovenian": "tiger",
         "italian": "tigre",
         "french": "tigre",
-        "dutch": "tijger"
+        "dutch": "tijger",
+        "turkish": "kaplan"
     },
     {
         "spanish": "oso (él)",
@@ -69,7 +76,8 @@
         "slovenian": "medved",
         "italian": "orso",
         "french": "ours",
-        "dutch": "beer"
+        "dutch": "beer",
+        "turkish": "ayı"
     },
     {
         "spanish": "cebra (la)",
@@ -78,98 +86,8 @@
         "slovenian": "zebra",
         "italian": "zebra",
         "french": "zèbre",
-        "dutch": "zebra"
-    },
-    {
-        "spanish": "serpiente (la)",
-        "german": "Schlange",
-        "english": "snake",
-        "slovenian": "kača",
-        "italian": "serpente",
-        "french": "serpent"
-    },
-    {
-        "spanish": "vaca (la)",
-        "german": "Kuh",
-        "english": "cow",
-        "slovenian": "krava",
-        "italian": "mucca",
-        "french": "vache"
-    },
-    {
-        "spanish": "pez (el)",
-        "german": "Fisch",
-        "english": "fish",
-        "slovenian": "riba",
-        "italian": "pesce",
-        "french": "poisson"
-    },
-    {
-        "spanish": "pollo (el)",
-        "german": "Huhn",
-        "english": "chicken",
-        "slovenian": "piščanec",
-        "italian": "pollo",
-        "french": "poulet"
-    },
-    {
-        "spanish": "cerdo (el)",
-        "german": "Schwein",
-        "english": "pig",
-        "slovenian": "prašič",
-        "italian": "maiale",
-        "french": "cochon"
-    },
-    {
-        "spanish": "pájaro (el)",
-        "german": "Vogel",
-        "english": "bird",
-        "slovenian": "ptica",
-        "italian": "uccello",
-        "french": "oiseau"
-    },
-    {
-        "spanish": "lama (la)",
-        "german": "Lama",
-        "english": "llama",
-        "slovenian": "lama",
-        "italian": "llama",
-        "french": "lama"
-    },
-    {
-        "spanish": "ardilla (la)",
-        "german": "Eichhörnchen",
-        "english": "squirrel",
-        "slovenian": "veverica",
-        "italian": "scoiattolo",
-        "french": "écureuil"
-    },
-    {
-        "spanish": "serpiente (la)",
-        "german": "Schlange",
-        "english": "snake",
-        "slovenian": "kača",
-        "italian": "serpente",
-        "french": "serpent",
-        "dutch": "slang"
-    },
-    {
-        "spanish": "vaca (la)",
-        "german": "Kuh",
-        "english": "cow",
-        "slovenian": "krava",
-        "italian": "mucca",
-        "french": "vache",
-        "dutch": "koe"
-    },
-    {
-        "spanish": "pez (el)",
-        "german": "Fisch",
-        "english": "fish",
-        "slovenian": "riba",
-        "italian": "pesce",
-        "french": "poisson",
-        "dutch": "vis"
+        "dutch": "zebra",
+        "turkish": "zebra"
     },
     {
         "spanish": "pollo (el)",
@@ -178,7 +96,8 @@
         "slovenian": "piščanec",
         "italian": "pollo",
         "french": "poulet",
-        "dutch": "kip"
+        "dutch": "kip",
+        "turkish": "tavuk"
     },
     {
         "spanish": "cerdo (el)",
@@ -187,7 +106,8 @@
         "slovenian": "prašič",
         "italian": "maiale",
         "french": "cochon",
-        "dutch": "varken"
+        "dutch": "varken",
+        "turkish": "domuz"
     },
     {
         "spanish": "pájaro (el)",
@@ -196,7 +116,8 @@
         "slovenian": "ptica",
         "italian": "uccello",
         "french": "oiseau",
-        "dutch": "vogel"
+        "dutch": "vogel",
+        "turkish": "kuş"
     },
     {
         "spanish": "lama (la)",
@@ -205,7 +126,28 @@
         "slovenian": "lama",
         "italian": "llama",
         "french": "lama",
-        "dutch": "lama"
+        "dutch": "lama",
+        "turkish": "lama"
+    },
+    {
+        "spanish": "serpiente (la)",
+        "german": "Schlange",
+        "english": "snake",
+        "slovenian": "kača",
+        "italian": "serpente",
+        "french": "serpent",
+        "dutch": "slang",
+        "turkish": "yılan"
+    },
+    {
+        "spanish": "pez (el)",
+        "german": "Fisch",
+        "english": "fish",
+        "slovenian": "riba",
+        "italian": "pesce",
+        "french": "poisson",
+        "dutch": "vis",
+        "turkish": "balık"
     },
     {
         "spanish": "ardilla (la)",
@@ -214,6 +156,7 @@
         "slovenian": "veverica",
         "italian": "scoiattolo",
         "french": "écureuil",
-        "dutch": "eekhoorn"
+        "dutch": "eekhoorn",
+        "turkish": "sincap"
     }
 ]
