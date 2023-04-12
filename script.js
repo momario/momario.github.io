@@ -43,7 +43,7 @@ $(document).ready(function () {
             setCookie("tolang", "english", 365);
             alert("Cookie now set: german - english");
         }
-    }
+    }                  
 
     $(document).on('click', '.language_select_button', function () {
         const language_split = $(this).text().split("-");
@@ -66,8 +66,9 @@ $(document).ready(function () {
 
     $.getJSON(json_file, function (data) {
         if (data.length <= max_count) {
-            alert("There are not enough elements in the data array to select random keys. Aborting.");
-            return;
+            // alert("There are not enough elements in the data array to select random keys. Aborting.");
+            // return;
+            max_count = data.length;
         }
 
         var dict = {};

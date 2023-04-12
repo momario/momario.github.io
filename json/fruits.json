@@ -73,7 +73,7 @@
         "spanish": "sandía",
         "german": "Wassermelone",
         "english": "watermelon",
-        "slovenian": "melona",
+        "slovenian": "ljubenica",
         "italian": "anguria",
         "french": "pastèque",
         "dutch": "watermeloen",
@@ -97,15 +97,6 @@
         "italian": "kiwi",
         "french": "kiwi",
         "dutch": "kiwi"
-    },
-    {
-        "spanish": "melón",
-        "german": "Melone",
-        "english": "melon",
-        "slovenian": "melon",
-        "italian": "melone",
-        "french": "melon",
-        "dutch": "meloen"
     },
     {
         "spanish": "frambuesa",
@@ -135,15 +126,5 @@
         "french": "melon",
         "dutch": "meloen",
         "turkish": "kavun"
-    },
-    {
-        "spanish": "frambuesa",
-        "german": "Himbeere",
-        "english": "raspberry",
-        "slovenian": "malina",
-        "italian": "lampone",
-        "french": "framboise",
-        "dutch": "framboos",
-        "turkish": "ahududu"
     }
 ]

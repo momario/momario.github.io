@@ -1,0 +1,65 @@
+[
+    {
+        "spanish": "lunes",
+        "german": "Montag",
+        "english": "Monday",
+        "slovenian": "ponedeljek",
+        "italian": "lunedì",
+        "french": "lundi",
+        "dutch": "maandag"
+    },
+    {
+        "spanish": "martes",
+        "german": "Dienstag",
+        "english": "Tuesday",
+        "slovenian": "torek",
+        "italian": "martedì",
+        "french": "mardi",
+        "dutch": "dinsdag"
+    },
+    {
+        "spanish": "miércoles",
+        "german": "Mittwoch",
+        "english": "Wednesday",
+        "slovenian": "sreda",
+        "italian": "mercoledì",
+        "french": "mercredi",
+        "dutch": "woensdag"
+    },
+    {
+        "spanish": "jueves",
+        "german": "Donnerstag",
+        "english": "Thursday",
+        "slovenian": "četrtek",
+        "italian": "giovedì",
+        "french": "jeudi",
+        "dutch": "donderdag"
+    },
+    {
+        "spanish": "viernes",
+        "german": "Freitag",
+        "english": "Friday",
+        "slovenian": "petek",
+        "italian": "venerdì",
+        "french": "vendredi",
+        "dutch": "vrijdag"
+    },
+    {
+        "spanish": "sábado",
+        "german": "Samstag",
+        "english": "Saturday",
+        "slovenian": "sobota",
+        "italian": "sabato",
+        "french": "samedi",
+        "dutch": "zaterdag"
+    },
+    {
+        "spanish": "domingo",
+        "german": "Sonntag",
+        "english": "Sunday",
+        "slovenian": "nedelja",
+        "italian": "domenica",
+        "french": "dimanche",
+        "dutch": "zondag"
+    }
+]
