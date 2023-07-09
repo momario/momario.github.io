@@ -244,7 +244,7 @@ $(document).ready(function () {
             case 'DUTCH':
                 language = 'nl-nl';
                 break;
-            case 'TURSKISH':
+            case 'TURKISH':
                 language = 'tr-tr';
                 break;
             default:
