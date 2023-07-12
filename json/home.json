@@ -1,0 +1,191 @@
+[
+    {
+        "spanish": "jardín",
+        "german": "Garten",
+        "english": "garden",
+        "slovenian": "vrt",
+        "italian": "giardino",
+        "french": "jardin",
+        "dutch": "tuin"
+    },
+    {
+        "spanish": "casa",
+        "german": "Haus",
+        "english": "house",
+        "slovenian": "hiša",
+        "italian": "casa",
+        "french": "maison",
+        "dutch": "huis"
+    },
+    {
+        "spanish": "ventana",
+        "german": "Fenster",
+        "english": "window",
+        "slovenian": "okno",
+        "italian": "finestra",
+        "french": "fenêtre",
+        "dutch": "raam"
+    },
+    {
+        "spanish": "habitación",
+        "german": "Zimmer",
+        "english": "room",
+        "slovenian": "soba",
+        "italian": "stanza",
+        "french": "chambre",
+        "dutch": "kamer"
+    },
+    {
+        "spanish": "puerta",
+        "german": "Tür",
+        "english": "door",
+        "slovenian": "vrata",
+        "italian": "porta",
+        "french": "porte",
+        "dutch": "deur"
+    },
+    {
+        "spanish": "baño",
+        "german": "Badezimmer",
+        "english": "bathroom",
+        "slovenian": "kopalnica",
+        "italian": "bagno",
+        "french": "salle de bain",
+        "dutch": "badkamer"
+    },
+    {
+        "spanish": "cocina",
+        "german": "Küche",
+        "english": "kitchen",
+        "slovenian": "kuhinja",
+        "italian": "cucina",
+        "french": "cuisine",
+        "dutch": "keuken"
+    },
+    {
+        "spanish": "sala",
+        "german": "Wohnzimmer",
+        "english": "living room",
+        "slovenian": "dnevna soba",
+        "italian": "soggiorno",
+        "french": "salle de séjour",
+        "dutch": "woonkamer"
+    },
+    {
+        "spanish": "dormitorio",
+        "german": "Schlafzimmer",
+        "english": "bedroom",
+        "slovenian": "spalnica",
+        "italian": "camera da letto",
+        "french": "chambre à coucher",
+        "dutch": "slaapkamer"
+    },
+    {
+        "spanish": "comedor",
+        "german": "Esszimmer",
+        "english": "dining room",
+        "slovenian": "jedilnica",
+        "italian": "sala da pranzo",
+        "french": "salle à manger",
+        "dutch": "eetkamer"
+    },
+    {
+        "spanish": "sótano",
+        "german": "Keller",
+        "english": "basement",
+        "slovenian": "klet",
+        "italian": "cantina",
+        "french": "sous-sol",
+        "dutch": "kelder"
+    },
+    {
+        "spanish": "escalera",
+        "german": "Treppe",
+        "english": "staircase",
+        "slovenian": "stopnišče",
+        "italian": "scala",
+        "french": "escalier",
+        "dutch": "trap"
+    },
+    {
+        "spanish": "techo",
+        "german": "Dach",
+        "english": "roof",
+        "slovenian": "streha",
+        "italian": "tetto",
+        "french": "toit",
+        "dutch": "dak"
+    },
+    {
+        "spanish": "patio",
+        "german": "Hof",
+        "english": "patio",
+        "slovenian": "dvorišče",
+        "italian": "cortile",
+        "french": "cour",
+        "dutch": "patio"
+    },
+    {
+        "spanish": "terraza",
+        "german": "Terrasse",
+        "english": "terrace",
+        "slovenian": "terasa",
+        "italian": "terrazza",
+        "french": "terrasse",
+        "dutch": "terras"
+    },
+    {
+        "spanish": "garaje",
+        "german": "Garage",
+        "english": "garage",
+        "slovenian": "garaža",
+        "italian": "garage",
+        "french": "garage",
+        "dutch": "garage"
+    },
+    {
+        "spanish": "pared",
+        "german": "Wand",
+        "english": "wall",
+        "slovenian": "stena",
+        "italian": "muro",
+        "french": "mur",
+        "dutch": "muur"
+    },
+    {
+        "spanish": "chimenea",
+        "german": "Kamin",
+        "english": "fireplace",
+        "slovenian": "kamin",
+        "italian": "camino",
+        "french": "cheminée",
+        "dutch": "open haard"
+    },
+    {
+        "spanish": "suelo",
+        "german": "Boden",
+        "english": "floor",
+        "slovenian": "tla",
+        "italian": "pavimento",
+        "french": "sol",
+        "dutch": "vloer"
+    },
+    {
+        "spanish": "persiana",
+        "german": "Rollladen",
+        "english": "shutter",
+        "slovenian": "škatla za okno",
+        "italian": "tapparella",
+        "french": "volet",
+        "dutch": "rolluik"
+    },
+    {
+        "spanish": "lavadero",
+        "german": "Waschraum",
+        "english": "laundry room",
+        "slovenian": "pralnica",
+        "italian": "lavanderia",
+        "french": "buanderie",
+        "dutch": "waskamer"
+    }
+]

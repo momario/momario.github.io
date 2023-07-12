@@ -1,164 +1,164 @@
 [
     {
         "spanish": "médico",
-        "german": "Arzt/Ärztin",
+        "german": "Arzt",
         "english": "doctor",
-        "slovenian": "zdravnik/zdravnica",
+        "slovenian": "zdravnik",
         "italian": "medico",
         "french": "médecin",
         "dutch": "arts"
     },
     {
-        "spanish": "ingeniero/ingeniera",
-        "german": "Ingenieur/Ingenieurin",
+        "spanish": "ingeniero",
+        "german": "Ingenieur",
         "english": "engineer",
-        "slovenian": "inženir/inženirka",
+        "slovenian": "inženir",
         "italian": "ingegnere",
-        "french": "ingénieur/ingénieure",
+        "french": "ingénieur",
         "dutch": "ingenieur"
     },
     {
-        "spanish": "profesor/profesora",
-        "german": "Lehrer/Lehrerin",
+        "spanish": "profesor",
+        "german": "Lehrer",
         "english": "teacher",
-        "slovenian": "učitelj/učiteljica",
+        "slovenian": "učitelj",
         "italian": "insegnante",
-        "french": "professeur/professeure",
-        "dutch": "leraar/lerares"
+        "french": "professeur",
+        "dutch": "leraar"
     },
     {
-        "spanish": "abogado/abogada",
-        "german": "Anwalt/Anwältin",
+        "spanish": "abogado",
+        "german": "Anwalt",
         "english": "lawyer",
-        "slovenian": "odvetnik/odvetnica",
-        "italian": "avvocato/avvocata",
-        "french": "avocat/avocate",
-        "dutch": "advocaat/advocate"
+        "slovenian": "odvetnik",
+        "italian": "avvocato",
+        "french": "avocat",
+        "dutch": "advocaat"
     },
     {
-        "spanish": "enfermero/enfermera",
-        "german": "Krankenpfleger/Krankenschwester",
+        "spanish": "enfermero",
+        "german": "Krankenpfleger",
         "english": "nurse",
         "slovenian": "medicinska sestra",
-        "italian": "infermiere/infermiera",
-        "french": "infirmier/infirmière",
+        "italian": "infermiere",
+        "french": "infirmier",
         "dutch": "verpleegkundige"
     },
     {
-        "spanish": "programador/programadora",
-        "german": "Programmierer/Programmiererin",
+        "spanish": "programador",
+        "german": "Programmierer",
         "english": "programmer",
-        "slovenian": "programer/programerka",
-        "italian": "programmatore/programmatrice",
-        "french": "programmeur/programmeuse",
-        "dutch": "programmeur/programmeuse"
+        "slovenian": "programer",
+        "italian": "programmatore",
+        "french": "programmeur",
+        "dutch": "programmeur"
     },
     {
-        "spanish": "científico/científica",
-        "german": "Wissenschaftler/Wissenschaftlerin",
+        "spanish": "científico",
+        "german": "Wissenschaftler",
         "english": "scientist",
-        "slovenian": "znanstvenik/znanstvenica",
-        "italian": "scienziato/scienziata",
+        "slovenian": "znanstvenik",
+        "italian": "scienziato",
         "french": "scientifique",
-        "dutch": "wetenschapper/wetenschapster"
+        "dutch": "wetenschapper"
     },
     {
         "spanish": "policía",
-        "german": "Polizist/Polizistin",
+        "german": "Polizist",
         "english": "police officer",
-        "slovenian": "policist/policistka",
-        "italian": "poliziotto/poliziotta",
-        "french": "police/policière",
-        "dutch": "politieman/politieman"
+        "slovenian": "policist",
+        "italian": "poliziotto",
+        "french": "police",
+        "dutch": "politieman"
     },
     {
-        "spanish": "bombero/bombera",
-        "german": "Feuerwehrmann/Feuerwehrfrau",
+        "spanish": "bombero",
+        "german": "Feuerwehrmann",
         "english": "firefighter",
-        "slovenian": "gasilec/gasilska",
+        "slovenian": "gasilec",
         "italian": "vigile del fuoco",
         "french": "pompiere",
-        "dutch": "brandweerman/brandweervrouw"
+        "dutch": "brandweerman"
     },
     {
-        "spanish": "veterinario/veterinaria",
-        "german": "Tierarzt/Tierärztin",
+        "spanish": "veterinario",
+        "german": "Tierarzt",
         "english": "veterinarian",
-        "slovenian": "veterinar/veterinarka",
-        "italian": "veterinario/veterinaria",
+        "slovenian": "veterinar",
+        "italian": "veterinario",
         "french": "vétérinaire",
         "dutch": "dierenarts"
     },
     {
-        "spanish": "chef/chefa",
-        "german": "Koch/Köchin",
+        "spanish": "chef",
+        "german": "Koch",
         "english": "chef",
-        "slovenian": "kuhar/kuharica",
-        "italian": "chef/cuoco",
-        "french": "chef/cuisinier",
-        "dutch": "chef-kok/kokkin"
+        "slovenian": "kuhar",
+        "italian": "chef",
+        "french": "chef",
+        "dutch": "chef-kok"
     },
     {
-        "spanish": "contador/contadora",
-        "german": "Buchhalter/Buchhalterin",
+        "spanish": "contador",
+        "german": "Buchhalter",
         "english": "accountant",
-        "slovenian": "računovodja/računovodkinja",
+        "slovenian": "računovodja",
         "italian": "contabile",
         "french": "comptable",
-        "dutch": "boekhouder/boekhoudster"
+        "dutch": "boekhouder"
     },
     {
-        "spanish": "arquitecto/arquitecta",
-        "german": "Architekt/Architektin",
+        "spanish": "arquitecto",
+        "german": "Architekt",
         "english": "architect",
-        "slovenian": "arhitekt/arhitektka",
-        "italian": "architetto/architetta",
+        "slovenian": "arhitekt",
+        "italian": "architetto",
         "french": "architecte",
-        "dutch": "architect/architecte"
+        "dutch": "architect"
     },
     {
-        "spanish": "panadero/panadera",
-        "german": "Bäcker/Bäckerin",
+        "spanish": "panadero",
+        "german": "Bäcker",
         "english": "baker",
-        "slovenian": "pek/pekarka",
-        "italian": "panettiere/panettiera",
-        "french": "boulanger/boulangère",
-        "dutch": "bakker/bakkerin"
+        "slovenian": "pek",
+        "italian": "panettiere",
+        "french": "boulanger",
+        "dutch": "bakker"
     },
     {
-        "spanish": "vendedor/vendedora",
-        "german": "Verkäufer/Verkäuferin",
+        "spanish": "vendedor",
+        "german": "Verkäufer",
         "english": "salesperson",
-        "slovenian": "prodajalec/prodajalka",
-        "italian": "venditore/venditrice",
-        "french": "vendeur/vendeuse",
-        "dutch": "verkoper/verkoopster"
+        "slovenian": "prodajalec",
+        "italian": "venditore",
+        "french": "vendeur",
+        "dutch": "verkoper"
     },
     {
         "spanish": "electricista",
-        "german": "Elektriker/Elektrikerin",
+        "german": "Elektriker",
         "english": "electrician",
-        "slovenian": "električar/električarka",
+        "slovenian": "električar",
         "italian": "elettricista",
-        "french": "électricien/électricienne",
-        "dutch": "elektricien/elektricienne"
+        "french": "électricien",
+        "dutch": "elektricien"
     },
     {
-        "spanish": "funcionario/funcionaria",
+        "spanish": "funcionario",
         "german": "Beamter/Beamtin",
         "english": "civil servant",
-        "slovenian": "državni uslužbenec/državna uslužbenka",
-        "italian": "impiegato/impiegata pubblico",
+        "slovenian": "državni uslužbenec",
+        "italian": "impiegato",
         "french": "fonctionnaire",
-        "dutch": "ambtenaar/ambtenares"
+        "dutch": "ambtenaar"
     },
     {
         "spanish": "astronauta",
-        "german": "Astronaut/Astronautin",
+        "german": "Astronaut",
         "english": "astronaut",
-        "slovenian": "astronavt/astronavtka",
+        "slovenian": "astronavt",
         "italian": "astronauta",
         "french": "astronaute",
-        "dutch": "astronaut/astronaute"
+        "dutch": "astronaut"
     }
 ]
