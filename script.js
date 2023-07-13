@@ -226,6 +226,9 @@ $(document).ready(function () {
 
     $(document).on('click', '.conjugation-button', function() {
         switch(getCookie("tolang").toUpperCase()) {
+            case 'GERMAN':
+                language = 'de-de';
+                break;
             case 'ENGLISH':
                 language = 'en-us';
                 break;

@@ -127,6 +127,38 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
       '', '', 'veinte', 'treinta', 'cuarenta', 'cincuenta', 'sesenta', 'setenta', 'ochenta', 'noventa'
     ];
 
+    const germanHundreds = [
+      '', 'hundert', 'zweihundert', 'dreihundert', 'vierhundert', 'fünfhundert', 'sechshundert', 'siebenhundert', 'achthundert', 'neunhundert'
+    ];
+    
+    const englishHundreds = [
+      '', 'one hundred', 'two hundred', 'three hundred', 'four hundred', 'five hundred', 'six hundred', 'seven hundred', 'eight hundred', 'nine hundred'
+    ];
+    
+    const slovenianHundreds = [
+      '', 'sto', 'dvesto', 'tristo', 'štiristo', 'petsto', 'šeststo', 'sedemsto', 'osemsto', 'devetsto'
+    ];
+    
+    const frenchHundreds = [
+      '', 'cent', 'deux cents', 'trois cents', 'quatre cents', 'cinq cents', 'six cents', 'sept cents', 'huit cents', 'neuf cents'
+    ];
+    
+    const italianHundreds = [
+      '', 'cento', 'duecento', 'trecento', 'quattrocento', 'cinquecento', 'seicento', 'settecento', 'ottocento', 'novecento'
+    ];
+    
+    const turkishHundreds = [
+      '', 'yüz', 'iki yüz', 'üç yüz', 'dört yüz', 'beş yüz', 'altı yüz', 'yedi yüz', 'sekiz yüz', 'dokuz yüz'
+    ];
+    
+    const dutchHundreds = [
+      '', 'honderd', 'tweehonderd', 'driehonderd', 'vierhonderd', 'vijfhonderd', 'zeshonderd', 'zevenhonderd', 'achthonderd', 'negenhonderd'
+    ];
+    
+    const spanishHundreds = [
+      '', 'cien', 'doscientos', 'trescientos', 'cuatrocientos', 'quinientos', 'seiscientos', 'setecientos', 'ochocientos', 'novecientos'
+    ];
+    
     function getGermanText(number) {
       if (number < 20) {
         return germanDigits[number];
@@ -215,6 +247,88 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
       }
     }
 
+    // function getGermanText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : germanDigits[number % 10];
+    //     const tens = number < 20 ? '' : germanTens[Math.floor(number / 10)];
+    //     return germanHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + (number < 20 ? '' : 'und') + ones;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getEnglishText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : englishDigits[number % 10];
+    //     const tens = number < 20 ? '' : englishTens[Math.floor(number / 10)];
+    //     return englishHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + ones;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getSlovenianText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : slovenianDigits[number % 10];
+    //     const tens = number < 20 ? '' : slovenianTens[Math.floor(number / 10)];
+    //     return slovenianHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + ones + (number < 20 ? '' : 'in') + tens;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getFrenchText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : frenchDigits[number % 10];
+    //     const tens = number < 20 ? '' : frenchTens[Math.floor(number / 10)];
+    //     return frenchHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + (number < 70 ? (number % 10 === 1 ? ' et ' : ' ') + ones : (number < 80 ? '-soixante' : '-quatre-vingt')) + (number % 20 === 0 ? '' : getFrenchText(number % 20));
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getItalianText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : italianDigits[number % 10];
+    //     const tens = number < 20 ? '' : italianTens[Math.floor(number / 10)];
+    //     return italianHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + ones;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getTurkishText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : turkishDigits[number % 10];
+    //     const tens = number < 20 ? '' : turkishTens[Math.floor(number / 10)];
+    //     return turkishHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + ones;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getDutchText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : dutchDigits[number % 10];
+    //     const tens = number < 100 ? '' : dutchTens[Math.floor(number / 10) % 10];
+    //     const hundreds = dutchHundreds[Math.floor(number / 100)];
+    //     return hundreds + (number < 100 ? '' : ' ') + tens + (number % 100 < 20 ? '' : 'en') + ones;
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+    // function getSpanishText(number) {
+    //   if (number < 1000) {
+    //     const ones = number % 10 === 0 ? '' : spanishDigits[number % 10];
+    //     const tens = number < 20 ? '' : spanishTens[Math.floor(number / 10)];
+    //     return spanishHundreds[Math.floor(number / 100)] + (number < 100 ? '' : ' ') + tens + (number < 30 ? (number % 10 === 0 ? '' : ' y ') + ones : '');
+    //   } else {
+    //     return 'Number out of range';
+    //   }
+    // }
+    
+
     switch(getCookie("tolang").toUpperCase()) {
       case 'GERMAN':
           return getGermanText(number);
@@ -241,12 +355,27 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
   $('#correct_div').css('display','none');
   $('#wrong_div').css('display','none');
   $('#numpad_next').css('display','none');
+  $('#numpad_reset').css('display','block');
 
   //create random number
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  var randomNum = getRandomNumber(0, 99);
+  var randomMasterNum = getRandomNumber(0, 1);
+  switch(randomMasterNum) {
+    case 0:
+      var randomNum = getRandomNumber(0, 9);
+      break;
+    case 1:
+      var randomNum = getRandomNumber(10, 99);
+      break;
+    case 2:
+      var randomNum = getRandomNumber(100, 999); //needs to be done!!!
+      break;
+    default:
+      var randomNum = getRandomNumber(10, 99);
+      break;
+  }
   //convert this number to text and add it to the output table
   var numberAsText = convertNumberToText(randomNum);
   $('#numpad_output').val(numberAsText);
@@ -271,10 +400,46 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
     if(inputAsText == inputAsNumverToText) {
       $('#correct_div').css('display','block');
       $('#numpad_next').css('display','block');
+      $('#numpad_reset').css('display','none');
     } else {
       $('#wrong_div').css('display','block');
       $('#numpad_next').css('display','block');
+      $('#numpad_reset').css('display','none');
     }
+
+    switch(getCookie("tolang").toUpperCase()) {
+      case 'GERMAN':
+          language = 'de-de';
+          break;
+      case 'ENGLISH':
+          language = 'en-us';
+          break;
+      case 'SLOVENIAN':
+          language = 'sl-si';
+          break;
+      case 'SPANISH':
+          language = 'es-es';
+          break;
+      case 'FRENCH':
+          language = 'fr-fr';
+          break;
+      case 'ITALIAN':
+          language = 'it-it';
+          break;
+      case 'DUTCH':
+          language = 'nl-nl';
+          break;
+      case 'TURKISH':
+          language = 'tr-tr';
+          break;
+      default:
+          language = 'en-us';
+    }
+    var apiKey = '83a7a15df9bb440380724e35be5a7e68';
+    var text = numberAsText;
+    var audioSrc  = 'http://api.voicerss.org/?key=' + apiKey + '&hl=' + language + '&c=MP3&f=44khz_16bit_stereo&src=' + encodeURIComponent(text);
+    var audio = new Audio(audioSrc);
+    audio.play();
   });
 
   $('#numpad_reset').click(function(e) {
