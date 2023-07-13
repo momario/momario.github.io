@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="../numbers.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <span id="heading">NUMBERS</span>
+    <br>
+    <span>
+      <span id="language_select"></span>
+      <a id="homelink" href="../../momario.github.io/">&#8618; HOME</a>
+    </span>
+  </div>
+  <div id="content">
+    <form method="post">
+      <table class="numpad_table">
+        <tr>
+            <td>
+              <input type="text" id="numpad_output" name="numpad_output" style="width:100%;" placeholder="0" readonly>
+            </td>
+          </tr>
+      <table>
+    </form>
+    <form method="post" id="numpad_form">
+        <table class="numpad_table">
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="numpad_input" name="numpad_input" style="width:100%;" placeholder="0" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="numpad_number" value="1"></td>
+                <td><input type="submit" class="numpad_number" value="2"></td>
+                <td><input type="submit" class="numpad_number" value="3"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="numpad_number" value="4"></td>
+                <td><input type="submit" class="numpad_number" value="5"></td>
+                <td><input type="submit" class="numpad_number" value="6"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="numpad_number" value="7"></td>
+                <td><input type="submit" class="numpad_number" value="8"></td>
+                <td><input type="submit" class="numpad_number" value="9"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" class="numpad_number" value="0" style="width:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" id="numpad_submit" name="numpad_submit" value="CHECK" style="width:100%;">
+                </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                  <input type="reset" id="numpad_reset" value="RESET">
+              </td>
+            </tr>
+
+        <table>
+    </form>
+    <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
+    <div id="correct_div">ANSWER WAS CORRECT</div>
+    <form method="post">
+      <table class="numpad_table">
+        <tr>
+            <td>
+              <input type="submit" id="numpad_next" name="numpad_next" style="width:100%;" value="NEXT" placeholder="0" readonly>
+            </td>
+          </tr>
+      <table>
+    </form>
+  </div>
+</body>

@@ -189,3 +189,46 @@ body {
 #wrong_answers_span {
   font-size: 25px;
 }
+
+/*NUMPAD*/
+.numpad_table {
+  width:100%;
+  cursor: pointer;
+}
+#numpad_input,
+#numpad_output,
+#numpad_next {
+  width:100%;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+  background:white;
+  cursor: pointer;
+}
+#numpad_submit:hover,
+#numpad_reset:hover,
+#numpad_next:hover,
+#numpad_submit:focus,
+#numpad_reset:focus,
+#numpad_next:focus {
+  background: yellow;
+}
+.numpad_number {
+  width:100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background:white;
+  cursor: pointer;
+}
+#numpad_submit,
+#numpad_reset {
+  width:100%;
+  padding:15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+  background:white;
+  cursor: pointer;
+}
