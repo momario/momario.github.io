@@ -237,6 +237,7 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
     }
   }
 
+  $('#numpad_input').val("");
   $('#correct_div').css('display','none');
   $('#wrong_div').css('display','none');
   $('#numpad_next').css('display','none');
@@ -260,7 +261,7 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
   });
 
   //check function
-  $('#numpad_form').submit(function(e) {
+  $('#numpad_submit').click(function(e) {
     e.preventDefault();
     var inputAsText = $('#numpad_output').val();
     var inputAsNumber = $('#numpad_input').val();
@@ -274,7 +275,15 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
       $('#wrong_div').css('display','block');
       $('#numpad_next').css('display','block');
     }
+  });
 
+  $('#numpad_reset').click(function(e) {
+    e.preventDefault();
+    $('#numpad_input').val("");
+  });
+
+  $('#numpad_next').click(function(e) {
+    location.reload();
   });
 
 });

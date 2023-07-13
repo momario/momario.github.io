@@ -212,7 +212,7 @@ body {
 #numpad_submit:focus,
 #numpad_reset:focus,
 #numpad_next:focus {
-  background: yellow;
+  background: lightgray;
 }
 .numpad_number {
   width:100%;
