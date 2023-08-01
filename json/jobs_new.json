@@ -1,0 +1,17 @@
+[
+    ["Handwerker", "craftsman", "mojster", "artigiano", "vakman", "artisan", "artesano", "usta", "hunermend"],
+    ["Ingenieur", "engineer", "inženir", "ingegnere", "ingenieur", "ingénieur", "ingeniero", "mühendis", "mohendîs"],
+    ["Lehrer", "teacher", "učitelj", "insegnante", "leraar", "enseignant", "maestro", "öğretmen", "mamostay"],
+    ["Arzt", "doctor", "zdravnik", "medico", "dokter", "médecin", "médico", "doktor", "doktor"],
+    ["Künstler", "artist", "umetnik", "artista", "kunstenaar", "artiste", "artista", "sanatçı", "hunermend"],
+    ["Musiker", "musician", "glasbenik", "musicista", "muzikant", "musicien", "músico", "müzisyen", "muzîkvan"],
+    ["Koch", "cook", "kuhar", "cuoco", "kok", "cuisinier", "cocinero", "aşçı", "şef"],
+    ["Bäcker", "baker", "pekarnar", "panettiere", "bakker", "boulanger", "panadero", "fırıncı", "nanî"],
+    ["Schreiner", "carpenter", "mizar", "falegname", "timmerman", "charpentier", "carpintero", "marangoz", "tîmar"],
+    ["Maler", "painter", "slikar", "pittore", "schilder", "peintre", "pintor", "resimci", "pêncerê"],
+    ["Elektriker", "electrician", "električar", "elettricista", "elektricien", "électricien", "electricista", "elektrikçi", "elektrîker"],
+    ["Klempner", "plumber", "vodovodar", "idraulico", "loodgieter", "plombier", "fontanero", "sıhhi tesisatçı", "plombir"],
+    ["Maurer", "bricklayer", "zidar", "muratore", "metselaar", "maçon", "albañil", "duvarcı", "qirax"],
+    ["Metzger", "butcher", "mesar", "macellaio", "slager", "boucher", "carnicero", "kasap", "qurbanî"],
+    ["Friseur", "hairdresser", "frizer", "parrucchiere", "kapper", "coiffeur", "peluquero", "kuaför", "berber"]
+]

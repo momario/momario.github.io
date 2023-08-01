@@ -384,7 +384,13 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
   $('.numpad_number').click(function(e) {
     e.preventDefault();
     $('#numpad_input').val($('#numpad_input').val() + $(this).val());
-    var audioSrc  = '../sounds/beep.mp3';
+    var audioSrc  = '../sounds/click.wav';
+    var audio = new Audio(audioSrc);
+    audio.play();
+  });
+  $('#numpad_submit, #numpad_reset').click(function(e) {
+    e.preventDefault();
+    var audioSrc  = '../sounds/click.wav';
     var audio = new Audio(audioSrc);
     audio.play();
   });
@@ -401,10 +407,15 @@ $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie
       $('#correct_div').css('display','block');
       $('#numpad_next').css('display','block');
       $('#numpad_reset').css('display','none');
+      $('#numpad_submit').css('display','none');
+      $('.numpad_number').prop('disabled', true);
     } else {
       $('#wrong_div').css('display','block');
       $('#numpad_next').css('display','block');
       $('#numpad_reset').css('display','none');
+      $('#numpad_submit').css('display','none');
+      $('.numpad_number').prop('disabled', true);
+      $('#wrong_div').append('<br><span>'+inputAsText+' = '+randomNum+'</span>');
     }
 
     switch(getCookie("tolang").toUpperCase()) {

@@ -1,162 +1,22 @@
 [
-    {
-        "spanish": "perro (él)",
-        "german": "Hund",
-        "english": "dog",
-        "slovenian": "pes",
-        "italian": "cane",
-        "french": "chien",
-        "dutch": "hond",
-        "turkish": "köpek"
-    },
-    {
-        "spanish": "gata (la)",
-        "german": "Katze",
-        "english": "cat",
-        "slovenian": "mačka",
-        "italian": "gatta",
-        "french": "chatte",
-        "dutch": "kat",
-        "turkish": "kedi"
-    },
-    {
-        "spanish": "elefante (él)",
-        "german": "Elefant",
-        "english": "elephant",
-        "slovenian": "slon",
-        "italian": "elefante",
-        "french": "éléphant",
-        "dutch": "olifant",
-        "turkish": "fil"
-    },
-    {
-        "spanish": "león (él)",
-        "german": "Löwe",
-        "english": "lion",
-        "slovenian": "lev",
-        "italian": "leone",
-        "french": "lion",
-        "dutch": "leeuw",
-        "turkish": "aslan"
-    },
-    {
-        "spanish": "jirafa (la)",
-        "german": "Giraffe",
-        "english": "giraffe",
-        "slovenian": "žirafa",
-        "italian": "giraffa",
-        "french": "girafe",
-        "dutch": "giraffe",
-        "turkish": "zürafa"
-    },
-    {
-        "spanish": "mono (él)",
-        "german": "Affe",
-        "english": "monkey",
-        "slovenian": "opica",
-        "italian": "scimmia",
-        "french": "singe",
-        "dutch": "aap",
-        "turkish": "maymun"
-    },
-    {
-        "spanish": "tigre (él)",
-        "german": "Tiger",
-        "english": "tiger",
-        "slovenian": "tiger",
-        "italian": "tigre",
-        "french": "tigre",
-        "dutch": "tijger",
-        "turkish": "kaplan"
-    },
-    {
-        "spanish": "oso (él)",
-        "german": "Bär",
-        "english": "bear",
-        "slovenian": "medved",
-        "italian": "orso",
-        "french": "ours",
-        "dutch": "beer",
-        "turkish": "ayı"
-    },
-    {
-        "spanish": "cebra (la)",
-        "german": "Zebra",
-        "english": "zebra",
-        "slovenian": "zebra",
-        "italian": "zebra",
-        "french": "zèbre",
-        "dutch": "zebra",
-        "turkish": "zebra"
-    },
-    {
-        "spanish": "pollo (el)",
-        "german": "Huhn",
-        "english": "chicken",
-        "slovenian": "piščanec",
-        "italian": "pollo",
-        "french": "poulet",
-        "dutch": "kip",
-        "turkish": "tavuk"
-    },
-    {
-        "spanish": "cerdo (el)",
-        "german": "Schwein",
-        "english": "pig",
-        "slovenian": "prašič",
-        "italian": "maiale",
-        "french": "cochon",
-        "dutch": "varken",
-        "turkish": "domuz"
-    },
-    {
-        "spanish": "pájaro (el)",
-        "german": "Vogel",
-        "english": "bird",
-        "slovenian": "ptica",
-        "italian": "uccello",
-        "french": "oiseau",
-        "dutch": "vogel",
-        "turkish": "kuş"
-    },
-    {
-        "spanish": "lama (la)",
-        "german": "Lama",
-        "english": "llama",
-        "slovenian": "lama",
-        "italian": "llama",
-        "french": "lama",
-        "dutch": "lama",
-        "turkish": "lama"
-    },
-    {
-        "spanish": "serpiente (la)",
-        "german": "Schlange",
-        "english": "snake",
-        "slovenian": "kača",
-        "italian": "serpente",
-        "french": "serpent",
-        "dutch": "slang",
-        "turkish": "yılan"
-    },
-    {
-        "spanish": "pez (el)",
-        "german": "Fisch",
-        "english": "fish",
-        "slovenian": "riba",
-        "italian": "pesce",
-        "french": "poisson",
-        "dutch": "vis",
-        "turkish": "balık"
-    },
-    {
-        "spanish": "ardilla (la)",
-        "german": "Eichhörnchen",
-        "english": "squirrel",
-        "slovenian": "veverica",
-        "italian": "scoiattolo",
-        "french": "écureuil",
-        "dutch": "eekhoorn",
-        "turkish": "sincap"
-    }
+    ["Hund", "dog", "pes", "cane", "hond", "chien", "perro", "köpek", "sî"],
+    ["Katze", "cat", "mačka", "gatto", "kat", "chat", "gato", "kedi", "pîs"],
+    ["Vogel", "bird", "ptica", "uccello", "vogel", "oiseau", "pájaro", "kuş", "çaw"],
+    ["Elefant", "elephant", "slon", "elefante", "olifant", "éléphant", "elefante", "fil", "pîl"],
+    ["Affe", "monkey", "opica", "scimmia", "aap", "singe", "mono", "maymun", "mank"],
+    ["Löwe", "lion", "lev", "leone", "leeuw", "lion", "león", "aslan", "şîr"],
+    ["Tiger", "tiger", "tiger", "tigre", "tijger", "tigre", "tigre", "kaplan", "şêr"],
+    ["Giraffe", "giraffe", "žirafa", "giraffa", "giraf", "girafe", "jirafa", "zürafa", "geraf"],
+    ["Bär", "bear", "medved", "orso", "beer", "ours", "oso", "ayı", "mêr"],
+    ["Hase", "rabbit", "zajec", "coniglio", "konijn", "lapin", "conejo", "tavşan", "firik"],
+    ["Schlange", "snake", "kača", "serpente", "slang", "serpent", "serpiente", "yılan", "hew"],
+    ["Pferd", "horse", "konj", "cavallo", "paard", "cheval", "caballo", "at", "heval"],
+    ["Kuh", "cow", "krava", "mucca", "koe", "vache", "vaca", "inek", "ger"],
+    ["Schaf", "sheep", "ovca", "pecora", "schaap", "mouton", "oveja", "koyun", "kêr"],
+    ["Huhn", "chicken", "piščanec", "pollo", "kip", "poule", "pollo", "tavuk", "gov"],
+    ["Ente", "duck", "raca", "anatra", "eend", "canard", "pato", "ördek", "gêr"],
+    ["Fisch", "fish", "riba", "pesce", "vis", "poisson", "pez", "balık", "mêr"],
+    ["Wal", "whale", "kit", "balena", "walvis", "baleine", "ballena", "balina", "wêl"],
+    ["Hai", "shark", "morski pes", "squalo", "haai", "requin", "tiburón", "köpek balığı", "mêrgef"],
+    ["Schmetterling", "butterfly", "metulj", "farfalla", "vlinder", "papillon", "mariposa", "kelebek", "pervîn"]
 ]

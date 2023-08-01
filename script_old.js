@@ -1,5 +1,32 @@
 $(document).ready(function () {
 
+    $(document).on('click', '#test_button', function () {       
+        $.ajax({
+            url: 'https://cors-anywhere.herokuapp.com/https://api.pons.com/v1/dictionary?q=schwarz&l=dees',
+            headers: {
+              'X-Secret': '951f0cd14bc91cda8dd5af5a1f689c0d2b754aa6c7c9e9767463587a6177fdcd'
+            },
+            success: function(data) {
+              // Do something with the response data
+              console.log(data);
+            },
+            error: function(error) {
+              // Handle any errors that occur during the request
+              console.error(error);
+            }
+          });
+    });
+
+    // Global script variables
+    var correct_answers = 0;
+    var wrong_answers = 0;
+    var max_count = 8;
+    var selected_subject = null;
+    var selected_verb = null;
+    var correction_dict = null;
+    var clicked_subject = null;
+    var clicked_verb = null;
+
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -51,115 +78,10 @@ $(document).ready(function () {
     var tolang_cookie = getCookie("tolang");
     $('#language_select').html(fromlang_cookie.toUpperCase() + " - " + tolang_cookie.toUpperCase());
 
-    // Global script variables
-    var correct_answers = 0;
-    var wrong_answers = 0;
-    var max_count = 3;
-    var selected_subject = null;
-    var selected_verb = null;
-    var clicked_subject = null;
-    var clicked_verb = null;
-    var fromlang_dict = [];
-    var tolang_dict = [];
-    var fromlang_correct_dict = [];
+    // TESTING THE MODAL BOX
+    // $("#all_correct_div").css("display", "block");
 
-    // from language specific variables
-    var fromlang_id = 1;
-    switch (getCookie("fromlang").toUpperCase()) {
-        case 'GERMAN':
-            fromlang_id = 0;
-            break;
-        case 'ENGLISH':
-            fromlang_id = 1;
-            break;
-        case 'SLOVENIAN':
-            fromlang_id = 2;
-            break;
-        case 'SPANISH':
-            fromlang_id = 6;
-            break;
-        case 'FRENCH':
-            fromlang_id = 5;
-            break;
-        case 'ITALIAN':
-            fromlang_id = 3;
-            break;
-        case 'DUTCH':
-            fromlang_id = 4;
-            break;
-        case 'TURKISH':
-            fromlang_id = 7;
-            break;
-        case 'KURDISH':
-            fromlang_id = 8;
-            break;
-        default:
-            fromlang_id = 1;
-    }
-
-    var tolang_id = 1;
-    language = 'en-us';
-    switch (getCookie("tolang").toUpperCase()) {
-        case 'GERMAN':
-            tolang_id = 0;
-            language = 'de-de';
-            break;
-        case 'ENGLISH':
-            tolang_id = 1;
-            language = 'en-us';
-            break;
-        case 'SLOVENIAN':
-            tolang_id = 2;
-            language = 'sl-si';
-            break;
-        case 'SPANISH':
-            tolang_id = 6;
-            language = 'es-es';
-            break;
-        case 'FRENCH':
-            tolang_id = 5;
-            language = 'fr-fr';
-            break;
-        case 'ITALIAN':
-            tolang_id = 3;
-            language = 'it-it';
-            break;
-        case 'DUTCH':
-            tolang_id = 4;
-            language = 'nl-nl';
-            break;
-        case 'TURKISH':
-            tolang_id = 7;
-            language = 'tr-tr';
-            break;
-        case 'KURDISH':
-            tolang_id = 8;
-            language = 'tr-tr';
-            break;
-        default:
-            tolang_id = 1;
-            language = 'en-us';
-    }
-
-    // Shuffle the data array to get random sublists
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-    }
-
-    function getElementId(list, element) {
-        for (let i = 0; i < list.length; i++) {
-            if (list[i] === element) {
-                return i;
-            }
-        }
-        return "";
-    }
-
-    // var json_file = {};
+    var json_file = {};
     $.getJSON(json_file, function (data) {
         if (data.length <= max_count) {
             // alert("There are not enough elements in the data array to select random keys. Aborting.");
@@ -167,44 +89,76 @@ $(document).ready(function () {
             max_count = data.length;
         }
 
-        // Choose how many random sublists you want
-        const numRandomSublists = max_count;
+        var dict = {};
 
-        // Get the random sublists
-        const shuffledData = shuffleArray(data);
-        const randomSublists = shuffledData.slice(0, numRandomSublists);
-        // console.log(randomSublists);
-        // DE - EN - SL - IT - NL - FR - ES - TR - KU
-        // [["Hund", "dog", "pes", "cane", "hond", "chien", "perro", "köpek", "sî"], ...] : length = 8
-
-        fromlang_dict = [];
-        for (var key in randomSublists) {
-            fromlang_dict.push(randomSublists[key][fromlang_id]);
-            fromlang_correct_dict.push(randomSublists[key][tolang_id]);
+        for (var key in data) {
+            dict[data[key][fromlang_cookie]] = data[key][tolang_cookie]
         }
+        var correction_dict2 = dict;
 
-        tolang_dict = [];
-        for (var key in randomSublists) {
-            tolang_dict.push(randomSublists[key][tolang_id]);
+        function selectRandomKeys(obj) {
+            const keys = Object.keys(obj);
+            const randomKeys = [];
+
+            while (randomKeys.length < max_count) {
+                const randomIndex = Math.floor(Math.random() * keys.length);
+                const randomKey = keys[randomIndex];
+
+                if (!randomKeys.includes(randomKey)) {
+                    randomKeys.push(randomKey);
+                }
+            }
+
+            const randomObj = {};
+
+            randomKeys.forEach(key => {
+                randomObj[key] = obj[key];
+            });
+
+            return randomObj;
         }
+        const randomObj = selectRandomKeys(correction_dict2);
+        correction_dict = randomObj;
+        // console.log(correction_dict);
 
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        var shuffledtolang_dict = shuffleArray(tolang_dict);
-        // console.log(shuffledtolang_dict);
-
-        for (var i = 0; i < max_count; i++) {
-            $('#output_table').append('<tr><td><input type="submit" class="button subject-button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="button conjugation-button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
+        /*shuffle function*/
+        const correction_values = Object.values(correction_dict);
+        // Shuffle correction_values
+        for (let i = correction_values.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [correction_values[i], correction_values[j]] = [correction_values[j], correction_values[i]];
         }
+        // Create new object
+        const shuffled_dict = {};
+        // Add key-value pairs to the new object
+        const correction_keys = Object.keys(correction_dict);
+        for (let i = 0; i < correction_keys.length; i++) {
+            shuffled_dict[correction_keys[i]] = correction_values[i];
+        }
+        function shuffleObject(obj) {
+            const entries = Object.entries(obj);
+            const shuffled = shuffleArray(entries);
+            return Object.fromEntries(shuffled);
+        }
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+        /*console.log(shuffled_dict);*/
+        var shuffled_obj = shuffleObject(shuffled_dict);
+        // console.log(shuffled_obj);
+
+        $.each(shuffled_obj, function (subject, verb) {
+            $('#output_table').append('<tr><td><input type="submit" class="button subject-button" value="' + subject + '"></td><td><input type="submit" class="button conjugation-button" value="' + verb + '"></td></tr>');
+        });
     });
 
     $(document).on('click', '.subject-button', function () {
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        // console.log(fromlang_correct_dict);
         selected_subject = $(this).val();
         clicked_subject = $(this);
-
         $("#wrong_div").css("display", "none");
         $("#correct_div").css("display", "none");
         if (selected_verb === null) {
@@ -212,7 +166,7 @@ $(document).ready(function () {
             $('.conjugation-button').removeClass('selected');
             $(this).addClass('selected');
         } else {
-            if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
+            if (selected_verb === correction_dict[selected_subject]) {
                 // console.log("Answer is correct");
                 clicked_subject.addClass('grayed-out');
                 clicked_verb.addClass('grayed-out');
@@ -222,7 +176,11 @@ $(document).ready(function () {
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    $("#numpad_next").css("display", "block");
+                    if (wrong_answers === null || wrong_answers === "") {
+                        wrong_answers = 0;
+                    }
+                    $("#wrong_answers_span").html(wrong_answers);
+                    $("#all_correct_div").css("display", "block");
                 } else {
                     $("#correct_div").css("display", "block");
                 }
@@ -240,12 +198,8 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.conjugation-button', function () {
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        // console.log(fromlang_correct_dict);
         selected_verb = $(this).val();
         clicked_verb = $(this);
-
         $("#wrong_div").css("display", "none");
         $("#correct_div").css("display", "none");
         if (selected_subject === null) {
@@ -253,7 +207,7 @@ $(document).ready(function () {
             $('.conjugation-button').removeClass('selected');
             $(this).addClass('selected');
         } else {
-            if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
+            if (selected_verb === correction_dict[selected_subject]) {
                 clicked_subject.addClass('grayed-out');
                 clicked_verb.addClass('grayed-out');
                 clicked_subject.attr("disabled", "disabled");
@@ -262,7 +216,11 @@ $(document).ready(function () {
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    $("#numpad_next").css("display", "block");
+                    if (wrong_answers === null || wrong_answers === "") {
+                        wrong_answers = 0;
+                    }
+                    $("#wrong_answers_span").html(wrong_answers);
+                    $("#all_correct_div").css("display", "block");
                 } else {
                     $("#correct_div").css("display", "block");
                 }
@@ -279,12 +237,40 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', '#numpad_next', function () {
+    $(document).on('click', '#next_verb', function () {
         wrong_answers = 0;
         location.reload();
     });
 
     $(document).on('click', '.conjugation-button', function () {
+        switch (getCookie("tolang").toUpperCase()) {
+            case 'GERMAN':
+                language = 'de-de';
+                break;
+            case 'ENGLISH':
+                language = 'en-us';
+                break;
+            case 'SLOVENIAN':
+                language = 'sl-si';
+                break;
+            case 'SPANISH':
+                language = 'es-es';
+                break;
+            case 'FRENCH':
+                language = 'fr-fr';
+                break;
+            case 'ITALIAN':
+                language = 'it-it';
+                break;
+            case 'DUTCH':
+                language = 'nl-nl';
+                break;
+            case 'TURKISH':
+                language = 'tr-tr';
+                break;
+            default:
+                language = 'en-us';
+        }
         var apiKey = '83a7a15df9bb440380724e35be5a7e68';
         var text = $(this).val();
         var audioSrc = 'http://api.voicerss.org/?key=' + apiKey + '&hl=' + language + '&c=MP3&f=44khz_16bit_stereo&src=' + encodeURIComponent(text);

@@ -25,13 +25,18 @@
   <div id="content">
     <table id="output_table">
     </table>
-    <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
-    <div id="correct_div">ANSWER WAS CORRECT</div>
-    <div id="all_correct_div">
-      <h1>ALL ANSWERS CORRECT</h1>
-      <h2>WRONG ANSWERS: <span id="wrong_answers_span"></span></h2>
-      <a href="" class="link">REPEAT</a>
-      <a href="../../momario.github.io/" class="link">HOME</a>
-    </div>
+    <table>
+      <tr>
+        <td colspan="3">
+          <input type="submit" id="numpad_next" name="numpad_next" style="width:100%;" value="NEXT" placeholder="0" readonly>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
+          <div id="correct_div">ANSWER WAS CORRECT</div>
+        </td>
+      </tr>
+    </table>
   </div>
 </body>

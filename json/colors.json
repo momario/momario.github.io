@@ -1,152 +1,16 @@
 [
-  {
-    "english": "red",
-    "spanish": "rojo",
-    "german": "rot",
-    "french": "rouge",
-    "italian": "rosso",
-    "slovenian": "rdeča",
-    "dutch": "rood",
-    "turkish": "kırmızı"
-  },
-  {
-    "english": "blue",
-    "spanish": "azul",
-    "german": "blau",
-    "french": "bleu",
-    "italian": "blu",
-    "slovenian": "modra",
-    "dutch": "blauw",
-    "turkish": "mavi"
-  },
-  {
-    "english": "green",
-    "spanish": "verde",
-    "german": "grün",
-    "french": "vert",
-    "italian": "verde",
-    "slovenian": "zelena",
-    "dutch": "groen",
-    "turkish": "yeşil"
-  },
-  {
-    "english": "yellow",
-    "spanish": "amarillo",
-    "german": "gelb",
-    "french": "jaune",
-    "italian": "giallo",
-    "slovenian": "rumena",
-    "dutch": "geel",
-    "turkish": "sarı"
-  },
-  {
-    "english": "purple",
-    "spanish": "morado",
-    "german": "lila",
-    "french": "violet",
-    "italian": "viola",
-    "slovenian": "vijolična",
-    "dutch": "paars",
-    "turkish": "mor"
-  },
-  {
-    "english": "orange",
-    "spanish": "naranja",
-    "german": "orange",
-    "french": "orange",
-    "italian": "arancione",
-    "slovenian": "oranžna",
-    "dutch": "oranje",
-    "turkish": "turuncu"
-  },
-  {
-    "english": "black",
-    "spanish": "negro",
-    "german": "schwarz",
-    "french": "noir",
-    "italian": "nero",
-    "slovenian": "črna",
-    "dutch": "zwart",
-    "turkish": "siyah"
-  },
-  {
-    "english": "white",
-    "spanish": "blanco",
-    "german": "weiß",
-    "french": "blanc",
-    "italian": "bianco",
-    "slovenian": "bela",
-    "dutch": "wit",
-    "turkish": "beyaz"
-  },
-  {
-    "english": "pink",
-    "spanish": "rosado",
-    "german": "rosa",
-    "french": "rose",
-    "italian": "rosa",
-    "slovenian": "roza",
-    "dutch": "roze",
-    "turkish": "pembe"
-  },
-  {
-    "english": "brown",
-    "spanish": "marrón",
-    "german": "braun",
-    "french": "marron",
-    "italian": "marrone",
-    "slovenian": "rjava",
-    "dutch": "bruin",
-    "turkish": "kahverengi"
-  },
-  {
-    "english": "gray",
-    "spanish": "gris",
-    "german": "grau",
-    "french": "gris",
-    "italian": "grigio",
-    "slovenian": "siva",
-    "dutch": "grijs",
-    "turkish": "gri"
-  },
-  {
-    "english": "turquoise",
-    "spanish": "turquesa",
-    "german": "türkis",
-    "italian": "turchese",
-    "slovenian": "turkizna",
-    "french": "turquoise",
-    "dutch": "turkoois",
-    "turkish": "turkuaz"
-  },
-  {
-    "english": "silver",
-    "spanish": "plata",
-    "german": "silber",
-    "italian": "argento",
-    "slovenian": "srebrna",
-    "french": "argent",
-    "dutch": "zilver",
-    "turkish": "gümüş"
-  },
-  {
-    "english": "gold",
-    "spanish": "oro",
-    "german": "gold",
-    "italian": "oro",
-    "slovenian": "zlata",
-    "french": "or",
-    "dutch": "goud",
-    "turkish": "altın"
-  },
-  {
-    "english": "beige",
-    "spanish": "beige",
-    "german": "beige",
-    "italian": "beige",
-    "slovenian": "bež",
-    "french": "beige",
-    "dutch": "beige",
-    "turkish": "bej"
-  }
+    ["rot", "red", "rdeča", "rosso", "rood", "rouge", "rojo", "kırmızı", "sor"],
+    ["blau", "blue", "modra", "blu", "blauw", "bleu", "azul", "mavi", "şîn"],
+    ["grün", "green", "zelena", "verde", "groen", "vert", "verde", "yeşil", "hêlan"],
+    ["gelb", "yellow", "rumena", "giallo", "geel", "jaune", "amarillo", "sarı", "zer"],
+    ["schwarz", "black", "črna", "nero", "zwart", "noir", "negro", "siyah", "reş"],
+    ["weiß", "white", "bela", "bianco", "wit", "blanc", "blanco", "beyaz", "spî"],
+    ["orange", "orange", "oranžna", "arancione", "oranje", "orange", "naranja", "turuncu", "narîn"],
+    ["lila", "purple", "vijolična", "viola", "paars", "violet", "morado", "mor", "pîroz"],
+    ["pink", "pink", "roza", "rosa", "roze", "rose", "rosado", "pembe", "pinc"],
+    ["braun", "brown", "rjava", "marrone", "bruin", "marron", "marrón", "kahverengi", "çerm"],
+    ["grau", "gray", "siva", "grigio", "grijs", "gris", "gris", "gri", "pelî"],
+    ["gold", "gold", "zlato", "oro", "goud", "or", "oro", "altın", "tîrmeh"],
+    ["silber", "silver", "srebrna", "argento", "zilver", "argent", "plata", "gümüş", "firaz"],
+    ["beige", "beige", "bež", "beige", "beige", "beige", "beige", "bej", "bej"]
 ]
