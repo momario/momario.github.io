@@ -1,164 +1,17 @@
 [
-    {
-        "spanish": "médico",
-        "german": "Arzt",
-        "english": "doctor",
-        "slovenian": "zdravnik",
-        "italian": "medico",
-        "french": "médecin",
-        "dutch": "arts"
-    },
-    {
-        "spanish": "ingeniero",
-        "german": "Ingenieur",
-        "english": "engineer",
-        "slovenian": "inženir",
-        "italian": "ingegnere",
-        "french": "ingénieur",
-        "dutch": "ingenieur"
-    },
-    {
-        "spanish": "profesor",
-        "german": "Lehrer",
-        "english": "teacher",
-        "slovenian": "učitelj",
-        "italian": "insegnante",
-        "french": "professeur",
-        "dutch": "leraar"
-    },
-    {
-        "spanish": "abogado",
-        "german": "Anwalt",
-        "english": "lawyer",
-        "slovenian": "odvetnik",
-        "italian": "avvocato",
-        "french": "avocat",
-        "dutch": "advocaat"
-    },
-    {
-        "spanish": "enfermero",
-        "german": "Krankenpfleger",
-        "english": "nurse",
-        "slovenian": "medicinska sestra",
-        "italian": "infermiere",
-        "french": "infirmier",
-        "dutch": "verpleegkundige"
-    },
-    {
-        "spanish": "programador",
-        "german": "Programmierer",
-        "english": "programmer",
-        "slovenian": "programer",
-        "italian": "programmatore",
-        "french": "programmeur",
-        "dutch": "programmeur"
-    },
-    {
-        "spanish": "científico",
-        "german": "Wissenschaftler",
-        "english": "scientist",
-        "slovenian": "znanstvenik",
-        "italian": "scienziato",
-        "french": "scientifique",
-        "dutch": "wetenschapper"
-    },
-    {
-        "spanish": "policía",
-        "german": "Polizist",
-        "english": "police officer",
-        "slovenian": "policist",
-        "italian": "poliziotto",
-        "french": "police",
-        "dutch": "politieman"
-    },
-    {
-        "spanish": "bombero",
-        "german": "Feuerwehrmann",
-        "english": "firefighter",
-        "slovenian": "gasilec",
-        "italian": "vigile del fuoco",
-        "french": "pompiere",
-        "dutch": "brandweerman"
-    },
-    {
-        "spanish": "veterinario",
-        "german": "Tierarzt",
-        "english": "veterinarian",
-        "slovenian": "veterinar",
-        "italian": "veterinario",
-        "french": "vétérinaire",
-        "dutch": "dierenarts"
-    },
-    {
-        "spanish": "chef",
-        "german": "Koch",
-        "english": "chef",
-        "slovenian": "kuhar",
-        "italian": "chef",
-        "french": "chef",
-        "dutch": "chef-kok"
-    },
-    {
-        "spanish": "contador",
-        "german": "Buchhalter",
-        "english": "accountant",
-        "slovenian": "računovodja",
-        "italian": "contabile",
-        "french": "comptable",
-        "dutch": "boekhouder"
-    },
-    {
-        "spanish": "arquitecto",
-        "german": "Architekt",
-        "english": "architect",
-        "slovenian": "arhitekt",
-        "italian": "architetto",
-        "french": "architecte",
-        "dutch": "architect"
-    },
-    {
-        "spanish": "panadero",
-        "german": "Bäcker",
-        "english": "baker",
-        "slovenian": "pek",
-        "italian": "panettiere",
-        "french": "boulanger",
-        "dutch": "bakker"
-    },
-    {
-        "spanish": "vendedor",
-        "german": "Verkäufer",
-        "english": "salesperson",
-        "slovenian": "prodajalec",
-        "italian": "venditore",
-        "french": "vendeur",
-        "dutch": "verkoper"
-    },
-    {
-        "spanish": "electricista",
-        "german": "Elektriker",
-        "english": "electrician",
-        "slovenian": "električar",
-        "italian": "elettricista",
-        "french": "électricien",
-        "dutch": "elektricien"
-    },
-    {
-        "spanish": "funcionario",
-        "german": "Beamter/Beamtin",
-        "english": "civil servant",
-        "slovenian": "državni uslužbenec",
-        "italian": "impiegato",
-        "french": "fonctionnaire",
-        "dutch": "ambtenaar"
-    },
-    {
-        "spanish": "astronauta",
-        "german": "Astronaut",
-        "english": "astronaut",
-        "slovenian": "astronavt",
-        "italian": "astronauta",
-        "french": "astronaute",
-        "dutch": "astronaut"
-    }
+    ["Handwerker", "craftsman", "mojster", "artigiano", "vakman", "artisan", "artesano", "usta", "hunermend"],
+    ["Ingenieur", "engineer", "inženir", "ingegnere", "ingenieur", "ingénieur", "ingeniero", "mühendis", "mohendîs"],
+    ["Lehrer", "teacher", "učitelj", "insegnante", "leraar", "enseignant", "maestro", "öğretmen", "mamostay"],
+    ["Arzt", "doctor", "zdravnik", "medico", "dokter", "médecin", "médico", "doktor", "doktor"],
+    ["Künstler", "artist", "umetnik", "artista", "kunstenaar", "artiste", "artista", "sanatçı", "hunermend"],
+    ["Musiker", "musician", "glasbenik", "musicista", "muzikant", "musicien", "músico", "müzisyen", "muzîkvan"],
+    ["Koch", "cook", "kuhar", "cuoco", "kok", "cuisinier", "cocinero", "aşçı", "şef"],
+    ["Bäcker", "baker", "pekarnar", "panettiere", "bakker", "boulanger", "panadero", "fırıncı", "nanî"],
+    ["Schreiner", "carpenter", "mizar", "falegname", "timmerman", "charpentier", "carpintero", "marangoz", "tîmar"],
+    ["Maler", "painter", "slikar", "pittore", "schilder", "peintre", "pintor", "resimci", "pêncerê"],
+    ["Elektriker", "electrician", "električar", "elettricista", "elektricien", "électricien", "electricista", "elektrikçi", "elektrîker"],
+    ["Klempner", "plumber", "vodovodar", "idraulico", "loodgieter", "plombier", "fontanero", "sıhhi tesisatçı", "plombir"],
+    ["Maurer", "bricklayer", "zidar", "muratore", "metselaar", "maçon", "albañil", "duvarcı", "qirax"],
+    ["Metzger", "butcher", "mesar", "macellaio", "slager", "boucher", "carnicero", "kasap", "qurbanî"],
+    ["Friseur", "hairdresser", "frizer", "parrucchiere", "kapper", "coiffeur", "peluquero", "kuaför", "berber"]
 ]

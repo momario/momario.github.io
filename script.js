@@ -54,7 +54,7 @@ $(document).ready(function () {
     // Global script variables
     var correct_answers = 0;
     var wrong_answers = 0;
-    var max_count = 3;
+    var max_count = 6;
     var selected_subject = null;
     var selected_verb = null;
     var clicked_subject = null;
