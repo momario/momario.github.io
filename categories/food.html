@@ -8,24 +8,33 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script>
-    var json_file = '../json/fruits.json';
+    var json_file = '../json/food.json';
   </script>
   <script src="../script.js"></script>
 </head>
 
 <body>
   <div id="header">
-    <span id="heading">FRUITS</span>
-    <br>
     <span>
       <span id="language_select"></span>
-      <a id="homelink" href="../../momario.github.io/">&#8618; HOME</a>
+      <a id="homelink" href="../../momario.github.io/">HOME</a>
     </span>
   </div>
   <div id="content">
     <table id="output_table">
     </table>
-    <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
-    <div id="correct_div">ANSWER WAS CORRECT</div>
+    <table>
+      <tr>
+        <td>
+          <input type="submit" id="numpad_next" name="numpad_next" style="width:100%;" value="NEXT" placeholder="0" readonly>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="wrong_div">ANSWER WAS NOT CORRECT</div>
+          <div id="correct_div">ANSWER WAS CORRECT</div>
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
