@@ -96,8 +96,8 @@ body {
 
 .grayed-out {
   background: white;
-  color: lightgreen;
-  border: 1px solid lightgreen;
+  color: lightgray;
+  border: 1px solid white;
   cursor: default;
 }
 
@@ -138,7 +138,8 @@ body {
 }
 
 #numpad_next {
-  background: lightgray;
+  background: black;
+  color: white;
   display: none;
 }
 
@@ -188,6 +189,11 @@ body {
 }
 
 .error-button {
-  background-color: #ff6347; /* Tomato color for error */
+  background-color: red; /* Tomato color for error */
   color: white;
+}
+
+#button_table,
+#button_table td {
+  width:100%;
 }
