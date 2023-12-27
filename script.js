@@ -193,6 +193,8 @@ $(document).ready(function () {
         var shuffledtolang_dict = shuffleArray(tolang_dict);
         // console.log(shuffledtolang_dict);
 
+
+
         for (var i = 0; i < max_count; i++) {
             $('#output_table').append('<tr><td><input type="submit" class="button subject-button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="button conjugation-button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
         }
@@ -205,11 +207,13 @@ $(document).ready(function () {
         selected_subject = $(this).val();
         clicked_subject = $(this);
 
-        $("#wrong_div").css("display", "none");
-        $("#correct_div").css("display", "none");
+        // $("#wrong_div").css("display", "none");
+        // $("#correct_div").css("display", "none");
         if (selected_verb === null) {
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
+            $('.subject-button').removeClass('error-button');
+            $('.conjugation-button').removeClass('error-button');
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
@@ -224,11 +228,17 @@ $(document).ready(function () {
                 if (correct_answers === max_count) {
                     $("#numpad_next").css("display", "block");
                 } else {
-                    $("#correct_div").css("display", "block");
+                    // $("#correct_div").css("display", "block");
                 }
             } else {
-                wrong_answers++;
-                $("#wrong_div").css("display", "block");
+                // wrong_answers++;
+                // $("#wrong_div").css("display", "block");
+                
+                $(this).addClass('error-button');
+                $(this).addClass('error-shake');
+                setTimeout(function() {
+                    $(this).removeClass('error-shake');
+                }, 600);
             }
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
@@ -246,11 +256,13 @@ $(document).ready(function () {
         selected_verb = $(this).val();
         clicked_verb = $(this);
 
-        $("#wrong_div").css("display", "none");
-        $("#correct_div").css("display", "none");
+        // $("#wrong_div").css("display", "none");
+        // $("#correct_div").css("display", "none");
         if (selected_subject === null) {
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
+            $('.subject-button').removeClass('error-button');
+            $('.conjugation-button').removeClass('error-button');
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
@@ -264,11 +276,17 @@ $(document).ready(function () {
                 if (correct_answers === max_count) {
                     $("#numpad_next").css("display", "block");
                 } else {
-                    $("#correct_div").css("display", "block");
+                    // $("#correct_div").css("display", "block");
                 }
             } else {
-                wrong_answers++;
-                $("#wrong_div").css("display", "block");
+                // wrong_answers++;
+                // $("#wrong_div").css("display", "block");
+
+                $(this).addClass('error-button');
+                $(this).addClass('error-shake');
+                setTimeout(function() {
+                    $(this).removeClass('error-shake');              
+                }, 600);
             }
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
