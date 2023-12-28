@@ -12,23 +12,27 @@ body {
 }
 
 #content {
-  padding: 5px 10px;
+  padding: 10px;
 }
 
 #header {
-  padding: 10px;
+  width: 100%;
+  
+}
+
+#language_select,
+#homelink,
+#empty_span{
+  width: 50%;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box; 
+  text-align: center;
+  text-decoration: none;
   background: black;
   color: white;
+  padding:10px 0px;
 }
-
-#homelink {
-  text-decoration: none;
-  color: white;
-  float: right;
-  margin-right: 20px;
-
-}
-
 
 /*LINKS*/
 .link {
