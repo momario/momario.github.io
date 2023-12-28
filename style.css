@@ -16,8 +16,14 @@ body {
 }
 
 #header {
+<<<<<<< HEAD
   width: 100%;
   
+=======
+  padding: 20px;
+  background: black;
+  color: white;
+>>>>>>> d1f5d2f38df7d5492da0dfbf2280513a29129c5e
 }
 
 #language_select,
@@ -63,8 +69,6 @@ body {
   background-color: black;
 }
 
-
-
 /*TODO....*/
 #output_table {
   width: 100%;
@@ -86,13 +90,13 @@ body {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
   min-width: 150px;
   width: 100%;
   border-radius: 3px;
   cursor: pointer;
   border: 1px solid lightgray;
-  box-shadow: 2px 2px 2px lightgray;
+  /* box-shadow: 2px 2px 2px lightgray; */
   margin: 3px;
   font-weight: bold;
   font-size: 1rem;
@@ -142,7 +146,8 @@ body {
 }
 
 #numpad_next {
-  background: lightgray;
+  background: black;
+  color: white;
   display: none;
 }
 
@@ -154,7 +159,7 @@ body {
   padding: 15px;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background: white;
   cursor: pointer;
   font-weight: bold;
@@ -168,4 +173,35 @@ body {
 #correct_div {
   color: white;
   background-color: green;
+}
+
+.navigation_button {
+  color: white;
+  background: black;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+  }
+}
+
+.error-shake {
+  animation: shake 0.6s ease-in-out;
+}
+
+.error-button {
+  background-color: red; /* Tomato color for error */
+  color: white;
+}
+
+#button_table,
+#button_table td {
+  width:100%;
 }

@@ -1,0 +1,21 @@
+[
+    ["Montag", "Monday", "ponedeljek", "lunedì", "maandag", "lundi", "lunes", "Pazartesi", "Yekşem"],
+    ["Dienstag", "Tuesday", "torek", "martedì", "dinsdag", "mardi", "martes", "Salı", "Sêşem"],
+    ["Mittwoch", "Wednesday", "sreda", "mercoledì", "woensdag", "mercredi", "miércoles", "Çarşamba", "Çarşem"],
+    ["Donnerstag", "Thursday", "četrtek", "giovedì", "donderdag", "jeudi", "jueves", "Perşembe", "Pêncşem"],
+    ["Freitag", "Friday", "petek", "venerdì", "vrijdag", "vendredi", "viernes", "Cuma", "Înî"],
+    ["Samstag", "Saturday", "sobota", "sabato", "zaterdag", "samedi", "sábado", "Cumartesi", "Şemî"],
+    ["Sonntag", "Sunday", "nedelja", "domenica", "zondag", "dimanche", "domingo", "Pazar", "Yekşem"],
+    ["Januar", "January", "januar", "gennaio", "januari", "janvier", "enero", "Ocak", "Rêbendan"],
+    ["Februar", "February", "februar", "febbraio", "februari", "février", "febrero", "Şubat", "Pûşper"],
+    ["März", "March", "marec", "marzo", "maart", "mars", "marzo", "Mart", "Adar"],
+    ["April", "April", "april", "aprile", "april", "avril", "abril", "Nisan", "Nîsan"],
+    ["Mai", "May", "maj", "maggio", "mei", "mai", "mayo", "Mayıs", "Gulan"],
+    ["Juni", "June", "junij", "giugno", "juni", "juin", "junio", "Haziran", "Pûşper"],
+    ["Juli", "July", "julij", "luglio", "juli", "juillet", "julio", "Temmuz", "Tîrmeh"],
+    ["August", "August", "avgust", "agosto", "augustus", "août", "agosto", "Ağustos", "Tebax"],
+    ["September", "September", "september", "settembre", "september", "septembre", "septiembre", "Eylül", "Îlon"],
+    ["Oktober", "October", "oktober", "ottobre", "oktober", "octobre", "octubre", "Ekim", "Tîrmeh"],
+    ["November", "November", "november", "novembre", "november", "novembre", "noviembre", "Kasım", "Mijdar"],
+    ["Dezember", "December", "december", "dicembre", "december", "décembre", "diciembre", "Aralık", "Rêbendan"]
+]
