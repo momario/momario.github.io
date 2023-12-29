@@ -141,3 +141,7 @@ body {
   /* Tomato color for error */
   color: white;
 }
+
+/* #gradient_gerslo {
+  background: linear-gradient(to right, black 0%, black 10%, red 10%, red 20%, yellow 20%, yellow 30%, black 30%, black 31%, white 31%, white 69%, black 69%, black 70%, white 70%, white 80%, blue 80%, blue 90%, red 90%, red 100%);
+} */
