@@ -102,9 +102,10 @@ body {
 }
 
 .grayed_out {
-  background: white;
-  color: lightgray;
+  background: #eeeeee;
+  color: #cccccc;
   cursor: default;
+  box-shadow: 0px 0px 0px lightgray;
 }
 
 @keyframes shake {
