@@ -1,11 +1,41 @@
 $(document).ready(function () {
 
+    $('.excercise_button').click(function(e) {
+        e.preventDefault();
+        var excercise_button_id = $(this).attr('id');
+        // alert(excercise_button_id);
+        $( "#content" ).load( "view/category_template.html", function() {
+            var json_file = 'json/'+excercise_button_id+'.json';
+            load_output_table(json_file);
+        });
+
+        window.onbeforeunload = function() {
+            return "Prevent page reload";
+        };
+    });//END
+
+    $('#settings').click(function(e) {
+        e.preventDefault();
+        $( "#content" ).load( "settings.html");
+    });//END
+
+    $('#impressum').click(function(e) {
+        e.preventDefault();
+        $( "#content" ).load( "impressum.html");
+    });//END
+
+    $('#home_link').click(function() {
+        window.onbeforeunload = null;
+    });//END
+
+
+
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Lax";
-    }
+    }//END
 
     function getCookie(cname) {
         let name = cname + "=";
@@ -21,7 +51,7 @@ $(document).ready(function () {
             }
         }
         return "";
-    }
+    }//END
 
     function checkCookie() {
         let fromlang = getCookie("fromlang");
@@ -33,7 +63,7 @@ $(document).ready(function () {
             setCookie("tolang", "english", 365);
             alert("Cookie now set: german - english");
         }
-    }
+    }//END
 
     $(document).on('click', '.language_select_button', function () {
         const language_split = $(this).text().split("-");
@@ -159,56 +189,52 @@ $(document).ready(function () {
         return "";
     }
 
-    // var json_file = {};
-    $.getJSON(json_file, function (data) {
-        if (data.length <= max_count) {
-            // alert("There are not enough elements in the data array to select random keys. Aborting.");
-            // return;
-            max_count = data.length;
-        }
+    function load_output_table(json_file) {
+        // var json_file = {};
+        $.getJSON(json_file, function (data) {
+            if (data.length <= max_count) {
+                // alert("There are not enough elements in the data array to select random keys. Aborting.");
+                // return;
+                max_count = data.length;
+            }
 
-        // Choose how many random sublists you want
-        const numRandomSublists = max_count;
+            // Choose how many random sublists you want
+            const numRandomSublists = max_count;
 
-        // Get the random sublists
-        const shuffledData = shuffleArray(data);
-        const randomSublists = shuffledData.slice(0, numRandomSublists);
-        // console.log(randomSublists);
-        // DE - EN - SL - IT - NL - FR - ES - TR - KU
-        // [["Hund", "dog", "pes", "cane", "hond", "chien", "perro", "köpek", "sî"], ...] : length = 8
+            // Get the random sublists
+            const shuffledData = shuffleArray(data);
+            const randomSublists = shuffledData.slice(0, numRandomSublists);
+            // console.log(randomSublists);
+            // DE - EN - SL - IT - NL - FR - ES - TR - KU
+            // [["Hund", "dog", "pes", "cane", "hond", "chien", "perro", "köpek", "sî"], ...] : length = 8
 
-        fromlang_dict = [];
-        for (var key in randomSublists) {
-            fromlang_dict.push(randomSublists[key][fromlang_id]);
-            fromlang_correct_dict.push(randomSublists[key][tolang_id]);
-        }
+            fromlang_dict = [];
+            for (var key in randomSublists) {
+                fromlang_dict.push(randomSublists[key][fromlang_id]);
+                fromlang_correct_dict.push(randomSublists[key][tolang_id]);
+            }
 
-        tolang_dict = [];
-        for (var key in randomSublists) {
-            tolang_dict.push(randomSublists[key][tolang_id]);
-        }
+            tolang_dict = [];
+            for (var key in randomSublists) {
+                tolang_dict.push(randomSublists[key][tolang_id]);
+            }
 
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        var shuffledtolang_dict = shuffleArray(tolang_dict);
-        // console.log(shuffledtolang_dict);
+            // console.log(fromlang_dict);
+            // console.log(tolang_dict);
+            var shuffledtolang_dict = shuffleArray(tolang_dict);
+            // console.log(shuffledtolang_dict);
 
 
 
-        for (var i = 0; i < max_count; i++) {
-            $('#output_table').append('<tr><td><input type="submit" class="button subject-button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="button conjugation-button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
-        }
-    });
+            for (var i = 0; i < max_count; i++) {
+                $('#output_table').append('<tr><td><input type="submit" class="subject-button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="conjugation-button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
+            }
+        });
+    }
 
     $(document).on('click', '.subject-button', function () {
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        // console.log(fromlang_correct_dict);
         selected_subject = $(this).val();
         clicked_subject = $(this);
-
-        // $("#wrong_div").css("display", "none");
-        // $("#correct_div").css("display", "none");
         if (selected_verb === null) {
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
@@ -217,23 +243,19 @@ $(document).ready(function () {
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
-                // console.log("Answer is correct");
                 clicked_subject.addClass('grayed-out');
                 clicked_verb.addClass('grayed-out');
                 clicked_subject.attr("disabled", "disabled");
                 clicked_verb.attr("disabled", "disabled");
+                clicked_subject.removeClass('selected');
+                clicked_verb.removeClass('selected');
                 clicked_subject.removeClass('subject-button');
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
                     $("#numpad_next").css("display", "block");
-                } else {
-                    // $("#correct_div").css("display", "block");
                 }
             } else {
-                // wrong_answers++;
-                // $("#wrong_div").css("display", "block");
-                
                 $(this).addClass('error-button');
                 $(this).addClass('error-shake');
                 setTimeout(function() {
@@ -250,14 +272,8 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.conjugation-button', function () {
-        // console.log(fromlang_dict);
-        // console.log(tolang_dict);
-        // console.log(fromlang_correct_dict);
         selected_verb = $(this).val();
         clicked_verb = $(this);
-
-        // $("#wrong_div").css("display", "none");
-        // $("#correct_div").css("display", "none");
         if (selected_subject === null) {
             $('.subject-button').removeClass('selected');
             $('.conjugation-button').removeClass('selected');
@@ -270,18 +286,15 @@ $(document).ready(function () {
                 clicked_verb.addClass('grayed-out');
                 clicked_subject.attr("disabled", "disabled");
                 clicked_verb.attr("disabled", "disabled");
+                clicked_subject.removeClass('selected');
+                clicked_verb.removeClass('selected');
                 clicked_subject.removeClass('subject-button');
                 clicked_verb.removeClass('conjugation-button');
                 correct_answers++;
                 if (correct_answers === max_count) {
                     $("#numpad_next").css("display", "block");
-                } else {
-                    // $("#correct_div").css("display", "block");
                 }
             } else {
-                // wrong_answers++;
-                // $("#wrong_div").css("display", "block");
-
                 $(this).addClass('error-button');
                 $(this).addClass('error-shake');
                 setTimeout(function() {
@@ -309,4 +322,5 @@ $(document).ready(function () {
         var audio = new Audio(audioSrc);
         audio.play();
     });
+
 });
