@@ -24,11 +24,11 @@ $(document).ready(function () {
         $( "#content" ).load( "impressum.html");
     });//END
 
-    $('#home_link').click(function() {
-        window.onbeforeunload = null;
-    });//END
-
-
+    $('.excercise_button, .system_button').click(function() {
+        var audioSrc  = 'sounds/click.wav';
+        var audio = new Audio(audioSrc);
+        audio.play();
+    });
 
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
