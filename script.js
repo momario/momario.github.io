@@ -92,7 +92,6 @@ $(document).ready(function () {
 
     //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH']
 
-
     // from language specific variables
     var fromlang_id = 1;
     switch (getCookie("fromlang").toUpperCase()) {
@@ -302,11 +301,15 @@ $(document).ready(function () {
 
     $(document).on('click', '#next_button', function (e) {
         e.preventDefault();
-        $('.left_button').removeClass('grayed_out');
-        $('.left_button').removeAttr('disabled');
-        $('.right_button').removeClass('grayed_out');
-        $('.right_button').removeAttr('disabled');
-        $('#next_button').css('visibility','hidden');   
+        //shuffle of objects not implemented
+        // $('.left_button').removeClass('grayed_out');
+        // $('.left_button').removeAttr('disabled');
+        // $('.right_button').removeClass('grayed_out');
+        // $('.right_button').removeAttr('disabled');
+        // $('#next_button').css('visibility','hidden');
+        //so the next button goes to home instead
+        window.onbeforeunload = null;
+        window.location.reload();
     });//END
 
     $(document).on('click', '.right_button', function () {
