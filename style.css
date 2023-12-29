@@ -10,78 +10,78 @@ body {
   background: #eeeeee;
 }
 
-#heading_div {
-  width:100%;
-  float:left;
+#heading_div,
+#language_select,
+#home_link {
+  float: left;
   display: block;
   box-sizing: border-box;
   text-align: center;
+  text-decoration: none;
   background: black;
   color: white;
 }
 
-#language_select {
-  width: 50%;
-  float:left;
-  display: block;
-  box-sizing: border-box; 
-  padding:20px;
+#heading_div {
+  width: 100%;
 }
 
+#language_select,
 #home_link {
   width: 50%;
-  float: left;
-  display: block;
-  box-sizing: border-box; 
-  text-decoration: none;
-  color: white;
-  padding:20px;
+  padding: 20px;
 }
 
-#content{
+#content {
   padding: 20px;
 }
 
 #impressum_div {
   width: 100%;
-  float:left;
+  float: left;
   margin-top: 20px;
 }
 
 .excercise_button,
-.language_select_button {
+.language_select_button,
+.system_button,
+#next_button,
+.left_button,
+.right_button,
+.grayed_out,
+.selected {
   display: inline-block;
   box-sizing: border-box;
-  min-width: 150px;
   width: 100%;
   padding: 20px;
-  margin-top: 10px;
-  color: black;
-  background: white;
-  cursor: pointer;
   border: 0px solid black;
   box-shadow: 2px 2px 2px lightgray;
+  text-decoration: none;
 }
-.excercise_button:hover,
-.excercise_button:focus,
-.language_select_button:hover {
-  color: white;
-  background: black;
+
+.excercise_button,
+.language_select_button,
+.system_button,
+#next_button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.left_button,
+.right_button,
+.excercise_button,
+.language_select_button {
+  color: black;
+  background: white;
 }
 
 .system_button,
-#next_button {
-  display: inline-block;
-  box-sizing: border-box;
-  min-width: 150px;
-  width: 100%;
-  padding: 20px;
-  margin-top: 10px;
+#next_button,
+.selected,
+.excercise_button:hover,
+.language_select_button:hover {
   color: white;
   background: black;
-  cursor: pointer;
-  border: 0px solid black;
-  box-shadow: 2px 2px 2px lightgray;
 }
 
 #next_button {
@@ -94,47 +94,39 @@ body {
 
 .left_button,
 .right_button,
-.grayed-out,
+.grayed_out,
 .selected {
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  min-width: 150px;
-  width: 100%;
-  border: 0px solid black;
-  box-shadow: 2px 2px 2px lightgray;
   cursor: pointer;
-  padding: 20px;
   margin: 3px;
   font-size: 1rem;
 }
 
-.left_button,
-.right_button {
-  background: white;
-  color: black;
-}
-
-.grayed-out {
+.grayed_out {
   background: white;
   color: lightgray;
   cursor: default;
 }
 
-.selected {
-  background-color: black;
-  color: white;
-}
-
 @keyframes shake {
-  0%, 100% {
-      transform: translateX(0);
+
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
-      transform: translateX(-10px);
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
   }
-  20%, 40%, 60%, 80% {
-      transform: translateX(10px);
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -143,6 +135,7 @@ body {
 }
 
 .error_button {
-  background-color: red; /* Tomato color for error */
+  background-color: red;
+  /* Tomato color for error */
   color: white;
 }

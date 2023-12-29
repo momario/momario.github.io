@@ -1,30 +1,30 @@
 $(document).ready(function () {
 
-    $('.excercise_button').click(function(e) {
+    $('.excercise_button').click(function (e) {
         e.preventDefault();
         var excercise_button_id = $(this).attr('id');
         // alert(excercise_button_id);
-        $( "#content" ).load( "view/category_template.html", function() {
-            var json_file = 'json/'+excercise_button_id+'.json';
+        $("#content").load("view/category_template.html", function () {
+            var json_file = 'json/' + excercise_button_id + '.json';
             load_output_table(json_file);
         });
 
-        window.onbeforeunload = function() {
+        window.onbeforeunload = function () {
             return "Prevent page reload";
         };
     });//END
 
-    $('#settings').click(function(e) {
+    $('#settings').click(function (e) {
         e.preventDefault();
-        $( "#content" ).load( "settings.html");
+        $("#content").load("settings.html");
     });//END
 
-    $('#impressum').click(function(e) {
+    $('#impressum').click(function (e) {
         e.preventDefault();
-        $( "#content" ).load( "impressum.html");
+        $("#content").load("impressum.html");
     });//END
 
-    $('#home_link').click(function() {
+    $('#home_link').click(function () {
         window.onbeforeunload = null;
     });//END
 
@@ -221,8 +221,6 @@ $(document).ready(function () {
             var shuffledtolang_dict = shuffleArray(tolang_dict);
             // console.log(shuffledtolang_dict);
 
-
-
             for (var i = 0; i < max_count; i++) {
                 $('#output_table').append('<tr><td><input type="submit" class="left_button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="right_button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
             }
@@ -240,14 +238,10 @@ $(document).ready(function () {
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
-                clicked_subject.addClass('grayed-out');
-                clicked_verb.addClass('grayed-out');
+                clicked_subject.addClass('grayed_out');
+                clicked_verb.addClass('grayed_out');
                 clicked_subject.attr("disabled", "disabled");
                 clicked_verb.attr("disabled", "disabled");
-                clicked_subject.removeClass('selected');
-                clicked_verb.removeClass('selected');
-                clicked_subject.removeClass('subject-button');
-                clicked_verb.removeClass('right_button');
                 correct_answers++;
                 if (correct_answers === max_count) {
                     $("#next_button").css("visibility", "visible");
@@ -255,7 +249,7 @@ $(document).ready(function () {
             } else {
                 $(this).addClass('error_button');
                 $(this).addClass('error_shake');
-                setTimeout(function() {
+                setTimeout(function () {
                     $(this).removeClass('error_shake');
                 }, 600);
             }
@@ -279,14 +273,10 @@ $(document).ready(function () {
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
-                clicked_subject.addClass('grayed-out');
-                clicked_verb.addClass('grayed-out');
+                clicked_subject.addClass('grayed_out');
+                clicked_verb.addClass('grayed_out');
                 clicked_subject.attr("disabled", "disabled");
                 clicked_verb.attr("disabled", "disabled");
-                clicked_subject.removeClass('selected');
-                clicked_verb.removeClass('selected');
-                clicked_subject.removeClass('subject-button');
-                clicked_verb.removeClass('right_button');
                 correct_answers++;
                 if (correct_answers === max_count) {
                     $("#next_button").css("visibility", "visible");
@@ -294,8 +284,8 @@ $(document).ready(function () {
             } else {
                 $(this).addClass('error_button');
                 $(this).addClass('error_shake');
-                setTimeout(function() {
-                    $(this).removeClass('error_shake');              
+                setTimeout(function () {
+                    $(this).removeClass('error_shake');
                 }, 600);
             }
             $('.left_button').removeClass('selected');
@@ -306,6 +296,15 @@ $(document).ready(function () {
             clicked_verb = null;
         }
     });
+
+    $(document).on('click', '#next_button', function (e) {
+        e.preventDefault();
+        $('.left_button').removeClass('grayed_out');
+        $('.left_button').removeAttr('disabled');
+        $('.right_button').removeClass('grayed_out');
+        $('.right_button').removeAttr('disabled');
+        $('#next_button').css('visibility','hidden');   
+    });//END
 
     $(document).on('click', '.right_button', function () {
         var apiKey = '83a7a15df9bb440380724e35be5a7e68';
