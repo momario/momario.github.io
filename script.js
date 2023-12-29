@@ -24,11 +24,9 @@ $(document).ready(function () {
         $( "#content" ).load( "impressum.html");
     });//END
 
-    $('.excercise_button, .system_button').click(function() {
-        var audioSrc  = 'sounds/click.wav';
-        var audio = new Audio(audioSrc);
-        audio.play();
-    });
+    $('#home_link').click(function() {
+        window.onbeforeunload = null;
+    });//END
 
     function setCookie(cname, cvalue, exdays) {
         const d = new Date();
@@ -83,7 +81,6 @@ $(document).ready(function () {
 
     // Global script variables
     var correct_answers = 0;
-    var wrong_answers = 0;
     var max_count = 6;
     var selected_subject = null;
     var selected_verb = null;
@@ -227,19 +224,19 @@ $(document).ready(function () {
 
 
             for (var i = 0; i < max_count; i++) {
-                $('#output_table').append('<tr><td><input type="submit" class="subject-button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="conjugation-button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
+                $('#output_table').append('<tr><td><input type="submit" class="left_button" value="' + fromlang_dict[i] + '"></td><td><input type="submit" class="right_button" value="' + shuffledtolang_dict[i] + '"></td></tr>');
             }
         });
     }
 
-    $(document).on('click', '.subject-button', function () {
+    $(document).on('click', '.left_button', function () {
         selected_subject = $(this).val();
         clicked_subject = $(this);
         if (selected_verb === null) {
-            $('.subject-button').removeClass('selected');
-            $('.conjugation-button').removeClass('selected');
-            $('.subject-button').removeClass('error-button');
-            $('.conjugation-button').removeClass('error-button');
+            $('.left_button').removeClass('selected');
+            $('.right_button').removeClass('selected');
+            $('.left_button').removeClass('error_button');
+            $('.right_button').removeClass('error_button');
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
@@ -250,20 +247,20 @@ $(document).ready(function () {
                 clicked_subject.removeClass('selected');
                 clicked_verb.removeClass('selected');
                 clicked_subject.removeClass('subject-button');
-                clicked_verb.removeClass('conjugation-button');
+                clicked_verb.removeClass('right_button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    $("#numpad_next").css("display", "block");
+                    $("#next_button").css("visibility", "visible");
                 }
             } else {
-                $(this).addClass('error-button');
-                $(this).addClass('error-shake');
+                $(this).addClass('error_button');
+                $(this).addClass('error_shake');
                 setTimeout(function() {
-                    $(this).removeClass('error-shake');
+                    $(this).removeClass('error_shake');
                 }, 600);
             }
-            $('.subject-button').removeClass('selected');
-            $('.conjugation-button').removeClass('selected');
+            $('.left_button').removeClass('selected');
+            $('.right_button').removeClass('selected');
             selected_subject = null;
             selected_verb = null;
             clicked_subject = null;
@@ -271,14 +268,14 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', '.conjugation-button', function () {
+    $(document).on('click', '.right_button', function () {
         selected_verb = $(this).val();
         clicked_verb = $(this);
         if (selected_subject === null) {
-            $('.subject-button').removeClass('selected');
-            $('.conjugation-button').removeClass('selected');
-            $('.subject-button').removeClass('error-button');
-            $('.conjugation-button').removeClass('error-button');
+            $('.left_button').removeClass('selected');
+            $('.right_button').removeClass('selected');
+            $('.left_button').removeClass('error_button');
+            $('.right_button').removeClass('error_button');
             $(this).addClass('selected');
         } else {
             if (getElementId(fromlang_dict, selected_subject) === getElementId(fromlang_correct_dict, selected_verb)) {
@@ -289,20 +286,20 @@ $(document).ready(function () {
                 clicked_subject.removeClass('selected');
                 clicked_verb.removeClass('selected');
                 clicked_subject.removeClass('subject-button');
-                clicked_verb.removeClass('conjugation-button');
+                clicked_verb.removeClass('right_button');
                 correct_answers++;
                 if (correct_answers === max_count) {
-                    $("#numpad_next").css("display", "block");
+                    $("#next_button").css("visibility", "visible");
                 }
             } else {
-                $(this).addClass('error-button');
-                $(this).addClass('error-shake');
+                $(this).addClass('error_button');
+                $(this).addClass('error_shake');
                 setTimeout(function() {
-                    $(this).removeClass('error-shake');              
+                    $(this).removeClass('error_shake');              
                 }, 600);
             }
-            $('.subject-button').removeClass('selected');
-            $('.conjugation-button').removeClass('selected');
+            $('.left_button').removeClass('selected');
+            $('.right_button').removeClass('selected');
             selected_subject = null;
             selected_verb = null;
             clicked_subject = null;
@@ -310,12 +307,7 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', '#numpad_next', function () {
-        wrong_answers = 0;
-        location.reload();
-    });
-
-    $(document).on('click', '.conjugation-button', function () {
+    $(document).on('click', '.right_button', function () {
         var apiKey = '83a7a15df9bb440380724e35be5a7e68';
         var text = $(this).val();
         var audioSrc = 'http://api.voicerss.org/?key=' + apiKey + '&hl=' + language + '&c=MP3&f=44khz_16bit_stereo&src=' + encodeURIComponent(text);

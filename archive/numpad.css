@@ -1,0 +1,40 @@
+.numpad_table {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  #numpad_input,
+  #numpad_output,
+  .numpad_number,
+  #numpad_submit,
+  #numpad_reset,
+  #numpad_next {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #numpad_input,
+  #numpad_output {
+    background: black;
+    color: white;
+  }
+  
+  #numpad_reset {
+    background: red;
+  }
+  
+  #numpad_submit {
+    background: green;
+  }
+  
+  #numpad_next {
+    background: black;
+    color: white;
+    display: none;
+  }
