@@ -90,6 +90,9 @@ $(document).ready(function () {
     var tolang_dict = [];
     var fromlang_correct_dict = [];
 
+    //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH']
+
+
     // from language specific variables
     var fromlang_id = 1;
     switch (getCookie("fromlang").toUpperCase()) {

@@ -1,0 +1,14 @@
+[
+    ["Küche", "kitchen", "kuhinja", "cucina", "keuken", "cuisine", "cocina", "mutfak", "malên bavêj"],
+    ["Badezimmer", "restroom", "kopalnica", "bagno", "badkamer", "salle de bain", "baño", "tuvalet", "şîtana"],
+    ["Schlafzimmer", "bedroom", "spalnica", "camera da letto", "slaapkamer", "chambre", "dormitorio", "yatak odası", "hevîzane"],
+    ["Wohnzimmer", "living room", "dnevna soba", "soggiorno", "woonkamer", "salle de séjour", "sala de estar", "oturma odası", "kolîk"],
+    ["Esszimmer", "dining room", "jedilnica", "sala da pranzo", "eetkamer", "salle à manger", "comedor", "yemek odası", "qamîşxaneyê"],
+    ["Arbeitszimmer", "study", "delovna soba", "studio", "studeerkamer", "salle d'étude", "estudio", "çalısma odası", "zêvîyarekî"],
+    ["Kinderzimmer", "children's room", "otroška soba", "camera dei bambini", "kinderkamer", "chambre d'enfant", "habitación infantil", "çocuk odası", "kolîka zarokan"],
+    ["Keller", "basement", "klet", "cantina", "kelder", "cave", "sótano", "mahzen", "kîbek"],
+    ["Gästezimmer", "guest room", "gostinska soba", "camera degli ospiti", "logeerkamer", "chambre d'amis", "habitación de invitados", "misafir odası", "kolîka mehman"],
+    ["Flur", "hallway", "predsoba", "ingresso", "gang", "couloir", "pasillo", "koridor", "nexweşxane"],
+    ["Abstellkammer", "storage room", "shramba", "ripostiglio", "bergruimte", "local de almacenamiento", "trastero", "depo", "komara depoyê"],
+    ["Treppenhaus", "staircase", "stopnišče", "scala", "trap", "escalier", "escalera", "merdiven", "navenda qutiyê"]
+]

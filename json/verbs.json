@@ -1,0 +1,23 @@
+[
+    ["kochen", "cook", "kuhati", "cucinare", "koken", "cuisiner", "cocinar", "yemek yapmak", "xwê bikirin"],
+    ["reinigen", "clean", "očistiti", "pulire", "schoonmaken", "nettoyer", "limpiar", "temizlemek", "veşartîn"],
+    ["schlafen", "sleep", "spati", "dormire", "slapen", "dormir", "dormir", "uyumak", "şewitandin"],
+    ["arbeiten", "work", "delati", "lavorare", "werken", "travailler", "trabajar", "çalışmak", "karûbar kirin"],
+    ["essen", "eat", "jesti", "mangiare", "eten", "manger", "comer", "yemek", "xedîn"],
+    ["lernen", "learn", "učiti se", "imparare", "leren", "apprendre", "aprender", "öğrenmek", "xwendin"],
+    ["sprechen", "speak", "govoriti", "parlare", "spreken", "parler", "hablar", "konuşmak", "gotin"],
+    ["sehen", "see", "videti", "vedere", "zien", "voir", "ver", "görmek", "dîtin"],
+    ["haben", "have", "imeti", "avere", "hebben", "avoir", "tener", "sahip olmak", "hene"],
+    ["gehen", "go", "iti", "andare", "gaan", "aller", "ir", "gitmek", "hatin"],
+    ["schreiben", "write", "pisati", "scrivere", "schrijven", "écrire", "escribir", "yazmak", "nivîsandin"],
+    ["lesen", "read", "brati", "leggere", "lezen", "lire", "leer", "okumak", "xwendin"],
+    ["singen", "sing", "peti", "cantare", "zingen", "chanter", "cantar", "şaşîn", "hewar kirin"],
+    ["tanzen", "dance", "plesati", "ballare", "dansen", "danser", "bailar", "dans etmek", "şivan kirin"],
+    ["lachen", "laugh", "smehljati se", "ridere", "lachen", "rire", "reír", "gülümsemek", "qirîn"],
+    ["trinken", "drink", "piti", "bere", "drinken", "boire", "beber", "içmek", "xwarin"],
+    ["machen", "do/make", "narediti", "fare", "maken", "faire", "hacer", "yapmak", "kirin"],
+    ["brauchen", "need", "potrebovati", "avere bisogno di", "nodig hebben", "avoir besoin de", "necesitar", "ihtiyaç duymak", "pêşketin"],
+    ["wissen", "know", "vedeti", "sapere", "weten", "savoir", "saber", "bilmek", "zane"],
+    ["wollen", "want", "želeti", "volere", "willen", "vouloir", "querer", "istemek", "dixwazim"],
+    ["lieben", "love", "ljubiti", "amare", "houden van", "aimer", "amar", "sevmek", "hejîn"]
+]
