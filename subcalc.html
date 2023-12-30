@@ -36,22 +36,7 @@
             background: black;
             color: white;
         }
-
-        /* th:nth-child(1),
-        td:nth-child(1),
-        th:nth-child(3),
-        td:nth-child(3) {
-            width: 5%;
-            text-align: center;
-        }
-
-        th:nth-child(2),
-        td:nth-child(2),
-        th:nth-child(4),
-        td:nth-child(4) {
-            width: 40%;
-        } */
-
+        
         #input_ip {
             width: 100%;
             display: block;
@@ -66,9 +51,9 @@
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            width: 30px;
+            width: 40px;
             /* Adjusted size */
-            height: 30px;
+            height: 40px;
             /* Adjusted size */
             border: 2px solid black;
             border-radius: 4px;
@@ -105,12 +90,6 @@
 
         #submit_button:hover {
             background: green;
-        }
-
-        .numpad_button {
-            width: 100%;
-            border: 0px solid black;
-            padding: 20px;
         }
     </style>
     <script>
@@ -255,10 +234,23 @@
 
             document.getElementById('result_ip').innerHTML = ip;
             document.getElementById('result_sm').innerHTML = subnetMask + " ( /" + CIDRsubnetMask + " )";
-            document.getElementById('result_id').innerHTML = networkAddress;
-            document.getElementById('result_first').innerHTML = firstUsableAddress;
-            document.getElementById('result_last').innerHTML = lastUsableAddress;
-            document.getElementById('result_bc').innerHTML = broadcastAddress;
+
+            if (parseInt(CIDRsubnetMask) == 32) {
+                document.getElementById('result_id').innerHTML = ip;
+                document.getElementById('result_first').innerHTML = ip;
+                document.getElementById('result_last').innerHTML = ip;
+                document.getElementById('result_bc').innerHTML = ip;
+            } else if (parseInt(CIDRsubnetMask) == 31) {
+                document.getElementById('result_id').innerHTML = networkAddress;
+                document.getElementById('result_first').innerHTML = lastUsableAddress;
+                document.getElementById('result_last').innerHTML = firstUsableAddress;
+                document.getElementById('result_bc').innerHTML = broadcastAddress;
+            } else {
+                document.getElementById('result_id').innerHTML = networkAddress;
+                document.getElementById('result_first').innerHTML = firstUsableAddress;
+                document.getElementById('result_last').innerHTML = lastUsableAddress;
+                document.getElementById('result_bc').innerHTML = broadcastAddress;
+            }
             document.getElementById('result_count').innerHTML = numberOfUsableAddresses;
         }
 
@@ -344,26 +336,6 @@
                     <button id="submit_button" onclick="calculateSubnet()">CALCULATE</button>
                 </td>
             </tr>
-            <!-- <tr>
-                <td><button class="numpad_button" onclick="appendToInput('1')">1</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('2')">2</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('3')">3</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('4')">4</button></td>
-            </tr>
-            <tr>
-                <td><button class="numpad_button" onclick="appendToInput('5')">5</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('6')">6</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('7')">7</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('8')">8</button></td>
-            </tr>
-            <tr>
-                <td><button class="numpad_button" onclick="appendToInput('9')">9</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('0')">0</button></td>
-                <td><button class="numpad_button" onclick="appendToInput('.')">.</button></td>
-                <td><button class="numpad_button" onclick="clearInput()">C</button></td>
-
-            </tr> -->
-
             <tr>
                 <th colspan="2">INPUT ADDRESS:</th>
                 <td colspan="2" id="result_ip"></td>
