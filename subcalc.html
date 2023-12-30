@@ -66,9 +66,9 @@
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            width: 40px;
+            width: 30px;
             /* Adjusted size */
-            height: 40px;
+            height: 30px;
             /* Adjusted size */
             border: 2px solid black;
             border-radius: 4px;
@@ -248,8 +248,7 @@
             var numberOfUsableAddresses = calculateNumberOfUsableAddresses(CIDRsubnetMask);
 
             document.getElementById('result_ip').innerHTML = ip;
-            document.getElementById('result_sm').innerHTML = subnetMask;
-            document.getElementById('result_cidr').innerHTML = CIDRsubnetMask;
+            document.getElementById('result_sm').innerHTML = subnetMask + " (" + CIDRsubnetMask + ")";
             document.getElementById('result_id').innerHTML = networkAddress;
             document.getElementById('result_first').innerHTML = firstUsableAddress;
             document.getElementById('result_last').innerHTML = lastUsableAddress;
@@ -365,10 +364,6 @@
             <tr>
                 <th colspan="2">INPUT MASK:</th>
                 <td colspan="2" id="result_sm"></td>
-            </tr>
-            <tr>
-                <th colspan="2">INPUT CIDR:</th>
-                <td colspan="2" id="result_cidr"></td>
             </tr>
             <tr>
                 <th colspan="2">NETWORK ADDRESS:</th>
