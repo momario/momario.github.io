@@ -124,6 +124,12 @@
                 calculateSubnet();
         })
 
+        /*document.addEventListener('input', (e) => {
+            if (e.target.getAttribute('name') == "input_ip")
+                //console.log(e.target.value);
+                calculateSubnet();
+        })*/
+
         function calculateNetworkAddress(ip, subnetMask) {
             var ipArray = ip.split('.');
             var subnetArray = subnetMask.split('.');
@@ -248,7 +254,7 @@
             var numberOfUsableAddresses = calculateNumberOfUsableAddresses(CIDRsubnetMask);
 
             document.getElementById('result_ip').innerHTML = ip;
-            document.getElementById('result_sm').innerHTML = subnetMask + " (" + CIDRsubnetMask + ")";
+            document.getElementById('result_sm').innerHTML = subnetMask + " ( /" + CIDRsubnetMask + " )";
             document.getElementById('result_id').innerHTML = networkAddress;
             document.getElementById('result_first').innerHTML = firstUsableAddress;
             document.getElementById('result_last').innerHTML = lastUsableAddress;
@@ -331,11 +337,14 @@
                 <th colspan="4">ENTER IP ADRESS:</th>
             </tr>
             <tr>
-                <td colspan="4">
-                    <input type="text" id="input_ip" placeholder="192.168.0.1" value="192.168.0.1" required>
+                <td colspan="2">
+                    <input type="text" id="input_ip" name="input_ip" placeholder="192.168.0.1" value="192.168.0.1">
+                </td>
+                <td colspan="2">
+                    <button id="submit_button" onclick="calculateSubnet()">CALCULATE</button>
                 </td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td><button class="numpad_button" onclick="appendToInput('1')">1</button></td>
                 <td><button class="numpad_button" onclick="appendToInput('2')">2</button></td>
                 <td><button class="numpad_button" onclick="appendToInput('3')">3</button></td>
@@ -353,18 +362,14 @@
                 <td><button class="numpad_button" onclick="appendToInput('.')">.</button></td>
                 <td><button class="numpad_button" onclick="clearInput()">C</button></td>
 
-            </tr>
-            <tr>
-                <td colspan="4"><button id="submit_button" onclick="calculateSubnet()">CALCULATE</button></td>
-            </tr>
-            <tr>
-                <td><input type="number" step="any" id="decimalInput"></td>
-            </tr> 
+            </tr> -->
+
             <tr>
                 <th colspan="2">INPUT ADDRESS:</th>
                 <td colspan="2" id="result_ip"></td>
             </tr>
             <tr>
+
                 <th colspan="2">INPUT MASK:</th>
                 <td colspan="2" id="result_sm"></td>
             </tr>
@@ -385,7 +390,7 @@
                 <td colspan="2" id="result_bc"></td>
             </tr>
             <tr>
-                <th colspan="2">ADDRESS COUNT:</th>
+                <th colspan="2">USABLE ADDRESSES:</th>
                 <td colspan="2" id="result_count"></td>
             </tr>
         </table>
