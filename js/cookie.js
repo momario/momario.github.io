@@ -2,9 +2,44 @@
 
 if(!document.cookie) {
   resetCookie();
-  updateLanguage();
-} else {
-  updateLanguage();
+}
+updateLanguage();
+
+//['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH']
+function getLanguageIndex(language) {
+  let languageIndex;
+  switch(language) {
+    case "GERMAN":
+      languageIndex = 0;
+      break;
+    case "ENGLISH":
+      languageIndex = 1;
+      break;
+    case "SLOVENIAN":
+      languageIndex = 2;
+      break;
+    case "ITALIAN":
+      languageIndex = 3;
+      break;
+    case "DUTCH":
+      languageIndex = 4;
+      break;
+    case "FRANCE":
+      languageIndex = 5;
+      break;
+    case "ESPANIOL":
+      languageIndex = 6;
+      break;
+    case "TURKISH":
+      languageIndex = 7;
+      break;
+    case "KURDISH":
+      languageIndex = 8;
+      break;
+    default:
+      languageIndex = 0;
+  }
+  return languageIndex;
 }
 
 function updateLanguage() {
@@ -13,6 +48,8 @@ function updateLanguage() {
   //console.log(langfrom);
   //console.log(langto);
   document.getElementById("view_language").innerHTML = langfrom + "-" + langto;
+  languageIndex1 = getLanguageIndex(getCookie("langfrom"));
+  languageIndex2 = getLanguageIndex(getCookie("langto"));
 }
 
 function showCookie(message) {
@@ -27,6 +64,7 @@ function setCookie(name, value, days) {
         expires = "; expires=" + date.toUTCString();
     }
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    //needs to be resetted here
 }
 
 function getCookie(name) {
@@ -41,7 +79,7 @@ function getCookie(name) {
 }
 
 function resetCookie() {
-  setCookie("langfrom", "DE", 7);
-  setCookie("langto", "EN", 7);
+  setCookie("langfrom", "GERMAN", 7);
+  setCookie("langto", "ENGLISH", 7);
   showCookie("reset");
 }

@@ -16,6 +16,7 @@ header button {
   font-weight: bold;
   background: dodgerblue;
   color: white;
+  border: 1px solid darkblue;
 }
 
 
@@ -61,8 +62,24 @@ header button {
   background: whitesmoke;
   border: 1px solid lightgray;
 }
-#impressum b {
-  background: black;
-  color: white;
-  padding: 3px 20px;
+
+.exercise_wrapper {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.exercise_wrapper button {
+  flex-grow: 1;
+  width: 50%;
+  padding: 20px;
+  border: 0px;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+.selected {
+  background: lightgray !important;
+}
+.correct {
+  background: lightgreen !important;
 }

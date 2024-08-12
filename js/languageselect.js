@@ -1,4 +1,4 @@
-console.log("languageselect.js loaded");
+//console.log("languageselect.js loaded");
 
 document.querySelectorAll(".langfrom").forEach(function(button) {
     button.addEventListener("click", function() {

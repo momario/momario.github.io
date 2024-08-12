@@ -21,9 +21,9 @@ function createCorrectionList(initialArray, languageIndex1, languageIndex2) {
 
     // Iterate over each sublist in the initial array
     for (let i = 0; i < initialArray.length; i++) {
-        const fromLangEntry = initialArray[i][languageIndex1];
-        const toLangEntry = initialArray[i][languageIndex2];
-        correctionList.push({ from: fromLangEntry, to: toLangEntry });
+        const yfromLangEntry = initialArray[i][languageIndex1];
+        const ytoLangEntry = initialArray[i][languageIndex2];
+        correctionList.push({ from: yfromLangEntry, to: ytoLangEntry });
     }
 
     return correctionList;
@@ -41,9 +41,9 @@ function shuffleAndSelectLanguages(colorLists, languageIndex1, languageIndex2) {
     return [selectedColors1, selectedColors2];
 }
 
-function check(correctionList, fromLangEntry, toLangEntry) {
+function check(correctionList, xxxfromLangEntry, xxxtoLangEntry) {
     for (let pair of correctionList) {
-        if (pair.from === fromLangEntry && pair.to === toLangEntry) {
+        if (pair.from === xxxfromLangEntry && pair.to === xxxtoLangEntry) {
             return true;
         }
     }

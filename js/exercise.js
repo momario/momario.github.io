@@ -1,32 +1,20 @@
-console.log("exercise.js loaded");
+//console.log("exercise.js loaded");
 
-document.getElementById("colors").addEventListener("click", function() {
-    loadContent("view/colors.html");
-    //console.log(shuffledList1);
-    const exerciseDiv = document.getElementById('exercise');
-    for (let i = 0; i < max_count; i++) {
-      const fromLangEntry = shuffledList1[i];
-      const toLangEntry = shuffledList2[i];
-
-      // Create a new row div
-      const rowDiv = document.createElement('div');
-      rowDiv.className = 'exercise-wrapper';
-      rowDiv.style.display = 'flex';
-
-      // Create the buttons
-      const fromLangButton = document.createElement('button');
-      fromLangButton.className = 'fromlang';
-      fromLangButton.textContent = fromLangEntry;
-
-      const toLangButton = document.createElement('button');
-      toLangButton.className = 'tolang';
-      toLangButton.textContent = toLangEntry;
-
-      // Append buttons to the row div
-      rowDiv.appendChild(fromLangButton);
-      rowDiv.appendChild(toLangButton);
-
-      // Append the row div to the exercise div
-      exerciseDiv.appendChild(rowDiv);
-    }
-});
+var exercise_button = document.getElementsByClassName('exercise_button');
+for (var i = 0; i < exercise_button.length; i++) {
+  exercise_button[i].addEventListener('click', function() {
+    var exercise_button_Id = this.id;
+    loadContent("view/vocabulary_exercise.html");
+    loadJSON('json/' + exercise_button_Id + '.json').then(data => {
+      if (data) {
+        //overwrite max_count if list too short. NOT DONE YET
+        colorLists = shuffleAndSlice(data, max_count);
+        correctionList = createCorrectionList(colorLists, languageIndex1, languageIndex2);
+        //set global vars
+        [shuffledList1, shuffledList2] = shuffleAndSelectLanguages(colorLists, languageIndex1, languageIndex2);
+      } else {
+        console.log("Failed to load JSON.");
+      }
+    });
+  });
+}
