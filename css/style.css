@@ -168,6 +168,10 @@ body {
   border: 1px solid gray !important;
 }
 
+#numbertext {
+  font-weight: bold;
+}
+
 .verbdiv {
   display: flex;
   gap: 5px;
@@ -222,8 +226,8 @@ body {
   border: 1px solid lightpink;
 }
 .green {
-  background: palegreen;
-  border: 1px solid palegreen;
+  background: #AFE1AF;
+  border: 1px solid #AFE1AF;
 }
 .yellow {
   background: lightyellow;
@@ -232,6 +236,10 @@ body {
 .gray {
   background: lightgray;
   border: 1px solid lightgray;
+}
+.blue {
+  background: lightcyan;
+  border: 1px solid lightcyan;
 }
 
 /*verbs li button*/

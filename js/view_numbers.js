@@ -21,6 +21,7 @@ $(document).ready(function() {
         });
 
         $removeButton.click(function() {
+          $('.numbers button').prop("disabled", false);
           $numberInput.val("");
           $submitButton.show();
           $hintButton.show();
@@ -29,6 +30,7 @@ $(document).ready(function() {
         });
 
         $submitButton.click(function() {
+          $('.numbers button').prop("disabled", true);
           if (!checknumber($numberInput.val(), randomnumber)) {
             $submitButton.hide();
             $hintButton.hide();
@@ -49,6 +51,7 @@ $(document).ready(function() {
         });
 
         $nextButton.click(function() {
+          $('.numbers button').prop("disabled", false);
           randomnumber = getRandomNumber();
           $numberText.val(showrandomnumberastext(langtocookie, randomnumber));
           $numberInput.val("");
