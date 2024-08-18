@@ -20,9 +20,26 @@ body {
 }
 
 #heading {
+  font-family: Arial Black, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   background: linear-gradient(to right, orangered, orange);
+  background: linear-gradient(90deg, tomato, orangered, orange);
+  background-size: 300%;
+  animation: glow 10s linear infinite;
   background-clip: text;
   color: transparent;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #subheading {

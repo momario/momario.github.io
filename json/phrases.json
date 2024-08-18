@@ -1,0 +1,26 @@
+[
+    ["guten morgen", "good morning", "dobro jutro", "buongiorno", "goedemorgen", "bonjour", "buenos días", "günaydın", "sibê baş"],
+    ["guten tag", "good day", "dober dan", "buongiorno", "goedendag", "bonjour", "buen día", "iyi günler", "roja baş"],
+    ["guten abend", "good evening", "dober večer", "buonasera", "goedenavond", "bonsoir", "buenas noches", "iyi akşamlar", "evare baş"],
+    ["guten appetit", "enjoy your meal", "dober tek", "buon appetito", "eet smakelijk", "bon appétit", "buen provecho", "afiyet olsun", "xêr li ser xorina we"],
+    ["gute nacht", "good night", "lahko noč", "buona notte", "goede nacht", "bonne nuit", "buenas noches", "iyi geceler", "şev baş"],
+
+    ["alles gute zum geburtstag", "happy birthday", "vse najboljše", "buon compleanno", "gefeliciteerd", "joyeux anniversaire", "feliz cumpleaños", "doğum günün kutlu olsun", "rojbûna te pîroz be"],
+
+    ["wo finde ich eine haltestelle", "where can I find a bus stop", "kje najdem postajališče", "dove trovo una fermata", "waar vind ik een halte", "où puis-je trouver un arrêt de bus", "dónde puedo encontrar una parada de autobús", "otobüs durağını nerede bulabilirim", "qet sərê ku otobûsê dîyem?"],
+
+    ["wie geht es dir", "how are you", "kako si", "come stai", "hoe gaat het met je", "comment ça va", "¿cómo estás?", "nasılsın", "çawa yî"],
+
+    ["wie spät ist es", "what time is it", "koliko je ura", "che ore sono", "hoe laat is het", "quelle heure est-il", "¿qué hora es?", "saat kaç", "saet çend e"],
+     ["ich hätte gern ein bier", "I would like a beer", "rad bi pivo", "vorrei una birra", "ik zou graag een biertje willen", "je voudrais une bière", "me gustaría una cerveza", "bir bira alabilir miyim?", "bi birek hezdikim"],
+
+        ["ich hätte gerne eine pizza", "I would like a pizza", "rad bi pico", "vorrei una pizza", "ik zou graag een pizza willen", "je voudrais une pizza", "me gustaría una pizza", "bir pizza alabilir miyim?", "bi pitza hezdikim"],
+
+        ["wo finde ich eine toilette", "where can I find a toilet", "kje je stranišče", "dove trovo un bagno", "waar vind ik een toilet", "où puis-je trouver des toilettes", "¿dónde puedo encontrar un baño?", "tuvaleti nerede bulabilirim?", "qet sərê ku tuwaletê dîyem?"],
+
+        ["ich liebe dich", "I love you", "ljubim te", "ti amo", "ik hou van je", "je t'aime", "te quiero", "seni seviyorum", "ez hej te dikim"],
+
+        ["verschwinde", "get lost", "izgini", "vattene", "rot op", "dégage", "lárgate", "defol", "biçe!"],
+
+        ["wo finde ich ein taxi", "where can I find a taxi", "kje najdem taksi", "dove trovo un taxi", "waar vind ik een taxi", "où puis-je trouver un taxi", "¿dónde puedo encontrar un taxi?", "taksi nerede bulabilirim?", "qet sərê ku taksî dîyem?"]
+]
