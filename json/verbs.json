@@ -1,0 +1,435 @@
+{
+  "subjects": {
+    "GERMAN": ["ich", "du", "er/sie/es", "wir", "ihr", "sie"],
+    "ENGLISH": ["I", "you", "he/she/it", "we", "you", "they"],
+    "SLOVENIAN": ["jaz", "ti", "on/ona/ono", "mi", "vi", "oni/one"],
+    "DUTCH": ["ik", "jij/u", "hij/zij/het", "wij", "jullie", "zij"],
+    "SPANISH": ["yo", "tú", "él/ella/usted", "nosotros", "vosotros", "ellos/ellas/ustedes"],
+    "FRENCH": ["je", "tu", "il/elle/on", "nous", "vous", "ils/elles"],
+    "TURKISH": ["ben", "sen", "o", "biz", "siz", "onlar"],
+    "KURDISH": ["ez", "tu", "ew", "em", "hûn", "ew"],
+    "ITALIAN": ["io", "tu", "lui/lei", "noi", "voi", "loro"]
+  },
+  "verbs": {
+    "sein": {
+      "base": {
+        "GERMAN": "sein",
+        "ENGLISH": "to be",
+        "SLOVENIAN": "biti",
+        "DUTCH": "zijn",
+        "SPANISH": "ser",
+        "FRENCH": "être",
+        "TURKISH": "olmak",
+        "KURDISH": "bûn",
+        "ITALIAN": "essere"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["bin", "bist", "ist", "sind", "seid", "sind"],
+          "future": ["werde sein", "wirst sein", "wird sein", "werden sein", "werdet sein", "werden sein"],
+          "past": ["war", "warst", "war", "waren", "wart", "waren"]
+        },
+        "ENGLISH": {
+          "presence": ["am", "are", "is", "are", "are", "are"],
+          "future": ["will be", "will be", "will be", "will be", "will be", "will be"],
+          "past": ["was", "were", "was", "were", "were", "were"]
+        },
+        "SLOVENIAN": {
+          "presence": ["sem", "si", "je", "smo", "ste", "so"],
+          "future": ["bom", "boš", "bo", "bomo", "boste", "bodo"],
+          "past": ["sem bil", "si bil", "je bil", "smo bili", "ste bili", "so bili"]
+        },
+        "DUTCH": {
+          "presence": ["ben", "bent", "is", "zijn", "zijn", "zijn"],
+          "future": ["zal zijn", "zult zijn", "zal zijn", "zullen zijn", "zullen zijn", "zullen zijn"],
+          "past": ["was", "was", "was", "waren", "waren", "waren"]
+        },
+        "SPANISH": {
+          "presence": ["soy", "eres", "es", "somos", "sois", "son"],
+          "future": ["seré", "serás", "será", "seremos", "seréis", "serán"],
+          "past": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"]
+        },
+        "FRENCH": {
+          "presence": ["suis", "es", "est", "sommes", "êtes", "sont"],
+          "future": ["serai", "seras", "sera", "serons", "serez", "seront"],
+          "past": ["étais", "étais", "était", "étions", "étiez", "étaient"]
+        },
+        "TURKISH": {
+          "presence": ["im", "sin", "dir", "iz", "siniz", "ler"],
+          "future": ["olacağım", "olacaksın", "olacak", "olacağız", "olacaksınız", "olacaklar"],
+          "past": ["oldum", "oldun", "oldu", "olduk", "oldunuz", "oldular"]
+        },
+        "KURDISH": {
+          "presence": ["im", "î", "e", "in", "in", "in"],
+          "future": ["ê bim", "ê bî", "ê be", "ê bin", "ê bin", "ê bin"],
+          "past": ["bûm", "bû", "bû", "bûn", "bûn", "bûn"]
+        },
+        "ITALIAN": {
+          "presence": ["sono", "sei", "è", "siamo", "siete", "sono"],
+          "future": ["sarò", "sarai", "sarà", "saremo", "sarete", "saranno"],
+          "past": ["sono stato", "sei stato", "è stato", "siamo stati", "siete stati", "sono stati"]
+        }
+      }
+    },
+    "haben": {
+      "base": {
+        "GERMAN": "haben",
+        "ENGLISH": "to have",
+        "SLOVENIAN": "imeti",
+        "DUTCH": "hebben",
+        "SPANISH": "tener",
+        "FRENCH": "avoir",
+        "TURKISH": "sahip olmak",
+        "KURDISH": "hebûn",
+        "ITALIAN": "avere"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["habe", "hast", "hat", "haben", "habt", "haben"],
+          "future": ["werde haben", "wirst haben", "wird haben", "werden haben", "werdet haben", "werden haben"],
+          "past": ["hatte", "hattest", "hatte", "hatten", "hattet", "hatten"]
+        },
+        "ENGLISH": {
+          "presence": ["have", "have", "has", "have", "have", "have"],
+          "future": ["will have", "will have", "will have", "will have", "will have", "will have"],
+          "past": ["had", "had", "had", "had", "had", "had"]
+        },
+        "SLOVENIAN": {
+          "presence": ["imam", "imaš", "ima", "imamo", "imate", "imajo"],
+          "future": ["bom imel", "boš imel", "bo imel", "bomo imeli", "boste imeli", "bodo imeli"],
+          "past": ["sem imel", "si imel", "je imel", "smo imeli", "ste imeli", "so imeli"]
+        },
+        "DUTCH": {
+          "presence": ["heb", "hebt", "heeft", "hebben", "hebben", "hebben"],
+          "future": ["zal hebben", "zult hebben", "zal hebben", "zullen hebben", "zullen hebben", "zullen hebben"],
+          "past": ["had", "had", "had", "hadden", "hadden", "hadden"]
+        },
+        "SPANISH": {
+          "presence": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"],
+          "future": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
+          "past": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"]
+        },
+        "FRENCH": {
+          "presence": ["ai", "as", "a", "avons", "avez", "ont"],
+          "future": ["aurai", "auras", "aura", "aurons", "aurez", "auront"],
+          "past": ["avais", "avais", "avait", "avions", "aviez", "avaient"]
+        },
+        "TURKISH": {
+          "presence": ["varım", "varsın", "var", "varız", "varsınız", "varlar"],
+          "future": ["sahip olacağım", "sahip olacaksın", "sahip olacak", "sahip olacağız", "sahip olacaksınız", "sahip olacaklar"],
+          "past": ["sahip oldum", "sahip oldun", "sahip oldu", "sahip olduk", "sahip oldunuz", "sahip oldular"]
+        },
+        "KURDISH": {
+          "presence": ["hevim", "hevî", "heve", "hevin", "hevin", "hevin"],
+          "future": ["ê hebe", "ê hebî", "ê hebe", "ê hebin", "ê hebin", "ê hebin"],
+          "past": ["bûm", "bû", "bû", "bûn", "bûn", "bûn"]
+        },
+        "ITALIAN": {
+          "presence": ["ho", "hai", "ha", "abbiamo", "avete", "hanno"],
+          "future": ["avrò", "avrai", "avrà", "avremo", "avrete", "avranno"],
+          "past": ["ho avuto", "hai avuto", "ha avuto", "abbiamo avuto", "avete avuto", "hanno avuto"]
+        }
+      }
+    },
+    "machen": {
+      "base": {
+        "GERMAN": "machen",
+        "ENGLISH": "make",
+        "SLOVENIAN": "narediti",
+        "DUTCH": "maken",
+        "SPANISH": "hacer",
+        "FRENCH": "faire",
+        "TURKISH": "yapmak",
+        "KURDISH": "kirin",
+        "ITALIAN": "fare"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["mache", "machst", "macht", "machen", "macht", "machen"],
+          "future": ["werde machen", "wirst machen", "wird machen", "werden machen", "werdet machen", "werden machen"],
+          "past": ["machte", "machtest", "machte", "machten", "machtet", "machten"]
+        },
+        "ENGLISH": {
+          "presence": ["make", "make", "makes", "make", "make", "make"],
+          "future": ["will make", "will make", "will make", "will make", "will make", "will make"],
+          "past": ["made", "made", "made", "made", "made", "made"]
+        },
+        "SLOVENIAN": {
+          "presence": ["naredim", "narediš", "naredi", "naredimo", "naredite", "naredijo"],
+          "future": ["bom naredil", "boš naredil", "bo naredil", "bomo naredili", "boste naredili", "bodo naredili"],
+          "past": ["sem naredil", "si naredil", "je naredil", "smo naredili", "ste naredili", "so naredili"]
+        },
+        "DUTCH": {
+          "presence": ["maak", "maakt", "maakt", "maken", "maken", "maken"],
+          "future": ["zal maken", "zult maken", "zal maken", "zullen maken", "zullen maken", "zullen maken"],
+          "past": ["maakte", "maakte", "maakte", "maakten", "maakten", "maakten"]
+        },
+        "SPANISH": {
+          "presence": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"],
+          "future": ["haré", "harás", "hará", "haremos", "haréis", "harán"],
+          "past": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"]
+        },
+        "FRENCH": {
+          "presence": ["fais", "fais", "fait", "faisons", "faites", "font"],
+          "future": ["ferai", "feras", "fera", "ferons", "ferez", "feront"],
+          "past": ["faisais", "faisais", "faisait", "faisions", "faisiez", "faisaient"]
+        },
+        "TURKISH": {
+          "presence": ["yapıyorum", "yapıyorsun", "yapıyor", "yapıyoruz", "yapıyorsunuz", "yapıyorlar"],
+          "future": ["yapacağım", "yapacaksın", "yapacak", "yapacağız", "yapacaksınız", "yapacaklar"],
+          "past": ["yaptım", "yaptın", "yaptı", "yaptık", "yaptınız", "yaptılar"]
+        },
+        "KURDISH": {
+          "presence": ["dikin", "dikî", "dike", "dikin", "dikin", "dikin"],
+          "future": ["ê bikim", "ê bikî", "ê bike", "ê bikin", "ê bikin", "ê bikin"],
+          "past": ["kirim", "kiriye", "kiriye", "kiriye", "kiriyên", "kiriyên"]
+        },
+        "ITALIAN": {
+          "presence": ["faccio", "fai", "fa", "facciamo", "fate", "fanno"],
+          "future": ["farò", "farai", "farà", "faremo", "farete", "faranno"],
+          "past": ["ho fatto", "hai fatto", "ha fatto", "abbiamo fatto", "avete fatto", "hanno fatto"]
+        }
+      }
+    },
+    "gehen": {
+      "base": {
+        "GERMAN": "gehen",
+        "ENGLISH": "go",
+        "SLOVENIAN": "iti",
+        "DUTCH": "gaan",
+        "SPANISH": "ir",
+        "FRENCH": "aller",
+        "TURKISH": "gitmek",
+        "KURDISH": "çûn",
+        "ITALIAN": "andare"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["gehe", "gehst", "geht", "gehen", "geht", "gehen"],
+          "future": ["werde gehen", "wirst gehen", "wird gehen", "werden gehen", "werdet gehen", "werden gehen"],
+          "past": ["ging", "gingst", "ging", "gingen", "gingt", "gingen"]
+        },
+        "ENGLISH": {
+          "presence": ["go", "go", "goes", "go", "go", "go"],
+          "future": ["will go", "will go", "will go", "will go", "will go", "will go"],
+          "past": ["went", "went", "went", "went", "went", "went"]
+        },
+        "SLOVENIAN": {
+          "presence": ["grem", "greš", "gre", "gremo", "greste", "gredo"],
+          "future": ["bom šel", "boš šel", "bo šel", "bomo šli", "boste šli", "bodo šli"],
+          "past": ["sem šel", "si šel", "je šel", "smo šli", "ste šli", "so šli"]
+        },
+        "DUTCH": {
+          "presence": ["ga", "gaat", "gaat", "gaan", "gaan", "gaan"],
+          "future": ["zal gaan", "zult gaan", "zal gaan", "zullen gaan", "zullen gaan", "zullen gaan"],
+          "past": ["ging", "ging", "ging", "gingen", "gingen", "gingen"]
+        },
+        "SPANISH": {
+          "presence": ["voy", "vas", "va", "vamos", "vais", "van"],
+          "future": ["iré", "irás", "irá", "iremos", "iréis", "irán"],
+          "past": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"]
+        },
+        "FRENCH": {
+          "presence": ["vais", "vas", "va", "allons", "allez", "vont"],
+          "future": ["irai", "iras", "ira", "irons", "irez", "iront"],
+          "past": ["allais", "allais", "allait", "allions", "alliez", "allaient"]
+        },
+        "TURKISH": {
+          "presence": ["gidiyorum", "gidiyorsun", "gidiyor", "gidiyoruz", "gidiyorsunuz", "gidiyorlar"],
+          "future": ["gideceğim", "gideceksin", "gidecek", "gideceğiz", "gideceksiniz", "gidecekler"],
+          "past": ["gittim", "gittin", "gitti", "gittik", "gittiniz", "gittiler"]
+        },
+        "KURDISH": {
+          "presence": ["dîçim", "dîçî", "dîçe", "dîçin", "dîçin", "dîçin"],
+          "future": ["êvînem", "êvînî", "êvîne", "êvînin", "êvînin", "êvînin"],
+          "past": ["meşîyim", "meşîyî", "meşî", "meşîyin", "meşîyin", "meşîyin"]
+        },
+        "ITALIAN": {
+          "presence": ["vado", "vai", "va", "andiamo", "andate", "vanno"],
+          "future": ["andrò", "andrai", "andrà", "andremo", "andrete", "andranno"],
+          "past": ["sono andato", "sei andato", "è andato", "siamo andati", "siete andati", "sono andati"]
+        }
+      }
+    },
+    "essen": {
+      "base": {
+        "GERMAN": "essen",
+        "ENGLISH": "to eat",
+        "SLOVENIAN": "jesti",
+        "DUTCH": "eten",
+        "SPANISH": "comer",
+        "FRENCH": "manger",
+        "TURKISH": "yemek",
+        "KURDISH": "xwarin",
+        "ITALIAN": "mangiare"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["esse", "isst", "isst", "essen", "esst", "essen"],
+          "future": ["werde essen", "wirst essen", "wird essen", "werden essen", "werdet essen", "werden essen"],
+          "past": ["aß", "aßest", "aß", "aßen", "aßt", "aßen"]
+        },
+        "ENGLISH": {
+          "presence": ["eat", "eat", "eats", "eat", "eat", "eat"],
+          "future": ["will eat", "will eat", "will eat", "will eat", "will eat", "will eat"],
+          "past": ["ate", "ate", "ate", "ate", "ate", "ate"]
+        },
+        "SLOVENIAN": {
+          "presence": ["jem", "ješ", "je", "jemo", "jete", "jejo"],
+          "future": ["bom jedel", "boš jedel", "bo jedel", "bomo jedli", "boste jedli", "bodo jedli"],
+          "past": ["sem jedel", "si jedel", "je jedel", "smo jedli", "ste jedli", "so jedli"]
+        },
+        "DUTCH": {
+          "presence": ["eet", "eet", "eet", "eten", "eten", "eten"],
+          "future": ["zal eten", "zult eten", "zal eten", "zullen eten", "zullen eten", "zullen eten"],
+          "past": ["at", "at", "at", "aten", "aten", "aten"]
+        },
+        "SPANISH": {
+          "presence": ["como", "comes", "come", "comemos", "coméis", "comen"],
+          "future": ["comeré", "comerás", "comerá", "comeremos", "comeréis", "comerán"],
+          "past": ["comí", "comiste", "comió", "comimos", "comisteis", "comieron"]
+        },
+        "FRENCH": {
+          "presence": ["mange", "manges", "mange", "mangeons", "mangez", "mangent"],
+          "future": ["mangerai", "mangeras", "mangera", "mangerons", "mangerez", "mangeront"],
+          "past": ["mangeais", "mangeais", "mangeait", "mangions", "mangiez", "mangeaient"]
+        },
+        "TURKISH": {
+          "presence": ["yiyorum", "yiyorsun", "yiyor", "yiyoruz", "yiyorsunuz", "yiyorlar"],
+          "future": ["yeyeceğim", "yeyeceksin", "yeyecek", "yeyeceğiz", "yeyeceksiniz", "yeyecekler"],
+          "past": ["yemek yedim", "yemek yedin", "yemek yedi", "yemek yedik", "yemek yediniz", "yemek yediler"]
+        },
+        "KURDISH": {
+          "presence": ["xwarim", "xwarî", "xwar", "xwarin", "xwarin", "xwarin"],
+          "future": ["ê xwarim", "ê xwarî", "ê xwar", "ê xwarin", "ê xwarin", "ê xwarin"],
+          "past": ["xwarim", "xwarî", "xwar", "xwarin", "xwarin", "xwarin"]
+        },
+        "ITALIAN": {
+          "presence": ["mangio", "mangi", "mangia", "mangiamo", "mangiate", "mangiano"],
+          "future": ["mangerò", "mangerai", "mangerà", "mangeremo", "mangerete", "mangeranno"],
+          "past": ["ho mangiato", "hai mangiato", "ha mangiato", "abbiamo mangiato", "avete mangiato", "hanno mangiato"]
+        }
+      }
+    },
+    "trinken": {
+      "base": {
+        "GERMAN": "trinken",
+        "ENGLISH": "to drink",
+        "SLOVENIAN": "piti",
+        "DUTCH": "drinken",
+        "SPANISH": "beber",
+        "FRENCH": "boire",
+        "TURKISH": "içmek",
+        "KURDISH": "xwarin",
+        "ITALIAN": "bere"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["trinke", "trinkst", "trinkt", "trinken", "trinkt", "trinken"],
+          "future": ["werde trinken", "wirst trinken", "wird trinken", "werden trinken", "werdet trinken", "werden trinken"],
+          "past": ["trank", "trankst", "trank", "tranken", "trankt", "tranken"]
+        },
+        "ENGLISH": {
+          "presence": ["drink", "drink", "drinks", "drink", "drink", "drink"],
+          "future": ["will drink", "will drink", "will drink", "will drink", "will drink", "will drink"],
+          "past": ["drank", "drank", "drank", "drank", "drank", "drank"]
+        },
+        "SLOVENIAN": {
+          "presence": ["pijem", "piješ", "pije", "pijemo", "pijete", "pijejo"],
+          "future": ["bom pil", "boš pil", "bo pil", "bomo pili", "boste pili", "bodo pili"],
+          "past": ["sem pil", "si pil", "je pil", "smo pili", "ste pili", "so pili"]
+        },
+        "DUTCH": {
+          "presence": ["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"],
+          "future": ["zal drinken", "zult drinken", "zal drinken", "zullen drinken", "zullen drinken", "zullen drinken"],
+          "past": ["dronk", "dronk", "dronk", "dronken", "dronken", "dronken"]
+        },
+        "SPANISH": {
+          "presence": ["bebo", "bebes", "bebe", "bebemos", "bebéis", "beben"],
+          "future": ["beberé", "beberás", "beberá", "beberemos", "beberéis", "beberán"],
+          "past": ["bebí", "bebiste", "bebió", "bebimos", "bebisteis", "bebieron"]
+        },
+        "FRENCH": {
+          "presence": [" bois", " bois", " boit", " buvons", " buvez", " boivent"],
+          "future": ["boirai", "boiras", "boira", "boirons", "boirez", "boiront"],
+          "past": ["buvais", "buvais", "buvait", "buvions", "buviez", "buvaient"]
+        },
+        "TURKISH": {
+          "presence": ["içiyorum", "içiyorsun", "içiyor", "içiyoruz", "içiyorsunuz", "içiyorlar"],
+          "future": ["içeceğim", "içeceksin", "içecek", "içeceğiz", "içeceksiniz", "içecekler"],
+          "past": ["içtim", "içtin", "içti", "içtik", "içtiniz", "içtiler"]
+        },
+        "KURDISH": {
+          "presence": ["xwînim", "xwînî", "xwîne", "xwînin", "xwînin", "xwînin"],
+          "future": ["ê xwînî", "ê xwînî", "ê xwîne", "ê xwînin", "ê xwînin", "ê xwînin"],
+          "past": ["xwînim", "xwînî", "xwîne", "xwînin", "xwînin", "xwînin"]
+        },
+        "ITALIAN": {
+          "presence": ["bevo", "bevi", "beve", "beviamo", "bevete", "bevono"],
+          "future": ["berò", "berrai", "berrà", "berremo", "berrete", "berranno"],
+          "past": ["ho bevuto", "hai bevuto", "ha bevuto", "abbiamo bevuto", "avete bevuto", "hanno bevuto"]
+        }
+      }
+    },
+    "fahren": {
+      "base": {
+        "GERMAN": "fahren",
+        "ENGLISH": "to drive/go",
+        "SLOVENIAN": "voziti",
+        "DUTCH": "rijden",
+        "SPANISH": "conducir",
+        "FRENCH": "conduire",
+        "TURKISH": "gitmek/sürmek",
+        "KURDISH": "çûn",
+        "ITALIAN": "guidare"
+      },
+      "languages": {
+        "GERMAN": {
+          "presence": ["fahre", "fährst", "fährt", "fahren", "fahrt", "fahren"],
+          "future": ["werde fahren", "wirst fahren", "wird fahren", "werden fahren", "werdet fahren", "werden fahren"],
+          "past": ["fuhr", "fuhrst", "fuhr", "fuhren", "fuhrt", "fuhren"]
+        },
+        "ENGLISH": {
+          "presence": ["drive/go", "drive/go", "drives/goes", "drive/go", "drive/go", "drive/go"],
+          "future": ["will drive/go", "will drive/go", "will drive/go", "will drive/go", "will drive/go", "will drive/go"],
+          "past": ["drove", "drove", "drove", "drove", "drove", "drove"]
+        },
+        "SLOVENIAN": {
+          "presence": ["vozim", "voziš", "vozi", "vozimo", "vozite", "vozijo"],
+          "future": ["bom vozil", "boš vozil", "bo vozil", "bomo vozili", "boste vozili", "bodo vozili"],
+          "past": ["sem vozil", "si vozil", "je vozil", "smo vozili", "ste vozili", "so vozili"]
+        },
+        "DUTCH": {
+          "presence": ["rijd", "rijdt", "rijdt", "rijden", "rijden", "rijden"],
+          "future": ["zal rijden", "zult rijden", "zal rijden", "zullen rijden", "zullen rijden", "zullen rijden"],
+          "past": ["reed", "reed", "reed", "reden", "reden", "reden"]
+        },
+        "SPANISH": {
+          "presence": ["conduzco", "conduces", "conduce", "conducimos", "conducís", "conducen"],
+          "future": ["conduciré", "conducirás", "conducirá", "conduciremos", "conduciréis", "conducirán"],
+          "past": ["conduje", "condujiste", "condujo", "condujimos", "condujisteis", "condujeron"]
+        },
+        "FRENCH": {
+          "presence": ["conduis", "conduis", "conduit", "conduisons", "conduisez", "conduisent"],
+          "future": ["conduirai", "conduiras", "conduira", "conduirons", "conduirez", "conduiront"],
+          "past": ["conduisais", "conduisais", "conduisait", "conduisions", "conduisiez", "conduisaient"]
+        },
+        "TURKISH": {
+          "presence": ["gidiyorum", "gidiyorsun", "gidiyor", "gidiyoruz", "gidiyorsunuz", "gidiyorlar"],
+          "future": ["gideceğim", "gideceksin", "gidecek", "gideceğiz", "gideceksiniz", "gidecekler"],
+          "past": ["gittim", "gittin", "gitti", "gittik", "gittiniz", "gittiler"]
+        },
+        "KURDISH": {
+          "presence": ["dîçim", "dîçî", "dîçe", "dîçin", "dîçin", "dîçin"],
+          "future": ["êvînem", "êvînî", "êvîne", "êvînin", "êvînin", "êvînin"],
+          "past": ["meşîyim", "meşîyî", "meşî", "meşîyin", "meşîyin", "meşîyin"]
+        },
+        "ITALIAN": {
+          "presence": ["guido", "guidi", "guida", "guidiamo", "guidate", "guidano"],
+          "future": ["guiderò", "guiderai", "guiderà", "guideremo", "guiderete", "guideranno"],
+          "past": ["ho guidato", "hai guidato", "ha guidato", "abbiamo guidato", "avete guidato", "hanno guidato"]
+        }
+      }
+    }
+  }
+}

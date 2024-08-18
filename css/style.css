@@ -1,66 +1,79 @@
-body {
-    margin: 0px;
-    padding: 5px;
+:root {
+  --main-bg-color: #333;
+  --main-btn-color: whitesmoke;
 }
 
+body {
+  margin: 0px;
+  padding: 5px;
+  background: var(--main-bg-color);
+}
 
-header {
+#heading_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-bg-color);
+  padding: 20px;
+}
+
+#heading {
+  background: linear-gradient(to right, orangered, orange);
+  background-clip: text;
+  color: transparent;
+}
+
+#subheading {
+  font-family: 'Dancing Script', cursive;
+  color: deeppink;
+}
+
+.flexfield {
+  display: flex;
+  flex: 1 1 100%;
+  gap: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 5px;
+  background: whitesmoke;
+  color: black;
+  border: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#header {
   display: flex;
   gap: 5px;
+  flex-direction: column;
 }
-header button {
+
+#header button {
   flex-grow: 1;
-  width: 33%;
+  width: 100%;
   padding: 20px;
-  border: 0px;
   font-weight: bold;
   background: dodgerblue;
   color: white;
   border: 1px solid darkblue;
 }
 
+#header button:hover {
+  background: royalblue;
+}
 
 .settings {
   display: flex;
   gap: 5px;
-  margin-top: 5px;
 }
-.settings button {
-  flex-grow: 1;
-  width: 50%;
-  padding: 20px;
-  border: 0px;
-  background: whitesmoke;
-  border: 1px solid lightgray;
-}
+
 .settings #langreset {
   background: darkred;
   color: white;
-}
-
-
-#home {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 5px;
-}
-#home button {
-  flex-grow: 1;
-  padding: 20px;
-  border: 0px;
-  background: whitesmoke;
-  border: 1px solid lightgray;
-}
-
-
-#impressum {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  padding: 20px;
-  background: whitesmoke;
-  border: 1px solid lightgray;
+  border: 1px solid #6F0000;
 }
 
 .exercise_wrapper {
@@ -68,18 +81,159 @@ header button {
   gap: 5px;
   margin-top: 5px;
 }
+
 .exercise_wrapper button {
   flex-grow: 1;
   width: 50%;
-  padding: 20px;
+  padding: 30px 20px;
   border: 0px;
   background: whitesmoke;
   border: 1px solid lightgray;
+  transition: background-color 0.4s ease, opacity 0.4s ease;
 }
 
 .selected {
   background: lightgray !important;
+  border: 1px solid gray !important;
 }
+
 .correct {
   background: lightgreen !important;
+  border: 1px solid limegreen !important;
+}
+
+.notcorrect {
+  background: lightcoral !important;
+  border: 1px solid orangered !important;
+}
+
+.popupbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 999;
+}
+
+.popupbtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 60px;
+  background: whitesmoke;
+  border: 1px solid gray;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.numbers {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.numbers button {
+  flex-grow: 1;
+  width: 33%;
+  padding: 20px;
+  font-weight: bold;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+.numbers button:hover {
+  background: lightgray !important;
+  border: 1px solid gray !important;
+}
+
+.verbdiv {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardwrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+  width: 100%;
+  height: 50%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  scroll-snap-align: center;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+.card:nth-child(2) {
+  scroll-snap-stop: always;
+}
+
+/*light button colors*/
+.red {
+  background: lightpink;
+  border: 1px solid lightpink;
+}
+.green {
+  background: palegreen;
+  border: 1px solid palegreen;
+}
+.yellow {
+  background: lightyellow;
+  border: 1px solid lightyellow;
+}
+.gray {
+  background: lightgray;
+  border: 1px solid lightgray;
+}
+
+/*verbs li button*/
+#past-list,
+#presence-list,
+#future-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#past-list li,
+#presence-list li,
+#future-list li {
+  width: 100%;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  margin-top: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#past-list li:hover,
+#presence-list li:hover,
+#future-list li:hover {
+  background: lightgray !important;
+  border: 1px solid gray !important;
 }

@@ -8,6 +8,8 @@ for (var i = 0; i < exercise_button.length; i++) {
     loadJSON('json/' + exercise_button_Id + '.json').then(data => {
       if (data) {
         //overwrite max_count if list too short. NOT DONE YET
+        correct_counter = 0;
+        mistake_counter = 0;
         colorLists = shuffleAndSlice(data, max_count);
         correctionList = createCorrectionList(colorLists, languageIndex1, languageIndex2);
         //set global vars

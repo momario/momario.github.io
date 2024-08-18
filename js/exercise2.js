@@ -27,57 +27,79 @@ for (let i = 0; i < max_count; i++) {
 
 fromlangelements = document.querySelectorAll('.fromlang');
 tolangelements = document.querySelectorAll('.tolang');
+
+function resetSelections() {
+  fromlangelements.forEach(function(fromlang) {
+    fromlang.classList.remove('selected', 'notcorrect');
+  });
+  tolangelements.forEach(function(tolang) {
+    tolang.classList.remove('selected', 'notcorrect');
+  });
+}
+
+function handleClick(element, isFromLang) {
+  resetSelections();
+  element.classList.add('selected');
+
+  if (isFromLang) {
+    xfromLangEntry = element.innerHTML;
+    xfromLangEntryElement = element;
+  } else {
+    xtoLangEntry = element.innerHTML;
+    xtoLangEntryElement = element;
+  }
+
+  if (xfromLangEntry && xtoLangEntry) {
+    if (check(correctionList, xfromLangEntry, xtoLangEntry)) {
+      xfromLangEntryElement.classList.remove('selected');
+      xtoLangEntryElement.classList.remove('selected');
+      xfromLangEntryElement.classList.add('correct');
+      xtoLangEntryElement.classList.add('correct');
+      xfromLangEntryElement.disabled = true;
+      xtoLangEntryElement.disabled = true;
+      correct_counter++;
+      if (correct_counter == max_count) {
+        showPopup();
+      }
+    } else {
+      xfromLangEntryElement.classList.remove('selected');
+      xtoLangEntryElement.classList.remove('selected');
+      xfromLangEntryElement.classList.add('notcorrect');
+      xtoLangEntryElement.classList.add('notcorrect');
+      mistake_counter++;
+    }
+
+    xfromLangEntry = undefined;
+    xtoLangEntry = undefined;
+    xfromLangEntryElement = undefined;
+    xtoLangEntryElement = undefined;
+  }
+}
+
+function showPopup() {
+  var popupBg = document.createElement('div');
+  popupBg.className = 'popupbg';
+  var popupBtn = document.createElement('button');
+  // Determine color based on mistake_counter
+  const mistakeColor = mistake_counter === 0 ? 'green' : 'red';
+  popupBtn.innerHTML = 'Mistakes: <b style="color: '+mistakeColor+';">'+mistake_counter+'</b><br>Restart';
+  popupBtn.className = 'popupbtn';
+  document.body.appendChild(popupBg);
+  document.body.appendChild(popupBtn);
+
+  // Reload the page when the button is clicked
+  popupBtn.addEventListener('click', function() {
+    document.body.removeChild(popupBg); // Corrected
+    document.body.removeChild(popupBtn); // Corrected
+    location.reload();
+  });
+}
+
 for (let i = 0; i < max_count; i++) {
   fromlangelements[i].addEventListener('click', function() {
-    fromlangelements.forEach(function(fromlang) {
-      fromlang.classList.remove('selected');
-    });
-    tolangelements.forEach(function(tolang) {
-      tolang.classList.remove('selected');
-    });
-    this.classList.add('selected');
-
-    xfromLangEntry = this.innerHTML;
-    xfromLangEntryElement = this;
-    if (xfromLangEntry && xtoLangEntry) {
-      if (check(correctionList, xfromLangEntry, xtoLangEntry)) {
-        xfromLangEntryElement.classList.remove('selected');
-        xtoLangEntryElement.classList.remove('selected');
-        xfromLangEntryElement.classList.add('correct');
-        xtoLangEntryElement.classList.add('correct');
-      } else {
-        console.log("not correct");
-      }
-      xfromLangEntry = undefined;
-      xtoLangEntry = undefined;
-      xfromLangEntryElement = undefined;
-      xtoLangEntryElement = undefined;
-    }
+    handleClick(this, true);
   });
   tolangelements[i].addEventListener('click', function() {
-    fromlangelements.forEach(function(fromlang) {
-      fromlang.classList.remove('selected');
-    });
-    tolangelements.forEach(function(tolang) {
-      tolang.classList.remove('selected');
-    });
-    this.classList.add('selected');
-
-    xtoLangEntry = this.innerHTML;
-    xtoLangEntryElement = this;
-    if (xfromLangEntry && xtoLangEntry) {
-      if (check(correctionList, xfromLangEntry, xtoLangEntry)) {    
-        xfromLangEntryElement.classList.remove('selected');
-        xtoLangEntryElement.classList.remove('selected');
-        xfromLangEntryElement.classList.add('correct');
-        xtoLangEntryElement.classList.add('correct');
-      } else {
-        console.log("not correct");
-      }
-      xfromLangEntry = undefined;
-      xtoLangEntry = undefined;
-      xfromLangEntryElement = undefined;
-      xtoLangEntryElement = undefined;
-    }
+    handleClick(this, false);
   });
 }
