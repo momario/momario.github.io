@@ -17,5 +17,15 @@
     ["September", "September", "september", "settembre", "september", "septembre", "septiembre", "Eylül", "Îlon"],
     ["Oktober", "October", "oktober", "ottobre", "oktober", "octobre", "octubre", "Ekim", "Tîrmeh"],
     ["November", "November", "november", "novembre", "november", "novembre", "noviembre", "Kasım", "Mijdar"],
-    ["Dezember", "December", "december", "dicembre", "december", "décembre", "diciembre", "Aralık", "Rêbendan"]
+    ["Dezember", "December", "december", "dicembre", "december", "décembre", "diciembre", "Aralık", "Rêbendan"],
+    ["Heute", "Today", "danes", "oggi", "vandaag", "aujourd'hui", "hoy", "bugün", "îro"],
+    ["morgen", "tomorrow", "jutri", "domani", "morgen", "demain", "mañana", "yarın", "sibê"],
+    ["gestern", "yesterday", "včeraj", "ieri", "gisteren", "hier", "ayer", "dün", "du"],
+    ["übermorgen", "the day after tomorrow", "pojutrišnjem", "dopodomani", "overmorgen", "après-demain", "pasado mañana", "öbür gün", "dîrok"],
+    ["vorgestern", "the day before yesterday", "prejšnji dan", "anteieri", "eergisteren", "avant-hier", "anteayer", "evvelsi gün", "berîroj"],
+    ["damals", "at that time", "takrat", "allora", "toen", "à l'époque", "en aquel entonces", "o zamanlar", "wê demê"],
+    ["bald", "soon", "kmalu", "presto", "binnenkort", "bientôt", "pronto", "yakında", "nêzîk"],
+    ["jetzt", "now", "zdaj", "adesso", "nu", "maintenant", "ahora", "şimdi", "niha"],
+    ["immer", "always", "vedno", "sempre", "altijd", "toujours", "siempre", "her zaman", "her dem"],
+    ["niemals", "never", "nikoli", "mai", "nooit", "jamais", "nunca", "asla", "qet naxêr"]
 ]

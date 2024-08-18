@@ -1,0 +1,17 @@
+[
+    ["in", "in", "v", "in", "in", "dans", "en", "içinde", "di"],
+    ["on", "on", "na", "su", "op", "sur", "sobre", "üzerinde", "li"],
+    ["at", "at", "pri", "a", "bij", "à", "en", "de", "li"],
+    ["under", "under", "pod", "sotto", "onder", "sous", "bajo", "altında", "jêr"],
+    ["over", "over", "nad", "sopra", "boven", "au-dessus", "sobre", "üzerinde", "ser"],
+    ["between", "between", "med", "tra", "tussen", "entre", "entre", "arasında", "di navbera"],
+    ["behind", "behind", "za", "dietro", "achter", "derrière", "detrás", "arka", "pêş"],
+    ["beside", "beside", "poleg", "accanto a", "naast", "à côté de", "al lado de", "yanında", "li ser"],
+    ["among", "among", "med", "tra", "onder", "parmi", "entre", "arasında", "di navbera"],
+    ["above", "above", "nad", "sopra", "boven", "au-dessus", "por encima de", "üstünde", "ser"],
+    ["below", "below", "pod", "sotto", "onder", "sous", "debajo de", "altında", "jêr"],
+    ["near", "near", "blizu", "vicino a", "dichtbij", "près de", "cerca de", "yakın", "nêzîk"],
+    ["far", "far", "daleč", "lontano", "ver", "loin", "lejos", "uzak", "derî"],
+    ["toward", "toward", "proti", "verso", "richting", "vers", "hacia", "doğru", "li ser"],
+    ["against", "against", "proti", "contro", "tegen", "contre", "contra", "karşı", "li dijî"]
+]
