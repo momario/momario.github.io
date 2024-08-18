@@ -59,3 +59,7 @@ function check(correctionList, xxxfromLangEntry, xxxtoLangEntry) {
 
   return found;
 }
+
+function testx() {
+  console.log(3);
+}

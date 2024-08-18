@@ -1,6 +1,6 @@
 # The Ultimate Language Trainer
 
-[https://github.com/momario.github.io](https://github.com/momario.github.io)
+[https://momario.github.io](https://momario.github.io)
 
 ## Supported Languages:
 - **German**

@@ -36,7 +36,7 @@
     var audio = new Audio(audioSrc);
     audio.play();
   }
-  
+
   //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH']
   function getLanguageIndex(language) {
     let languageIndex;
