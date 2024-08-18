@@ -96,6 +96,7 @@ $(document).ready(function() {
 
             if (xfromLangEntry && xtoLangEntry) {
               if (check(correctionList, xfromLangEntry, xtoLangEntry)) {
+                speech_text(xtoLangEntry);
                 $(xfromLangEntryElement).removeClass('selected').addClass('correct').prop('disabled', true);
                 $(xtoLangEntryElement).removeClass('selected').addClass('correct').prop('disabled', true);
                 correct_counter++;
