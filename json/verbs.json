@@ -22,7 +22,8 @@
         "FRENCH": "être",
         "TURKISH": "olmak",
         "KURDISH": "bûn",
-        "ITALIAN": "essere"
+        "ITALIAN": "essere",
+        "POLISH": "być"
       },
       "languages": {
         "GERMAN": {
@@ -69,6 +70,11 @@
           "presence": ["sono", "sei", "è", "siamo", "siete", "sono"],
           "future": ["sarò", "sarai", "sarà", "saremo", "sarete", "saranno"],
           "past": ["sono stato", "sei stato", "è stato", "siamo stati", "siete stati", "sono stati"]
+        },
+        "POLISH": {
+          "presence": ["jestem", "jesteś", "jest", "jesteśmy", "jesteście", "są"],
+          "future": ["będę", "będziesz", "będzie", "będziemy", "będziecie", "będą"],
+          "past": ["byłem", "byłeś", "był", "byliśmy", "byliście", "byli"]
         }
       }
     },
@@ -82,7 +88,8 @@
         "FRENCH": "avoir",
         "TURKISH": "sahip olmak",
         "KURDISH": "hebûn",
-        "ITALIAN": "avere"
+        "ITALIAN": "avere",
+        "POLISH": "mieć"
       },
       "languages": {
         "GERMAN": {
@@ -129,6 +136,11 @@
           "presence": ["ho", "hai", "ha", "abbiamo", "avete", "hanno"],
           "future": ["avrò", "avrai", "avrà", "avremo", "avrete", "avranno"],
           "past": ["ho avuto", "hai avuto", "ha avuto", "abbiamo avuto", "avete avuto", "hanno avuto"]
+        },
+        "POLISH": {
+          "presence": ["mam", "masz", "ma", "mamy", "macie", "mają"],
+          "future": ["będę miał", "będziesz miał", "będzie miał", "będziemy mieli", "będziecie mieli", "będą mieli"],
+          "past": ["miałem", "miałeś", "miał", "mieliśmy", "mieliście", "mieli"]
         }
       }
     },
@@ -142,7 +154,8 @@
         "FRENCH": "faire",
         "TURKISH": "yapmak",
         "KURDISH": "kirin",
-        "ITALIAN": "fare"
+        "ITALIAN": "fare",
+        "POLISH": "robić"
       },
       "languages": {
         "GERMAN": {
@@ -189,6 +202,11 @@
           "presence": ["faccio", "fai", "fa", "facciamo", "fate", "fanno"],
           "future": ["farò", "farai", "farà", "faremo", "farete", "faranno"],
           "past": ["ho fatto", "hai fatto", "ha fatto", "abbiamo fatto", "avete fatto", "hanno fatto"]
+        },
+        "POLISH": {
+          "presence": ["robię", "robisz", "robi", "robimy", "robicie", "robią"],
+          "future": ["będę robił", "będziesz robił", "będzie robił", "będziemy robili", "będziecie robili", "będą robili"],
+          "past": ["robiłem", "robiłeś", "robił", "robiliśmy", "robiliście", "robili"]
         }
       }
     },
@@ -202,7 +220,8 @@
         "FRENCH": "aller",
         "TURKISH": "gitmek",
         "KURDISH": "çûn",
-        "ITALIAN": "andare"
+        "ITALIAN": "andare",
+        "POLISH": "iść"
       },
       "languages": {
         "GERMAN": {
@@ -249,6 +268,11 @@
           "presence": ["vado", "vai", "va", "andiamo", "andate", "vanno"],
           "future": ["andrò", "andrai", "andrà", "andremo", "andrete", "andranno"],
           "past": ["sono andato", "sei andato", "è andato", "siamo andati", "siete andati", "sono andati"]
+        },
+        "POLISH": {
+          "presence": ["idę", "idziesz", "idzie", "idziemy", "idziecie", "idą"],
+          "future": ["będę szedł", "będziesz szedł", "będzie szedł", "będziemy szli", "będziecie szli", "będą szli"],
+          "past": ["szedłem", "szedłeś", "szedł", "szliśmy", "szliście", "szli"]
         }
       }
     },
@@ -262,7 +286,8 @@
         "FRENCH": "manger",
         "TURKISH": "yemek",
         "KURDISH": "xwarin",
-        "ITALIAN": "mangiare"
+        "ITALIAN": "mangiare",
+        "POLISH": "jeść"
       },
       "languages": {
         "GERMAN": {
@@ -309,6 +334,11 @@
           "presence": ["mangio", "mangi", "mangia", "mangiamo", "mangiate", "mangiano"],
           "future": ["mangerò", "mangerai", "mangerà", "mangeremo", "mangerete", "mangeranno"],
           "past": ["ho mangiato", "hai mangiato", "ha mangiato", "abbiamo mangiato", "avete mangiato", "hanno mangiato"]
+        },
+        "POLISH": {
+          "presence": ["jem", "jesz", "je", "jemy", "jecie", "jedzą"],
+          "future": ["będę jadł", "będziesz jadł", "będzie jadł", "będziemy jedli", "będziecie jedli", "będą jedli"],
+          "past": ["jadłem", "jadłeś", "jadł", "jedliśmy", "jedliście", "jedli"]
         }
       }
     },
@@ -322,7 +352,8 @@
         "FRENCH": "boire",
         "TURKISH": "içmek",
         "KURDISH": "xwarin",
-        "ITALIAN": "bere"
+        "ITALIAN": "bere",
+        "POLISH": "pić"
       },
       "languages": {
         "GERMAN": {
@@ -369,6 +400,11 @@
           "presence": ["bevo", "bevi", "beve", "beviamo", "bevete", "bevono"],
           "future": ["berò", "berrai", "berrà", "berremo", "berrete", "berranno"],
           "past": ["ho bevuto", "hai bevuto", "ha bevuto", "abbiamo bevuto", "avete bevuto", "hanno bevuto"]
+        },
+        "POLISH": {
+          "presence": ["piję", "pijesz", "pije", "pijemy", "pijecie", "piją"],
+          "future": ["będę pił", "będziesz pił", "będzie pił", "będziemy pili", "będziecie pili", "będą pili"],
+          "past": ["piłem", "piłeś", "pił", "piliśmy", "piliście", "pili"]
         }
       }
     },
@@ -382,7 +418,8 @@
         "FRENCH": "conduire",
         "TURKISH": "gitmek/sürmek",
         "KURDISH": "çûn",
-        "ITALIAN": "guidare"
+        "ITALIAN": "guidare",
+        "POLISH": "jechać"
       },
       "languages": {
         "GERMAN": {
@@ -429,6 +466,11 @@
           "presence": ["guido", "guidi", "guida", "guidiamo", "guidate", "guidano"],
           "future": ["guiderò", "guiderai", "guiderà", "guideremo", "guiderete", "guideranno"],
           "past": ["ho guidato", "hai guidato", "ha guidato", "abbiamo guidato", "avete guidato", "hanno guidato"]
+        },
+        "POLISH": {
+          "presence": ["jadę", "jedziesz", "jedzie", "jedziemy", "jedziecie", "jadą"],
+          "future": ["będę jechał", "będziesz jechał", "będzie jechał", "będziemy jechali", "będziecie jechali", "będą jechali"],
+          "past": ["jechałem", "jechałeś", "jechał", "jechaliśmy", "jechaliście", "jechali"]
         }
       }
     }
