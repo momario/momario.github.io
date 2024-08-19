@@ -12,6 +12,7 @@
 - **Italian**
 - **Turkish**
 - **Kurdish**
+- **Polish**
 
 ## Features:
 - **Vocabulary Training:** Practice and expand your vocabulary across multiple languages.

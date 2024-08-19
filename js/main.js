@@ -39,13 +39,11 @@ $(document).ready(function() {
   $(document).on('click', '.exercise_button', function() {
     var exerciseButtonId = this.id;
     $("#content").load("view/vocabulary_exercise.html", function() {
-      //console.log(exerciseButtonId);
-      //testx();
       $.getJSON('json/' + exerciseButtonId + '.json').then(function(data) {
         if (data) {
           max_count = 6;
-          correct_counter = 0;
-          mistake_counter = 0;
+          var correct_counter = 0;
+          var mistake_counter = 0;
           languageIndex1 = getLanguageIndex(getCookie("langfrom"));
           languageIndex2 = getLanguageIndex(getCookie("langto"));
           let correctionList;
@@ -112,7 +110,7 @@ $(document).ready(function() {
                 $(xfromLangEntryElement).removeClass('selected').addClass('correct').prop('disabled', true);
                 $(xtoLangEntryElement).removeClass('selected').addClass('correct').prop('disabled', true);
                 correct_counter++;
-                if (correct_counter == max_count) {
+                if (correct_counter === max_count) {
                   showPopup();
                 }
               } else {
