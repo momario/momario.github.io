@@ -28,6 +28,9 @@
       case 'KURDISH':
         language = 'tr-tr';
         break;
+      case 'POLISH':
+        language = 'pt-br';
+        break;
       default:
         language = 'en-us';
     }
@@ -37,7 +40,7 @@
     audio.play();
   }
 
-  //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH']
+  //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH', 'POLISH']
   function getLanguageIndex(language) {
     let languageIndex;
     switch (language) {
@@ -67,6 +70,9 @@
         break;
       case "KURDISH":
         languageIndex = 8;
+        break;
+      case "POLISH":
+        languageIndex = 9;
         break;
       default:
         languageIndex = 0;

@@ -4,23 +4,28 @@
     ["guten abend", "good evening", "dober večer", "buonasera", "goedenavond", "bonsoir", "buenas noches", "iyi akşamlar", "evare baş"],
     ["guten appetit", "enjoy your meal", "dober tek", "buon appetito", "eet smakelijk", "bon appétit", "buen provecho", "afiyet olsun", "xêr li ser xorina we"],
     ["gute nacht", "good night", "lahko noč", "buona notte", "goede nacht", "bonne nuit", "buenas noches", "iyi geceler", "şev baş"],
-
     ["alles gute zum geburtstag", "happy birthday", "vse najboljše", "buon compleanno", "gefeliciteerd", "joyeux anniversaire", "feliz cumpleaños", "doğum günün kutlu olsun", "rojbûna te pîroz be"],
-
     ["wo finde ich eine haltestelle", "where can I find a bus stop", "kje najdem postajališče", "dove trovo una fermata", "waar vind ik een halte", "où puis-je trouver un arrêt de bus", "dónde puedo encontrar una parada de autobús", "otobüs durağını nerede bulabilirim", "qet sərê ku otobûsê dîyem?"],
-
     ["wie geht es dir", "how are you", "kako si", "come stai", "hoe gaat het met je", "comment ça va", "¿cómo estás?", "nasılsın", "çawa yî"],
-
     ["wie spät ist es", "what time is it", "koliko je ura", "che ore sono", "hoe laat is het", "quelle heure est-il", "¿qué hora es?", "saat kaç", "saet çend e"],
-     ["ich hätte gern ein bier", "I would like a beer", "rad bi pivo", "vorrei una birra", "ik zou graag een biertje willen", "je voudrais une bière", "me gustaría una cerveza", "bir bira alabilir miyim?", "bi birek hezdikim"],
-
-        ["ich hätte gerne eine pizza", "I would like a pizza", "rad bi pico", "vorrei una pizza", "ik zou graag een pizza willen", "je voudrais une pizza", "me gustaría una pizza", "bir pizza alabilir miyim?", "bi pitza hezdikim"],
-
-        ["wo finde ich eine toilette", "where can I find a toilet", "kje je stranišče", "dove trovo un bagno", "waar vind ik een toilet", "où puis-je trouver des toilettes", "¿dónde puedo encontrar un baño?", "tuvaleti nerede bulabilirim?", "qet sərê ku tuwaletê dîyem?"],
-
-        ["ich liebe dich", "I love you", "ljubim te", "ti amo", "ik hou van je", "je t'aime", "te quiero", "seni seviyorum", "ez hej te dikim"],
-
-        ["verschwinde", "get lost", "izgini", "vattene", "rot op", "dégage", "lárgate", "defol", "biçe!"],
-
-        ["wo finde ich ein taxi", "where can I find a taxi", "kje najdem taksi", "dove trovo un taxi", "waar vind ik een taxi", "où puis-je trouver un taxi", "¿dónde puedo encontrar un taxi?", "taksi nerede bulabilirim?", "qet sərê ku taksî dîyem?"]
+    ["ich hätte gern ein bier", "I would like a beer", "rad bi imel pivo", "vorrei una birra", "ik zou graag een biertje willen", "je voudrais une bière", "me gustaría una cerveza", "bir bira alabilir miyim?", "bi birek hezdikim"],
+    ["ich hätte gerne eine pizza", "I would like a pizza", "rad bi pico", "vorrei una pizza", "ik zou graag een pizza willen", "je voudrais une pizza", "me gustaría una pizza", "bir pizza alabilir miyim?", "bi pitza hezdikim"],
+    ["wo finde ich eine toilette", "where can I find a toilet", "kje je stranišče", "dove trovo un bagno", "waar vind ik een toilet", "où puis-je trouver des toilettes", "¿dónde puedo encontrar un baño?", "tuvaleti nerede bulabilirim?", "qet sərê ku tuwaletê dîyem?"],
+    ["ich liebe dich", "I love you", "ljubim te", "ti amo", "ik hou van je", "je t'aime", "te quiero", "seni seviyorum", "ez hej te dikim"],
+    ["verschwinde", "get lost", "izgini", "vattene", "rot op", "dégage", "lárgate", "defol", "biçe!"],
+    ["wo finde ich ein taxi", "where can I find a taxi", "kje najdem taksi", "dove trovo un taxi", "waar vind ik een taxi", "où puis-je trouver un taxi", "¿dónde puedo encontrar un taxi?", "taksi nerede bulabilirim?", "qet sərê ku taksî dîyem?"],
+    ["Dort ist das Restaurant", "there is the restaurant", "tam je restavracija", "lì c'è il ristorante", "daar is het restaurant", "voilà le restaurant", "allí está el restaurante", "restoran orada", "ev restora orê ye"],
+    ["Hier ist die Speisekarte", "here is the menu", "tu je jedilnik", "ecco il menu", "hier is het menu", "voici le menu", "aquí está el menú", "işte menü", "ev menûyê"],
+    ["Ich würde gerne mit Bargeld bezahlen", "I would like to pay with cash", "rad bi plačal z gotovino", "vorrei pagare in contanti", "ik wil graag met contant betalen", "je voudrais payer en espèces", "me gustaría pagar en efectivo", "nakit ile ödemek istiyorum", "ez dixwazim bi pîvaz re parê bike"],
+    ["Ich würde gerne mit Karte bezahlen", "I would like to pay with card", "rad bi plačal s kartico", "vorrei pagare con la carta", "ik wil graag met kaart betalen", "je voudrais payer par carte", "me gustaría pagar con tarjeta", "kart ile ödemek istiyorum", "ez dixwazim bi karta re parê bike"],
+    ["Ich bin hier", "I am here", "sem tukaj", "sono qui", "ik ben hier", "je suis ici", "estoy aquí", "buradayım", "ez li vir im"],
+    ["du bist dort", "you are there", "ti si tam", "sei lì", "jij bent daar", "tu es là-bas", "estás allí", "oradasın", "tu li virî yî"],
+    ["Es ist besetzt", "it is occupied", "zasedeno je", "è occupato", "het is bezet", "c'est occupé", "está ocupado", "dolu", "ev tê şixul kirinê"],
+    ["Ich bin auf der Toilette", "I am in the bathroom", "sem na stranišču", "sono in bagno", "ik ben op het toilet", "je suis aux toilettes", "estoy en el baño", "tuvaletteyim", "ez di hêza avê de me"],
+    ["Ich putze gerade noch meine Zähne", "I am still brushing my teeth", "še vedno si umivam zobe", "sto ancora lavandomi i denti", "ik ben nog steeds mijn tanden aan het poetsen", "je me brosse encore les dents", "todavía me estoy cepillando los dientes", "dişlerimi hala fırçalıyorum", "hîn şîlan dixwazim dîlanî xwe birînim"],
+    ["Der Ausblick ist sehr schön", "the view is very beautiful", "pogled je zelo lep", "la vista è molto bella", "het uitzicht is erg mooi", "la vue est très belle", "la vista es muy bonita", "manzara çok güzel", "pênî ye bi heraştînê ye"],
+    ["Wollen wir Karten spielen?", "shall we play cards?", "ali bomo igrali karte?", "vogliamo giocare a carte?", "zullen we kaarten spelen?", "on joue aux cartes?", "¿jugamos a las cartas?", "kart oynayalım mı?", "em dixwazin bijareyên kartê li helê?"],
+    ["vielen Dank", "thank you very much", "hvala lepa", "grazie mille", "heel erg bedankt", "merci beaucoup", "muchas gracias", "çok teşekkür ederim", "gelek spas dikim"],
+    ["Es tut mir leid", "I'm sorry", "oprostite", "mi dispiace", "het spijt me", "je suis désolé", "lo siento", "özür dilerim", "bêhna min diket"],
+    ["Verzeihung", "pardon", "oprosti", "scusa", "pardon", "pardon", "perdón", "affedersiniz", "bibore"]
 ]

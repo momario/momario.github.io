@@ -8,7 +8,8 @@
     "FRENCH": ["je", "tu", "il/elle/on", "nous", "vous", "ils/elles"],
     "TURKISH": ["ben", "sen", "o", "biz", "siz", "onlar"],
     "KURDISH": ["ez", "tu", "ew", "em", "hûn", "ew"],
-    "ITALIAN": ["io", "tu", "lui/lei", "noi", "voi", "loro"]
+    "ITALIAN": ["io", "tu", "lui/lei", "noi", "voi", "loro"],
+    "POLISH": ["ja", "ty", "on/ona", "my", "wy", "oni/one"]
   },
   "verbs": {
     "sein": {

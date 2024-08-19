@@ -39,6 +39,9 @@ function showrandomnumberastext(langtocookie, randomnumber) {
     case "KURDISH":
       convertedNumber = convertNumberToKurdish(randomnumber);
       break;
+    case "POLISH":
+      convertedNumber = convertNumberToPolish(randomnumber);
+      break;
     default:
       convertedNumber = convertNumberToGerman(randomnumber);
   }
@@ -47,47 +50,47 @@ function showrandomnumberastext(langtocookie, randomnumber) {
 
 // Function to create and play a DTMF tone
 function playSound(number) {
-    const frequencies = {
-        '1': [697, 1209],
-        '2': [697, 1336],
-        '3': [697, 1477],
-        '4': [770, 1209],
-        '5': [770, 1336],
-        '6': [770, 1477],
-        '7': [852, 1209],
-        '8': [852, 1336],
-        '9': [852, 1477],
-        '0': [941, 1336]
-    };
+  const frequencies = {
+    '1': [697, 1209],
+    '2': [697, 1336],
+    '3': [697, 1477],
+    '4': [770, 1209],
+    '5': [770, 1336],
+    '6': [770, 1477],
+    '7': [852, 1209],
+    '8': [852, 1336],
+    '9': [852, 1477],
+    '0': [941, 1336]
+  };
 
-    const [frequency1, frequency2] = frequencies[number] || [0, 0];
+  const [frequency1, frequency2] = frequencies[number] || [0, 0];
 
-    if (frequency1 && frequency2) {
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        const oscillator1 = audioContext.createOscillator();
-        const oscillator2 = audioContext.createOscillator();
-        const gainNode = audioContext.createGain();
+  if (frequency1 && frequency2) {
+    const audioContext = new(window.AudioContext || window.webkitAudioContext)();
+    const oscillator1 = audioContext.createOscillator();
+    const oscillator2 = audioContext.createOscillator();
+    const gainNode = audioContext.createGain();
 
-        oscillator1.type = 'sine';
-        oscillator2.type = 'sine';
+    oscillator1.type = 'sine';
+    oscillator2.type = 'sine';
 
-        oscillator1.frequency.setValueAtTime(frequency1, audioContext.currentTime);
-        oscillator2.frequency.setValueAtTime(frequency2, audioContext.currentTime);
-        
-        let volume = 0.1;
-        // Set the gain (volume)
-        gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
+    oscillator1.frequency.setValueAtTime(frequency1, audioContext.currentTime);
+    oscillator2.frequency.setValueAtTime(frequency2, audioContext.currentTime);
 
-        oscillator1.connect(gainNode);
-        oscillator2.connect(gainNode);
-        gainNode.connect(audioContext.destination);
+    let volume = 0.1;
+    // Set the gain (volume)
+    gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
 
-        oscillator1.start();
-        oscillator2.start();
+    oscillator1.connect(gainNode);
+    oscillator2.connect(gainNode);
+    gainNode.connect(audioContext.destination);
 
-        oscillator1.stop(audioContext.currentTime + 0.2); // duration of the tone
-        oscillator2.stop(audioContext.currentTime + 0.2); // duration of the tone
-    }
+    oscillator1.start();
+    oscillator2.start();
+
+    oscillator1.stop(audioContext.currentTime + 0.2); // duration of the tone
+    oscillator2.stop(audioContext.currentTime + 0.2); // duration of the tone
+  }
 }
 
 function convertNumberToGerman(num) {
@@ -271,6 +274,26 @@ function convertNumberToKurdish(num) {
       return tens[ten];
     } else {
       return tens[ten] + " û " + ones[one];
+    }
+  }
+}
+
+function convertNumberToPolish(num) {
+  const ones = ["zero", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć"];
+  const teens = ["dziesięć", "jedenaście", "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście", "osiemnaście", "dziewiętnaście"];
+  const tens = ["", "dziesięć", "dwadzieścia", "trzydzieści", "czterdzieści", "pięćdziesiąt", "sześćdziesiąt", "siedemdziesiąt", "osiemdziesiąt", "dziewięćdziesiąt"];
+
+  if (num < 10) {
+    return ones[num];
+  } else if (num < 20) {
+    return teens[num - 10];
+  } else {
+    let ten = Math.floor(num / 10);
+    let one = num % 10;
+    if (one === 0) {
+      return tens[ten];
+    } else {
+      return tens[ten] + " " + ones[one];
     }
   }
 }
