@@ -23,6 +23,12 @@ $(document).ready(function() {
       $("#content").load("view/home.html");
     });
   });
+  
+  $(document).on('click', '#view_phrases', function() {
+    $("#header").load("view/back.html", function() {
+      $("#content").load("view/phrases.html");
+    });
+  });
 
   $(document).on('click', '.exercise_button', function() {
     var exerciseButtonId = this.id;
