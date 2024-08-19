@@ -25,7 +25,7 @@ body {
   background: linear-gradient(to right, orangered, orange);
   background: linear-gradient(90deg, tomato, orangered, orange);
   background-size: 300%;
-  animation: glow 10s linear infinite;
+  animation: glow 8s linear infinite;
   background-clip: text;
   color: transparent;
 }
@@ -40,11 +40,6 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-
-#subheading {
-  font-family: 'Dancing Script', cursive !important;
-  color: deeppink;
 }
 
 .flexfield {
