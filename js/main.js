@@ -29,6 +29,12 @@ $(document).ready(function() {
       $("#content").load("view/phrases.html");
     });
   });
+  
+  $(document).on('click', '#view_impressum', function() {
+    $("#header").load("view/back.html", function() {
+      $("#content").load("view/impressum.html");
+    });
+  });
 
   $(document).on('click', '.exercise_button', function() {
     var exerciseButtonId = this.id;

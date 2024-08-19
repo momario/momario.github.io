@@ -63,6 +63,24 @@ body {
   text-align: center;
 }
 
+.flexfieldcolumn {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 5px;
+  background: whitesmoke;
+  color: black;
+  border: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
 #header {
   display: flex;
   gap: 5px;

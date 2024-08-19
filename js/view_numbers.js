@@ -8,6 +8,7 @@ $(document).ready(function() {
         var $submitButton = $('#numbersubmit');
         var $hintButton = $('#numberhint');
         var $nextButton = $('#numbernext');
+        $nextButton.hide();
         //functions
         var randomnumber = getRandomNumber();
         //functions
@@ -43,6 +44,7 @@ $(document).ready(function() {
             $numberText.addClass("correct");
             $numberInput.addClass("correct");
             speech_text(showrandomnumberastext(langtocookie, randomnumber));
+            $nextButton.show();
           }
         });
         
@@ -60,6 +62,7 @@ $(document).ready(function() {
           $hintButton.show();
           $numberText.removeClass("notcorrect correct");
           $numberInput.removeClass("notcorrect correct");
+          $nextButton.hide();
         });
       });
     });
