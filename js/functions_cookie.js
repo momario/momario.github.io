@@ -39,6 +39,48 @@
     var audio = new Audio(audioSrc);
     audio.play();
   }
+  
+  function speech_text_langfrom(text) {
+    let language;
+    switch (getCookie("langfrom").toUpperCase()) {
+      case 'GERMAN':
+        language = 'de-de';
+        break;
+      case 'ENGLISH':
+        language = 'en-us';
+        break;
+      case 'SLOVENIAN':
+        language = 'sl-si';
+        break;
+      case 'SPANISH':
+        language = 'es-es';
+        break;
+      case 'FRENCH':
+        language = 'fr-fr';
+        break;
+      case 'ITALIAN':
+        language = 'it-it';
+        break;
+      case 'DUTCH':
+        language = 'nl-nl';
+        break;
+      case 'TURKISH':
+        language = 'tr-tr';
+        break;
+      case 'KURDISH':
+        language = 'tr-tr';
+        break;
+      case 'POLISH':
+        language = 'pt-br';
+        break;
+      default:
+        language = 'en-us';
+    }
+    var apiKey = '83a7a15df9bb440380724e35be5a7e68';
+    var audioSrc = 'http://api.voicerss.org/?key=' + apiKey + '&hl=' + language + '&c=MP3&f=44khz_16bit_stereo&src=' + encodeURIComponent(text);
+    var audio = new Audio(audioSrc);
+    audio.play();
+  }
 
   //['GERMAN', 'ENGLISH', 'SLOVENIAN','ITALIAN', 'DUTCH', 'FRENCH', 'SPANISH', 'TURKISH', 'KURDISH', 'POLISH']
   function getLanguageIndex(language) {

@@ -23,13 +23,19 @@ $(document).ready(function() {
       $("#content").load("view/home.html");
     });
   });
-  
+
+  $(document).on('click', '#view_translates', function() {
+    $("#header").load("view/back.html", function() {
+      $("#content").load("view/home2.html");
+    });
+  });
+
   $(document).on('click', '#view_phrases', function() {
     $("#header").load("view/back.html", function() {
       $("#content").load("view/phrases.html");
     });
   });
-  
+
   $(document).on('click', '#view_impressum', function() {
     $("#header").load("view/back.html", function() {
       $("#content").load("view/impressum.html");
@@ -147,6 +153,99 @@ $(document).ready(function() {
         } else {
           console.log("Failed to load JSON.");
         }
+      });
+    });
+  });
+
+  $(document).on('click', '.exercise2_button', function() {
+    var exerciseButtonId = this.id;
+
+    // Load the initial HTML content
+    $("#content").load("view/vocabulary_exercise.html", function() {
+      // Load the JSON data
+      $.getJSON('json/' + exerciseButtonId + '.json').done(function(data) {
+        if (data) {
+          var jsondata = data;
+
+          // Load the second HTML content
+          $("#content").load("view/vocabulary_exercise2.html", function() {
+            var $translateText = $('#translateText'); // Corrected selector
+            var $translateInput = $('#translateInput');
+            var $removeButton = $('#translateremove');
+            var $submitButton = $('#translatesubmit');
+            var $hintButton = $('#translatehint');
+            var $hint2Button = $('#translatehint2');
+            var $nextButton = $('#translatenext');
+            $nextButton.hide();
+
+            // Use the randomTranslate function
+            var randomTranslate = getRandomTranslate(jsondata);
+            $translateText.val(randomTranslate[0]['from']);
+
+            $removeButton.click(function() {
+              $translateInput.val("");
+              $submitButton.show();
+              $hintButton.show();
+              $hint2Button.show();
+              $translateText.removeClass("notcorrect correct");
+              $translateInput.removeClass("notcorrect correct");
+            });
+
+            $hintButton.click(function() {
+              $translateInput.val(randomTranslate[0]['to']);
+            });
+
+            $hint2Button.click(function() {
+              speech_text(randomTranslate[0]['to']);
+            });
+            
+            $submitButton.click(function() {
+              if ($translateInput.val().toLowerCase().trim() != randomTranslate[0]['to']) {
+                $submitButton.hide();
+                $hintButton.hide();
+                $hint2Button.hide();
+                $translateText.addClass("notcorrect");
+                $translateInput.addClass("notcorrect");
+              } else {
+                $removeButton.hide();
+                $submitButton.hide();
+                $hintButton.hide();
+                $hint2Button.hide();
+                $translateText.addClass("correct");
+                $translateInput.addClass("correct");
+                speech_text(randomTranslate[0]['to']);
+                $nextButton.show();
+              }
+            });
+            
+            $nextButton.click(function() {
+              randomTranslate = getRandomTranslate(jsondata);
+              $translateText.val(randomTranslate[0]['from']);
+              $translateInput.val("");
+              $removeButton.show();
+              $submitButton.show();
+              $hintButton.show();
+              $hint2Button.show();
+              $translateText.removeClass("notcorrect correct");
+              $translateInput.removeClass("notcorrect correct");
+              $nextButton.hide();
+            });
+
+            // Function to get a random translation
+            function getRandomTranslate(jsondata) {
+              var max_count = 1;
+              var languageIndex1 = getLanguageIndex(getCookie("langfrom"));
+              var languageIndex2 = getLanguageIndex(getCookie("langto"));
+              var colorLists = shuffleAndSlice(jsondata, max_count);
+              var correctionList = createCorrectionList(colorLists, languageIndex1, languageIndex2);
+              return correctionList;
+            }
+          });
+        } else {
+          console.log("Failed to load JSON.");
+        }
+      }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.error('Error loading JSON:', textStatus, errorThrown);
       });
     });
   });
