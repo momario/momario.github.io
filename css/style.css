@@ -23,9 +23,9 @@ body {
   font-family: Arial Black, Arial, Helvetica, sans-serif;
   font-weight: bolder;
   background: linear-gradient(to right, orangered, orange);
-  background: linear-gradient(90deg, tomato, orangered, orange);
-  background-size: 300%;
-  animation: glow 8s linear infinite;
+  background: linear-gradient(90deg, tomato, orangered, orange, gold);
+  background-size: 400%;
+  animation: glow 10s linear infinite;
   background-clip: text;
   color: transparent;
 }
