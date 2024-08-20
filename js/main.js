@@ -200,7 +200,7 @@ $(document).ready(function() {
             });
             
             $submitButton.click(function() {
-              if ($translateInput.val().toLowerCase().trim() != randomTranslate[0]['to']) {
+              if ($translateInput.val().toLowerCase().trim() != randomTranslate[0]['to'].toLowerCase().trim()) {
                 $submitButton.hide();
                 $hintButton.hide();
                 $hint2Button.hide();
