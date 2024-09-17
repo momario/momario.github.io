@@ -129,7 +129,10 @@ $(document).ready(function() {
       const searchValue = $(this).val().toLowerCase();
       $('.product-wrapper').each(function() {
         const descrText = $(this).find('.product-description').text().toLowerCase();
-        $(this).toggle(descrText.includes(searchValue));
+        const tagsText = $(this).find('.tag').text().toLowerCase();
+        const matchesDescr = descrText.includes(searchValue);
+        const matchesTags = tagsText.includes(searchValue);
+        $(this).toggle(matchesDescr || matchesTags);
       });
     }, 300);
   });
