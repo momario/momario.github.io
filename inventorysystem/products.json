@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1234567",
+    "description": "Lorem ipsum dolor sit amet",
+    "tag": ["leuchten","rohbau"]
+  },
+  {
+    "id": "0066600",
+    "description": "consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag": ["rohbau"]
+  },
+  {
+    "id": "2345678",
+    "description": "tempor invidunt ut labore et dolore magna"
+  },
+  {
+    "id": "8655556",
+    "description": "aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum",
+    "tag": ["rohbau"]
+  },
+  {
+    "id": "245789654",
+    "description": "Stet clita kasd gubergren, no sea takimata sanctus est",
+    "tag": ["leuchten", "rohbau"]
+  }
+]
