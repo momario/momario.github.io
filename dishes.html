@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body {
+      background: black !important;
+      color: white !important;
+      font-size: 80%;
+    }
+    table {
+      width:100%;
+      border-collapse: collapse;
+    }
+    table td,
+    table th {
+      border: 1px solid #333 !important;
+      padding:5px;
+      border-radius: 2px;
+      width: 1%;
+      text-align: center;
+    }
+    .tag {
+      float: left;
+      display: block;
+      padding: 2px 10px;
+      border-radius: 2px;
+      margin: 2px;
+    }
+    .tvegan {
+      background: green !important; color: white !important;
+    }
+    .tvegan::after {content: "vegan";}
+    .tglutnfree {
+      background: darkorange !important; color: white !important;
+    }
+    .tglutnfree::after {content: "glutenfrei";}
+    .tprotein {
+      background: royalblue !important; color: white !important;
+    }
+    .tprotein::after {content: "proteinreich";}
+    .tabwechslung {
+      background: blueviolet !important; color: white !important;
+    }
+    .tabwechslung::after {content: "abwechslungsreich";}
+    .tverarbeitet {
+      background: darkgrey !important; color: white !important;
+    }
+    .tverarbeitet::after {content: "verarbeitet";}
+  </style>
+</head>
+
+<body>
+<table>
+  <tr>
+    <th>NAME</th>
+    <th>TAGS</th>
+    <th>&#9733;</th>
+    <th>AUFWAND</th>
+  </tr>
+  <tr>
+    <td>Pommes mit Käsesauce</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+    </td>
+    <td>5</td>
+    <td>mittel</td>
+  </tr>
+  <tr>
+    <td>Babicas Kartoffelsalat</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+    </td>
+    <td>4</td>
+    <td>mittel</td>
+  </tr>
+  <tr>
+    <td>Brotlose Burgerpatties mit Salat</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+      <span class="tag tprotein"></span>
+      <span class="tag tabwechslung"></span>
+    </td>
+    <td>5</td>
+    <td>hoch</td>
+  </tr>
+  <tr>
+    <td>Reispfanne im Weizentortilla "Burrito"</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tprotein"></span>
+      <span class="tag tabwechslung"></span>
+      <span class="tag tverarbeitet"></span>
+    </td>
+    <td>4</td>
+    <td>niedrig</td>
+  </tr>
+  <tr>
+    <td>Käsespätzle</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tverarbeitet"></span>
+    </td>
+    <td>5</td>
+    <td>niedrig</td>
+  </tr>
+  <tr>
+    <td>Linsencurry</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+      <span class="tag tprotein"></span>
+    </td>
+    <td>5</td>
+    <td>niedrig</td>
+  </tr>
+  <tr>
+    <td>afrikanisches Süßkartoffelcurry</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+      <span class="tag tprotein"></span>
+      <span class="tag tabwechslung"></span>
+    </td>
+    <td>5</td>
+    <td>hoch</td>
+  </tr>
+  <tr>
+    <td>Kürbissuppe</td>
+    <td>
+      <span class="tag tvegan"></span>
+      <span class="tag tglutnfree"></span>
+    </td>
+    <td>3</td>
+    <td>niedrig</td>
+  </tr>
+    <tr>
+      <td>Asia Ingwer-Pilz Suppe</td>
+      <td>
+        <span class="tag tvegan"></span>
+        <span class="tag tglutnfree"></span>
+        <span class="tag tabwechslung"></span>
+      </td>
+      <td>3</td>
+      <td>mittel</td>
+    </tr>
+    <tr>
+      <td>Reispfanne</td>
+      <td>
+        <span class="tag tvegan"></span>
+        <span class="tag tglutnfree"></span>
+        <span class="tag tprotein"></span>
+        <span class="tag tabwechslung"></span>
+      </td>
+      <td>3</td>
+      <td>mittel</td>
+    </tr>
+    <tr>
+      <td>Salat</td>
+      <td>
+        <span class="tag tvegan"></span>
+        <span class="tag tglutnfree"></span>
+        <span class="tag tprotein"></span>
+        <span class="tag tabwechslung"></span>
+      </td>
+      <td>4</td>
+      <td>mittel</td>
+    </tr>
+    <tr>
+      <td>Mushrom Tikka Masala</td>
+      <td>
+        <span class="tag tvegan"></span>
+        <span class="tag tglutnfree"></span>
+        <span class="tag tabwechslung"></span>
+      </td>
+      <td>4</td>
+      <td>mittel</td>
+    </tr>
+    <tr>
+      <td>Kartoffeln mit Sauce Hollandaise</td>
+      <td>
+        <span class="tag tvegan"></span>
+        <span class="tag tglutnfree"></span>
+        <span class="tag tverarbeitet"></span>
+      </td>
+      <td>4</td>
+      <td>mittel</td>
+    </tr>
+</table>
+</body>
+
+</html>
