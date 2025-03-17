@@ -10,19 +10,39 @@
       background: black !important;
       color: white !important;
       font-size: 80%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    
     table {
-      width:100%;
+      width: 100%;
       border-collapse: collapse;
     }
+    
     table td,
     table th {
       border: 1px solid #333 !important;
-      padding:5px;
+      padding: 5px;
       border-radius: 2px;
       width: 1%;
       text-align: center;
     }
+    
+    .search-row th input {
+      border: none;
+      padding: 5px;
+      background: #333;
+      color: white;
+      width: 50px;
+      max-width: 100%;
+    }
+    
+    .row-counter {
+      margin-top: 5px;
+      background: #333;
+      padding: 5px 10px;
+      border-radius: 2px;
+    }
+    
     .tag {
       float: left;
       display: block;
@@ -30,169 +50,326 @@
       border-radius: 2px;
       margin: 2px;
     }
+    
     .tvegan {
-      background: green !important; color: white !important;
+      background: green !important;
+      color: white !important;
     }
-    .tvegan::after {content: "vegan";}
+    
+    .tvegan::after {
+      content: "vegan";
+    }
+    
     .tglutnfree {
-      background: darkorange !important; color: white !important;
+      background: orangered !important;
+      color: white !important;
     }
-    .tglutnfree::after {content: "glutenfrei";}
+    
+    .tglutnfree::after {
+      content: "glutenfrei";
+    }
+    
     .tprotein {
-      background: royalblue !important; color: white !important;
+      background: royalblue !important;
+      color: white !important;
     }
-    .tprotein::after {content: "proteinreich";}
+    
+    .tprotein::after {
+      content: "proteinreich";
+    }
+    
     .tabwechslung {
-      background: blueviolet !important; color: white !important;
+      background: blueviolet !important;
+      color: white !important;
     }
-    .tabwechslung::after {content: "abwechslungsreich";}
+    
+    .tabwechslung::after {
+      content: "healthy";
+    }
+    
     .tverarbeitet {
-      background: darkgrey !important; color: white !important;
+      background: darkgrey !important;
+      color: white !important;
     }
-    .tverarbeitet::after {content: "verarbeitet";}
+    
+    .tverarbeitet::after {
+      content: "verarbeitet";
+    }
   </style>
 </head>
 
 <body>
-<table>
-  <tr>
-    <th>NAME</th>
-    <th>TAGS</th>
-    <th>&#9733;</th>
-    <th>AUFWAND</th>
-  </tr>
-  <tr>
-    <td>Pommes mit Käsesauce</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-    </td>
-    <td>5</td>
-    <td>mittel</td>
-  </tr>
-  <tr>
-    <td>Babicas Kartoffelsalat</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-    </td>
-    <td>4</td>
-    <td>mittel</td>
-  </tr>
-  <tr>
-    <td>Brotlose Burgerpatties mit Salat</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-      <span class="tag tprotein"></span>
-      <span class="tag tabwechslung"></span>
-    </td>
-    <td>5</td>
-    <td>hoch</td>
-  </tr>
-  <tr>
-    <td>Reispfanne im Weizentortilla "Burrito"</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tprotein"></span>
-      <span class="tag tabwechslung"></span>
-      <span class="tag tverarbeitet"></span>
-    </td>
-    <td>4</td>
-    <td>niedrig</td>
-  </tr>
-  <tr>
-    <td>Käsespätzle</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tverarbeitet"></span>
-    </td>
-    <td>5</td>
-    <td>niedrig</td>
-  </tr>
-  <tr>
-    <td>Linsencurry</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-      <span class="tag tprotein"></span>
-    </td>
-    <td>5</td>
-    <td>niedrig</td>
-  </tr>
-  <tr>
-    <td>afrikanisches Süßkartoffelcurry</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-      <span class="tag tprotein"></span>
-      <span class="tag tabwechslung"></span>
-    </td>
-    <td>5</td>
-    <td>hoch</td>
-  </tr>
-  <tr>
-    <td>Kürbissuppe</td>
-    <td>
-      <span class="tag tvegan"></span>
-      <span class="tag tglutnfree"></span>
-    </td>
-    <td>3</td>
-    <td>niedrig</td>
-  </tr>
-    <tr>
-      <td>Asia Ingwer-Pilz Suppe</td>
-      <td>
-        <span class="tag tvegan"></span>
-        <span class="tag tglutnfree"></span>
-        <span class="tag tabwechslung"></span>
-      </td>
-      <td>3</td>
-      <td>mittel</td>
-    </tr>
-    <tr>
-      <td>Reispfanne</td>
-      <td>
-        <span class="tag tvegan"></span>
-        <span class="tag tglutnfree"></span>
-        <span class="tag tprotein"></span>
-        <span class="tag tabwechslung"></span>
-      </td>
-      <td>3</td>
-      <td>mittel</td>
-    </tr>
-    <tr>
-      <td>Salat</td>
-      <td>
-        <span class="tag tvegan"></span>
-        <span class="tag tglutnfree"></span>
-        <span class="tag tprotein"></span>
-        <span class="tag tabwechslung"></span>
-      </td>
-      <td>4</td>
-      <td>mittel</td>
-    </tr>
-    <tr>
-      <td>Mushrom Tikka Masala</td>
-      <td>
-        <span class="tag tvegan"></span>
-        <span class="tag tglutnfree"></span>
-        <span class="tag tabwechslung"></span>
-      </td>
-      <td>4</td>
-      <td>mittel</td>
-    </tr>
-    <tr>
-      <td>Kartoffeln mit Sauce Hollandaise</td>
-      <td>
-        <span class="tag tvegan"></span>
-        <span class="tag tglutnfree"></span>
-        <span class="tag tverarbeitet"></span>
-      </td>
-      <td>4</td>
-      <td>mittel</td>
-    </tr>
-</table>
+  <table id="searchsorttable">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>TAGS</th>
+        <th>&#9733;</th>
+        <th>AUFWAND</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pommes mit Käsesauce</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+        </td>
+        <td>5</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Babicas Kartoffelsalat</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+        </td>
+        <td>4</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Brotlose Burgerpatties mit Salat</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tprotein"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>5</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>Reispfanne im Weizentortilla "Burrito"</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tprotein"></span>
+          <span class="tag tabwechslung"></span>
+          <span class="tag tverarbeitet"></span>
+        </td>
+        <td>4</td>
+        <td>niedrig</td>
+      </tr>
+      <tr>
+        <td>Käsespätzle</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tverarbeitet"></span>
+        </td>
+        <td>5</td>
+        <td>niedrig</td>
+      </tr>
+      <tr>
+        <td>Linsencurry</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tprotein"></span>
+        </td>
+        <td>5</td>
+        <td>niedrig</td>
+      </tr>
+      <tr>
+        <td>afrikanisches Süßkartoffelcurry</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tprotein"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>5</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>Kürbissuppe</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+        </td>
+        <td>3</td>
+        <td>niedrig</td>
+      </tr>
+      <tr>
+        <td>Asia Ingwer-Pilz Suppe</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>3</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Reispfanne</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tprotein"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>3</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Salat</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tprotein"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>4</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Mushrom Tikka Masala</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tabwechslung"></span>
+        </td>
+        <td>4</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>Kartoffeln mit Sauce Hollandaise</td>
+        <td>
+          <span class="tag tvegan"></span>
+          <span class="tag tglutnfree"></span>
+          <span class="tag tverarbeitet"></span>
+        </td>
+        <td>4</td>
+        <td>mittel</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <script>
+    function enhanceTable(tableid) {
+  const table = document.getElementById(tableid);
+  if (!table) return;
+  
+  // Add our custom class to the table
+  table.classList.add('enhanced-table');
+  
+  const headers = Array.from(table.querySelectorAll('thead th'));
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  
+  // Create search row
+  const searchRow = document.createElement('tr');
+  searchRow.classList.add('search-row');
+  
+  headers.forEach(() => {
+    const th = document.createElement('th');
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.placeholder = '...';
+    input.addEventListener('input', performSearch);
+    th.appendChild(input);
+    searchRow.appendChild(th);
+  });
+  
+  // Insert search row after header
+  table.querySelector('thead').appendChild(searchRow);
+  
+  // Add sort functionality to headers
+  headers.forEach((header, index) => {
+    header.style.cursor = 'pointer';
+    header.dataset.sortOrder = 'none';
+    header.addEventListener('click', () => sortTable(index));
+  });
+  
+  // Create and add row counter
+  const counterDiv = document.createElement('div');
+  counterDiv.classList.add('row-counter');
+  table.parentNode.insertBefore(counterDiv, table.nextSibling);
+  updateRowCounter();
+  
+  // Sort function
+  function sortTable(columnIndex) {
+    const header = headers[columnIndex];
+    const currentOrder = header.dataset.sortOrder;
+    
+    // Reset other headers
+    headers.forEach(h => {
+      if (h !== header) h.dataset.sortOrder = 'none';
+    });
+    
+    // Determine new sort order
+    const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+    header.dataset.sortOrder = newOrder;
+    
+    // Sort rows
+    const sortedRows = rows.slice().sort((a, b) => {
+      const aValue = a.cells[columnIndex].textContent.trim();
+      const bValue = b.cells[columnIndex].textContent.trim();
+      
+      // Check if values are numbers
+      const aNum = parseFloat(aValue);
+      const bNum = parseFloat(bValue);
+      
+      if (!isNaN(aNum) && !isNaN(bNum)) {
+        return newOrder === 'asc' ? aNum - bNum : bNum - aNum;
+      }
+      
+      // String comparison
+      return newOrder === 'asc' ?
+        aValue.localeCompare(bValue) :
+        bValue.localeCompare(aValue);
+    });
+    
+    // Re-append rows in new order
+    sortedRows.forEach(row => tbody.appendChild(row));
+  }
+  
+  // Search function
+  function performSearch() {
+    const searchValues = Array.from(searchRow.querySelectorAll('input'))
+      .map(input => input.value.toLowerCase());
+    
+    rows.forEach(row => {
+      // For regular cell content
+      const rowValues = Array.from(row.cells)
+        .map(cell => cell.textContent.toLowerCase());
+      
+      // Special handling for tags column (index 1)
+      let tagMatches = true;
+      if (searchValues[1]) {
+        const tagsCell = row.cells[1];
+        const tagElements = tagsCell.getElementsByClassName('tag');
+        const tagTexts = Array.from(tagElements).map(tag => {
+          // Get the content after the pseudo-element
+          const tagClass = Array.from(tag.classList).find(cls => cls.startsWith('t'));
+          return tagClass ? tagClass.substring(1).toLowerCase() : '';
+        });
+        
+        // Check if any tag contains the search term
+        tagMatches = tagTexts.some(tag => tag.includes(searchValues[1]));
+      }
+      
+      const shouldShow = rowValues.every((value, index) => {
+        // Skip tag column as we handled it separately
+        if (index === 1) return tagMatches;
+        return !searchValues[index] || value.includes(searchValues[index]);
+      });
+      
+      row.style.display = shouldShow ? '' : 'none';
+    });
+    
+    updateRowCounter();
+  }
+  
+  // Row counter function
+  function updateRowCounter() {
+    const visibleRowCount = rows.filter(
+      row => row.style.display !== 'none'
+    ).length;
+    
+    counterDiv.textContent = `${visibleRowCount} of ${rows.length}`;
+  }
+}
+enhanceTable('searchsorttable');
+  </script>
 </body>
 
 </html>
