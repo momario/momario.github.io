@@ -33,7 +33,6 @@
       background: #333;
       color: white;
       width: 50px;
-      max-width: 100%;
     }
     
     .row-counter {
@@ -95,6 +94,33 @@
     .tverarbeitet::after {
       content: "verarbeitet";
     }
+    
+    .taniedrig {
+  background: darkgreen !important;
+  color: lightgreen !important;
+}
+
+.taniedrig::after {
+  content: "niedrig";
+}
+
+.tamittel {
+  background: darkgoldenrod !important;
+  color: gold !important;
+}
+
+.tamittel::after {
+  content: "mittel";
+}
+
+.tahoch {
+  background: darkred !important;
+  color: orangered !important;
+}
+
+.tahoch::after {
+  content: "hoch";
+}
   </style>
 </head>
 
@@ -116,7 +142,9 @@
           <span class="tag tglutnfree"></span>
         </td>
         <td>5</td>
-        <td>mittel</td>
+        <td>
+          <span class="tag tamittel"></span>
+        </td>
       </tr>
       <tr>
         <td>Babicas Kartoffelsalat</td>
@@ -125,7 +153,9 @@
           <span class="tag tglutnfree"></span>
         </td>
         <td>4</td>
-        <td>mittel</td>
+        <td>
+          <span class="tag tamittel"></span>
+        </td>
       </tr>
       <tr>
         <td>Brotlose Burgerpatties mit Salat</td>
@@ -136,7 +166,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>5</td>
-        <td>hoch</td>
+        <td><span class="tag tahoch"></span></td>
       </tr>
       <tr>
         <td>Reispfanne im Weizentortilla "Burrito"</td>
@@ -147,7 +177,7 @@
           <span class="tag tverarbeitet"></span>
         </td>
         <td>4</td>
-        <td>niedrig</td>
+        <td><span class="tag taniedrig"></span></td>
       </tr>
       <tr>
         <td>Käsespätzle</td>
@@ -156,7 +186,7 @@
           <span class="tag tverarbeitet"></span>
         </td>
         <td>5</td>
-        <td>niedrig</td>
+        <td><span class="tag taniedrig"></span></td>
       </tr>
       <tr>
         <td>Linsencurry</td>
@@ -166,7 +196,7 @@
           <span class="tag tprotein"></span>
         </td>
         <td>5</td>
-        <td>niedrig</td>
+        <td><span class="tag taniedrig"></span></td>
       </tr>
       <tr>
         <td>afrikanisches Süßkartoffelcurry</td>
@@ -177,7 +207,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>5</td>
-        <td>hoch</td>
+        <td><span class="tag tahoch"></span></td>
       </tr>
       <tr>
         <td>Kürbissuppe</td>
@@ -186,7 +216,7 @@
           <span class="tag tglutnfree"></span>
         </td>
         <td>3</td>
-        <td>niedrig</td>
+        <td><span class="tag taniedrig"></span></td>
       </tr>
       <tr>
         <td>Asia Ingwer-Pilz Suppe</td>
@@ -196,7 +226,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>3</td>
-        <td>mittel</td>
+        <td><span class="tag tamittel"></span></td>
       </tr>
       <tr>
         <td>Reispfanne</td>
@@ -207,7 +237,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>3</td>
-        <td>mittel</td>
+        <td><span class="tag tamittel"></span></td>
       </tr>
       <tr>
         <td>Salat</td>
@@ -218,7 +248,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>4</td>
-        <td>mittel</td>
+        <td><span class="tag tamittel"></span></td>
       </tr>
       <tr>
         <td>Mushrom Tikka Masala</td>
@@ -228,7 +258,7 @@
           <span class="tag tabwechslung"></span>
         </td>
         <td>4</td>
-        <td>mittel</td>
+        <td><span class="tag tamittel"></span></td>
       </tr>
       <tr>
         <td>Kartoffeln mit Sauce Hollandaise</td>
@@ -238,137 +268,132 @@
           <span class="tag tverarbeitet"></span>
         </td>
         <td>4</td>
-        <td>mittel</td>
+        <td><span class="tag tamittel"></span></td>
       </tr>
     </tbody>
   </table>
   
   <script>
     function enhanceTable(tableid) {
-  const table = document.getElementById(tableid);
-  if (!table) return;
-  
-  // Add our custom class to the table
-  table.classList.add('enhanced-table');
-  
-  const headers = Array.from(table.querySelectorAll('thead th'));
-  const tbody = table.querySelector('tbody');
-  const rows = Array.from(tbody.querySelectorAll('tr'));
-  
-  // Create search row
-  const searchRow = document.createElement('tr');
-  searchRow.classList.add('search-row');
-  
-  headers.forEach(() => {
-    const th = document.createElement('th');
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.placeholder = '...';
-    input.addEventListener('input', performSearch);
-    th.appendChild(input);
-    searchRow.appendChild(th);
-  });
-  
-  // Insert search row after header
-  table.querySelector('thead').appendChild(searchRow);
-  
-  // Add sort functionality to headers
-  headers.forEach((header, index) => {
-    header.style.cursor = 'pointer';
-    header.dataset.sortOrder = 'none';
-    header.addEventListener('click', () => sortTable(index));
-  });
-  
-  // Create and add row counter
-  const counterDiv = document.createElement('div');
-  counterDiv.classList.add('row-counter');
-  table.parentNode.insertBefore(counterDiv, table.nextSibling);
-  updateRowCounter();
-  
-  // Sort function
-  function sortTable(columnIndex) {
-    const header = headers[columnIndex];
-    const currentOrder = header.dataset.sortOrder;
-    
-    // Reset other headers
-    headers.forEach(h => {
-      if (h !== header) h.dataset.sortOrder = 'none';
-    });
-    
-    // Determine new sort order
-    const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
-    header.dataset.sortOrder = newOrder;
-    
-    // Sort rows
-    const sortedRows = rows.slice().sort((a, b) => {
-      const aValue = a.cells[columnIndex].textContent.trim();
-      const bValue = b.cells[columnIndex].textContent.trim();
+      const table = document.getElementById(tableid);
+      if (!table) return;
       
-      // Check if values are numbers
-      const aNum = parseFloat(aValue);
-      const bNum = parseFloat(bValue);
+      // Add our custom class to the table
+      table.classList.add('enhanced-table');
       
-      if (!isNaN(aNum) && !isNaN(bNum)) {
-        return newOrder === 'asc' ? aNum - bNum : bNum - aNum;
-      }
+      const headers = Array.from(table.querySelectorAll('thead th'));
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
       
-      // String comparison
-      return newOrder === 'asc' ?
-        aValue.localeCompare(bValue) :
-        bValue.localeCompare(aValue);
-    });
-    
-    // Re-append rows in new order
-    sortedRows.forEach(row => tbody.appendChild(row));
-  }
-  
-  // Search function
-  function performSearch() {
-    const searchValues = Array.from(searchRow.querySelectorAll('input'))
-      .map(input => input.value.toLowerCase());
-    
-    rows.forEach(row => {
-      // For regular cell content
-      const rowValues = Array.from(row.cells)
-        .map(cell => cell.textContent.toLowerCase());
+      // Create search row
+      const searchRow = document.createElement('tr');
+      searchRow.classList.add('search-row');
       
-      // Special handling for tags column (index 1)
-      let tagMatches = true;
-      if (searchValues[1]) {
-        const tagsCell = row.cells[1];
-        const tagElements = tagsCell.getElementsByClassName('tag');
-        const tagTexts = Array.from(tagElements).map(tag => {
-          // Get the content after the pseudo-element
-          const tagClass = Array.from(tag.classList).find(cls => cls.startsWith('t'));
-          return tagClass ? tagClass.substring(1).toLowerCase() : '';
-        });
-        
-        // Check if any tag contains the search term
-        tagMatches = tagTexts.some(tag => tag.includes(searchValues[1]));
-      }
-      
-      const shouldShow = rowValues.every((value, index) => {
-        // Skip tag column as we handled it separately
-        if (index === 1) return tagMatches;
-        return !searchValues[index] || value.includes(searchValues[index]);
+      headers.forEach(() => {
+        const th = document.createElement('th');
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = '...';
+        input.addEventListener('input', performSearch);
+        th.appendChild(input);
+        searchRow.appendChild(th);
       });
       
-      row.style.display = shouldShow ? '' : 'none';
-    });
-    
-    updateRowCounter();
-  }
-  
-  // Row counter function
-  function updateRowCounter() {
-    const visibleRowCount = rows.filter(
-      row => row.style.display !== 'none'
-    ).length;
-    
-    counterDiv.textContent = `${visibleRowCount} of ${rows.length}`;
-  }
-}
-enhanceTable('searchsorttable');
+      // Insert search row after header
+      table.querySelector('thead').appendChild(searchRow);
+      
+      // Add sort functionality to headers
+      headers.forEach((header, index) => {
+        header.style.cursor = 'pointer';
+        header.dataset.sortOrder = 'none';
+        header.addEventListener('click', () => sortTable(index));
+      });
+      
+      // Create and add row counter
+      const counterDiv = document.createElement('div');
+      counterDiv.classList.add('row-counter');
+      table.parentNode.insertBefore(counterDiv, table.nextSibling);
+      updateRowCounter();
+      
+      // Sort function
+      function sortTable(columnIndex) {
+        const header = headers[columnIndex];
+        const currentOrder = header.dataset.sortOrder;
+        
+        // Reset other headers
+        headers.forEach(h => {
+          if (h !== header) h.dataset.sortOrder = 'none';
+        });
+        
+        // Determine new sort order
+        const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+        header.dataset.sortOrder = newOrder;
+        
+        // Sort rows
+        const sortedRows = rows.slice().sort((a, b) => {
+          const aValue = a.cells[columnIndex].textContent.trim();
+          const bValue = b.cells[columnIndex].textContent.trim();
+          
+          // Check if values are numbers
+          const aNum = parseFloat(aValue);
+          const bNum = parseFloat(bValue);
+          
+          if (!isNaN(aNum) && !isNaN(bNum)) {
+            return newOrder === 'asc' ? aNum - bNum : bNum - aNum;
+          }
+          
+          // String comparison
+          return newOrder === 'asc' ?
+            aValue.localeCompare(bValue) :
+            bValue.localeCompare(aValue);
+        });
+        
+        // Re-append rows in new order
+        sortedRows.forEach(row => tbody.appendChild(row));
+      }
+      
+      // Search function
+      function performSearch() {
+        const searchValues = Array.from(searchRow.querySelectorAll('input'))
+          .map(input => input.value.toLowerCase());
+        
+        rows.forEach(row => {
+          // For regular cell content (for non-tag columns)
+          const rowValues = Array.from(row.cells)
+            .map(cell => cell.textContent.toLowerCase());
+          
+          // Special handling for tags column (index 1)
+          let tagMatches = true;
+          if (searchValues[1]) {
+            const tagsCell = row.cells[1];
+            const tagsText = tagsCell.textContent.toLowerCase();
+            
+            // Check if tag cell contains the search term
+            tagMatches = tagsText.includes(searchValues[1]);
+          }
+          
+          const shouldShow = rowValues.every((value, index) => {
+            // Skip tag column as we handled it separately
+            if (index === 1) return tagMatches;
+            return !searchValues[index] || value.includes(searchValues[index]);
+          });
+          
+          row.style.display = shouldShow ? '' : 'none';
+        });
+        
+        updateRowCounter();
+      }
+      
+      // Row counter function
+      function updateRowCounter() {
+        const visibleRowCount = rows.filter(
+          row => row.style.display !== 'none'
+        ).length;
+        
+        counterDiv.textContent = `Showing ${visibleRowCount} of ${rows.length} rows`;
+      }
+    }
+    enhanceTable('searchsorttable');
   </script>
 </body>
 
