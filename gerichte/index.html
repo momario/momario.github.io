@@ -27,6 +27,21 @@
       text-align: center;
     }
     
+    table th {
+      position: relative;
+    }
+    
+    /* Pfeile für Sortierung */
+    th[data-sort-order="asc"]::after {
+      content: " ↑";
+      color: #fff;
+    }
+    
+    th[data-sort-order="desc"]::after {
+      content: " ↓";
+      color: #fff;
+    }
+    
     .search-row th input {
       border: none;
       padding: 5px;
@@ -96,31 +111,31 @@
     }
     
     .taniedrig {
-  background: darkgreen !important;
-  color: lightgreen !important;
-}
-
-.taniedrig::after {
-  content: "niedrig";
-}
-
-.tamittel {
-  background: darkgoldenrod !important;
-  color: gold !important;
-}
-
-.tamittel::after {
-  content: "mittel";
-}
-
-.tahoch {
-  background: darkred !important;
-  color: orangered !important;
-}
-
-.tahoch::after {
-  content: "hoch";
-}
+      background: darkgreen !important;
+      color: lightgreen !important;
+    }
+    
+    .taniedrig::after {
+      content: "niedrig";
+    }
+    
+    .tamittel {
+      background: darkgoldenrod !important;
+      color: gold !important;
+    }
+    
+    .tamittel::after {
+      content: "mittel";
+    }
+    
+    .tahoch {
+      background: darkred !important;
+      color: orangered !important;
+    }
+    
+    .tahoch::after {
+      content: "hoch";
+    }
   </style>
 </head>
 
@@ -315,6 +330,12 @@
       table.parentNode.insertBefore(counterDiv, table.nextSibling);
       updateRowCounter();
       
+      // Hilfsfunktion: Extrahiert Tags aus einer Zelle
+      function getTagsFromCell(cell) {
+        return Array.from(cell.querySelectorAll('.tag'))
+          .map(tag => tag.className.split(' ')[1]); // Klasse wie 'tvegan', 'tprotein' usw.
+      }
+      
       // Sort function
       function sortTable(columnIndex) {
         const header = headers[columnIndex];
@@ -331,6 +352,37 @@
         
         // Sort rows
         const sortedRows = rows.slice().sort((a, b) => {
+          // Spezielle Behandlung für die Tag-Spalte (Index 1)
+          if (columnIndex === 1) {
+            const aTags = getTagsFromCell(a.cells[columnIndex]);
+            const bTags = getTagsFromCell(b.cells[columnIndex]);
+            
+            // Sortieren nach Anzahl der Tags
+            if (newOrder === 'asc') {
+              return aTags.length - bTags.length;
+            } else {
+              return bTags.length - aTags.length;
+            }
+          }
+          
+          // Spezielle Behandlung für die Aufwand-Spalte (Index 3)
+          if (columnIndex === 3) {
+            const aTag = a.cells[columnIndex].querySelector('.tag');
+            const bTag = b.cells[columnIndex].querySelector('.tag');
+            
+            const aufwandRank = {
+              'taniedrig': 1,
+              'tamittel': 2,
+              'tahoch': 3
+            };
+            
+            const aRank = aTag ? aufwandRank[aTag.className.split(' ')[1]] || 0 : 0;
+            const bRank = bTag ? aufwandRank[bTag.className.split(' ')[1]] || 0 : 0;
+            
+            return newOrder === 'asc' ? aRank - bRank : bRank - aRank;
+          }
+          
+          // Standard-Sortierung für andere Spalten
           const aValue = a.cells[columnIndex].textContent.trim();
           const bValue = b.cells[columnIndex].textContent.trim();
           
@@ -358,27 +410,58 @@
           .map(input => input.value.toLowerCase());
         
         rows.forEach(row => {
-          // For regular cell content (for non-tag columns)
-          const rowValues = Array.from(row.cells)
-            .map(cell => cell.textContent.toLowerCase());
+          let showRow = true;
           
-          // Special handling for tags column (index 1)
-          let tagMatches = true;
-          if (searchValues[1]) {
-            const tagsCell = row.cells[1];
-            const tagsText = tagsCell.textContent.toLowerCase();
+          // Für jede Spalte prüfen
+          for (let i = 0; i < searchValues.length; i++) {
+            if (!searchValues[i]) continue; // Leere Suche überspringen
             
-            // Check if tag cell contains the search term
-            tagMatches = tagsText.includes(searchValues[1]);
+            const cell = row.cells[i];
+            
+            // Spezielle Behandlung für Tag-Spalte (Index 1)
+            if (i === 1) {
+              const tagSearch = searchValues[i];
+              const tags = Array.from(cell.querySelectorAll('.tag'));
+              const tagTexts = tags.map(tag => tag.textContent.toLowerCase());
+              const tagClasses = tags.map(tag => 
+                Array.from(tag.classList)
+                  .filter(cls => cls.startsWith('t'))
+                  .join(' ')
+                  .toLowerCase()
+              );
+              
+              // Prüfen, ob ein Tag den Suchbegriff enthält
+              const tagMatch = tagTexts.some(text => text.includes(tagSearch)) || 
+                              tagClasses.some(cls => cls.includes(tagSearch));
+              
+              if (!tagMatch) {
+                showRow = false;
+                break;
+              }
+            }
+            // Spezielle Behandlung für Aufwand-Spalte (Index 3)
+            else if (i === 3) {
+              const aufwandSearch = searchValues[i];
+              const aufwandTag = cell.querySelector('.tag');
+              
+              if (!aufwandTag || 
+                  !aufwandTag.textContent.toLowerCase().includes(aufwandSearch) && 
+                  !aufwandTag.className.toLowerCase().includes(aufwandSearch)) {
+                showRow = false;
+                break;
+              }
+            }
+            // Standard-Suche für andere Spalten
+            else {
+              const cellText = cell.textContent.toLowerCase();
+              if (!cellText.includes(searchValues[i])) {
+                showRow = false;
+                break;
+              }
+            }
           }
           
-          const shouldShow = rowValues.every((value, index) => {
-            // Skip tag column as we handled it separately
-            if (index === 1) return tagMatches;
-            return !searchValues[index] || value.includes(searchValues[index]);
-          });
-          
-          row.style.display = shouldShow ? '' : 'none';
+          row.style.display = showRow ? '' : 'none';
         });
         
         updateRowCounter();
@@ -393,6 +476,7 @@
         counterDiv.textContent = `Showing ${visibleRowCount} of ${rows.length} rows`;
       }
     }
+    
     enhanceTable('searchsorttable');
   </script>
 </body>
